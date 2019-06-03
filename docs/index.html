@@ -13,6 +13,13 @@ title: Main Index
 
   <h3>Work in progress</h3>
 
+  <h3>Unsorted</h3>
+  <ul class="posts">
+    {% for post in sortedPosts %}
+     <li><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+
   <h3>Links</h3>
   <ul class="posts">
     <li><a href="https://www.lemonamiga.com/games/details.php?id=2655">Dungeons of Avalon</a> at LemonAmiga</li>
