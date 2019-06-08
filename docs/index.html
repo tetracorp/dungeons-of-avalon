@@ -5,7 +5,7 @@ title: Main Index
 
   <p><em>Exploring the Dungeons of Avalon</em> analyzes the executable, data
   files and history of
-  the 1991-1992 Commodore Amiga roleplaying game series _Dungeons of Avalon_.
+  the 1992 Commodore Amiga roleplaying game series <em>Dungeons of Avalon</em>.
   Read more
   <a href="{{site.baseurl}}/about/this-project.html">about this project</a>.</p>
 
@@ -13,19 +13,16 @@ title: Main Index
 
   <h3>Work in progress</h3>
 
-  <h3>Unsorted</h3>
+  <h3>History</h3>
   <ul class="posts">
     {% for post in sortedPosts %}
-     <li><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
+      {% if post.categories contains "history" %}
+      <li><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
+      {% endif %}
     {% endfor %}
   </ul>
 
   <h3>Links</h3>
   <ul class="posts">
     <li><a href="https://www.lemonamiga.com/games/details.php?id=2655">Dungeons of Avalon</a> at LemonAmiga</li>
-  </ul>
-
-  <h3>Todo</h3>
-  <ul class="posts">
-    <li></li>
   </ul>
