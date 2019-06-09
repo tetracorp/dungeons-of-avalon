@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Development and release history
 category: history
 ---
@@ -151,7 +152,6 @@ _Dungeons of Avalon II_, giving it a score of 70%.
   (Source: [Amiga History Guide](http://www.amigahistory.plus.com/amigafun.html)
 * __28 Jan 1992__: English and German text added to the German version of
   _Dungeons of Avalon_, suggesting an international release is now planned.
-* __28 Jan 1992__:
 * __7 Feb 1992__: Final build of _Dungeons of Avalon_ completed in both
   German and English. Based on English credits text, _Dungeons of Avalon II_ is
   now planned.

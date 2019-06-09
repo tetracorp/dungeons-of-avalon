@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Differences between releases
 category: history
 ---
