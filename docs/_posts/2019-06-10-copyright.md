@@ -15,6 +15,10 @@ derivative works, provided that a link is given back to this website is
 included.
 
 _Dungeons of Avalon_ and _Dungeons of Avalon II: The Isle of Darkness_ are
-copyright &copy; 1992 CompuTec Verlag. All content from those games used on this
+copyright &copy;1992 CompuTec Verlag. All content from those games used on this
 website is believed to constitute fair use for the purposes of criticism and
 analysis.
+
+[Hacker theme](https://github.com/pages-themes/hacker) for GitHub Pages is
+released under the Creative Commons Zero v1.0 Universal public domain
+dedication.

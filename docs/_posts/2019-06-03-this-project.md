@@ -23,3 +23,7 @@ This project primarily intends to discover the following:
 2. What are the game's mechanics?
 3. What is the complete game map?
 4. When was the game released and translated into English?
+
+### History
+
+This site was started on 3 June 2019.

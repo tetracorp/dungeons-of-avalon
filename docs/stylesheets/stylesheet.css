@@ -257,6 +257,23 @@ a {
   margin: 0 0 0 1em;
 }
 
+.center {
+  font-size: 80%;
+  color: #aaaaaa;
+  text-align: center;
+}
+
+.left {
+  font-size: 80%;
+  color: #aaaaaa;
+}
+
+footer {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 footer p {
   text-align: right;
   font-size: 80%;
@@ -272,4 +289,10 @@ footer p a {
 
 footer p a:hover{
   text-decoration: underline;
+}
+
+code {
+  font-size: 120%;
+  background: #333333;
+  padding: 0 2px;
 }
