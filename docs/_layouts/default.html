@@ -30,8 +30,10 @@
     </div>
 
     <footer>
-      <p>
+      <p class="copyright">
+{{ unless page.license or page.copyright }}
         <a href="https://tetracorp.github.io/dungeons-of-avalon/about/copyright.html">CC BY</a>
+{{ endunless }}
       </p>
     </footer>
     

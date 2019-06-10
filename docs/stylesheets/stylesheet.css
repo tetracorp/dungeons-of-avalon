@@ -261,4 +261,15 @@ footer p {
   text-align: right;
   font-size: 80%;
   color: #aaaaaa;
+  padding-right: 1em;
+}
+
+footer p a {
+  color: #aaaaaa;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+footer p a:hover{
+  text-decoration: underline;
 }
