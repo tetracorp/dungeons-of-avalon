@@ -28,7 +28,7 @@ disk copying methods.
 
 * __Filename__: `Dungeons of Avalon v1.0 (demo-playable) (1991)(Zeret)(de)[h SR].adf`
 * __md5__: cfb665990e32633f9bf7bdf2f751f9e2
-* __Release date:__ 8 May 1991 (Unknown release), 1 Oct 1991 (Skidrow)
+* __Date:__ 8 May 1991 (Unknown release), 1 Oct 1991 (Skidrow)
 
 This preview release of _Dungeons of Avalon_ is the earliest known version of
 the game, and has some big differences. This version has a cracktro for piracy
@@ -415,7 +415,7 @@ April, meaning they probably tested the game by loading a save file.
   The Island of Darkness].adf`, `DungeonsOfAvalon2.dms`
 * __md5__: 491e490017831956bd67cc0c98a433ec (ADF),
   02e9f37af41cf2436b1748e97f64a45a (DMS)
-* __Release date:__ 15 Oct 1992 (modified), September 1995 (_Amiga Games_ magazine)
+* __Date:__ 15 Oct 1992 (modified), September 1995 (_Amiga Games_ magazine)
 * __Download link__: [DungeonsOfAvalon2.dms](http://cd.textfiles.com/amigagames/ag-199501/Spiele/Vollversionen/DungeonsOfAvalon2.dms) (cd.textfiles.com)
   CD-ROM)
 
@@ -499,7 +499,7 @@ when the game is played without write-protecting the disk.
 
 * __Filename__: `Dungeons of Avalon 2 (1992)(Zeret)(de).adf`
 * __md5__: 0c1be33f445a7e85d4cdf3356956819e
-* __Release date:__ 20 Oct 1993 (modified)
+* __Date:__ 20 Oct 1993 (modified)
 
 This appears to be a regular copy of the original release.
 
@@ -529,7 +529,7 @@ of 01:49:27, and `dat/DUNG` has a time of 01:50:41.
 * __Filename__: `DungeonsOfAvalonII-TheIslandOfDarkness.ipf`,
   `Dungeons of Avalon II - The Island of Darkness (1992-10)(CompuTec Verlag)(GB)[Amiga Mania Issue 07][1957].zip`
 * __md5__: d1afbc8782bb0dd8fb3addcab797a510
-* __Release date:__ 23 July 1992 (modified), Oct 1992 (_Amiga Mania_ #7,
+* __Date:__ 23 July 1992 (modified), Oct 1992 (_Amiga Mania_ #7,
   probable)
 
 All the files on this version are dated 23 July 1992 at around 8am. This is
@@ -554,7 +554,7 @@ the disk, which suggests that this is an unmodified original copy.
 
 * __Filename__: `Amiga Mania #7 (1992)(MC Publications)(GB)[h DTC][Oct 1992][Dungeons of Avalon II - The Island of Darkness].adf`
 * __md5__: a720c37e908aaa043b81cf8cd1d6c114
-* __Release date:__ 4 Oct 1992 (modified, pirate release)
+* __Date:__ 4 Oct 1992 (modified, pirate release)
 
 A pirate release by group DYTEC.
 
@@ -576,7 +576,7 @@ day of release, tested, then redistributed later.
 
 * __Filename__: `Amiga Mania #7 (1992)(MC Publications)(GB)[h DTC][a2][Oct 1992][Dungeons of Avalon II - The Island of Darkness].adf`
 * __md5__: ce03970ef6b43dba16dec986eb2c1ead
-* __Release date:__ 9 Oct 1992 (modified, patched)
+* __Date:__ 9 Oct 1992 (modified, patched)
 
 Another variant of the original DYTEC release. Its DAT/DUNG are dated 20:05,
 almost exactly one minute before the above release. Probably two people
@@ -602,7 +602,7 @@ from the cracktro strip.
 
 * __Filename__: `Amiga Mania #7 (1992)(MC Publications)(GB)[h DTC][t +3 Palace][Oct 1992][Dungeons of Avalon II - The Island of Darkness].adf`
 * __md5__: 2f4ba9d61fc860ba69e545c082052941
-* __Release date:__ 8 Oct 1992 (modified, trainer), 11 Oct 1992 (modified, patch?)
+* __Date:__ 8 Oct 1992 (modified, trainer), 11 Oct 1992 (modified, patch?)
 
 Another variant of the DYTEC release, but a trainer (cheat program) has been
 added to this version by Caesar of group Palace.
