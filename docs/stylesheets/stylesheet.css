@@ -296,3 +296,7 @@ code {
   background: #333333;
   padding: 0 2px;
 }
+
+body {
+  cursor: url(https://tetracorp.github.io/images/pointer.png), auto;
+}
