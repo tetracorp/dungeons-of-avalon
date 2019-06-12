@@ -30,7 +30,8 @@ disk copying methods.
 * __md5__: cfb665990e32633f9bf7bdf2f751f9e2
 * __Date:__ 8 May 1991 (Unknown release), 1 Oct 1991 (Skidrow)
 
-This preview release of _Dungeons of Avalon_ is the earliest known version of
+This [preview release](../secrets/early-alpha-version.html)
+of _Dungeons of Avalon_ is the earliest known version of
 the game, and has some big differences. This version has a cracktro for piracy
 group Skidrow, who credit member S.S.R for supplying the original disk. I had to
 run Relokick to get it to work correctly on an emulated A1200.
@@ -128,6 +129,9 @@ which would become known as Zeret.
 
 What's notable about this is that in the final release, save games are XOR'd
 with the phrase SEFERSALAP in ASCII as a cheat prevention measure.
+
+For more detailed information on the gameplay differences evident in the demo,
+see [early alpha version](../secrets/early-alpha-version.html).
 
 ### Dungeons of Avalon 1 (German)
 

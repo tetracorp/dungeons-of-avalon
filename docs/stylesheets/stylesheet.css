@@ -261,6 +261,9 @@ a {
   font-size: 80%;
   color: #aaaaaa;
   text-align: center;
+  overflow: hidden;
+
+  clear: both;
 }
 
 .left {
