@@ -7,7 +7,7 @@ categories: game
 ### Valid race/class combinations
 
 |         |Human|Elf|Half-elf|Dwarf|Troll|Gnom|Stemb&auml;r|Lizzard |
-|---------|-----|---|--------|-----|-----|----|------------|--------|
+|---------|:---:|:-:|:------:|:---:|:---:|:--:|:----------:|:------:|
 |Fighter  | :white_check_mark: |:white_check_mark:|  :white_check_mark:   | :white_check_mark: | :white_check_mark: |:white_check_mark: |    :white_check_mark:     |  :white_check_mark:   |
 |Thief    | :white_check_mark: |:x:|  :white_check_mark:   | :x: | :white_check_mark: |:white_check_mark: |    :white_check_mark:     |  :x:   |
 |Knight   | :white_check_mark: |:white_check_mark:|  :white_check_mark:   | :white_check_mark: | :white_check_mark: |:x: |    :white_check_mark:     |  :x:   |
@@ -22,10 +22,10 @@ categories: game
 
 The following descriptions are translated from the German game manual.
 
-__Humans:__ These humans are not comparable to the average person of our society.
+__Humans:__ These humans are not comparable to the typical person of our society.
 They are sturdier, stronger and tougher and correspond in structure to an Armold
 S. This race is very common on Avalon and thus forms the largest part of the
-population. People are the average.
+population. Humans are the average.
 
 __Elves:__ The elves are a breed of their own. They live in forests and in their
 own cities. They are graceful and tender beings, who stay away from the other
@@ -125,3 +125,11 @@ means "lizard".
 reference to Rudolf Stember, the game's musician.
 4. The German name for wizard is "der Hexer", which would be more accurately
 translated as "warlock".
+5. The human race description describes them as like "Armold S.", a reference to
+actor and bodybuilder Arnold Schwarzenegger.
+
+### Deleted classes
+
+A piece of [cut content](../secrets/unused-content.html#deleted-character-classes)
+included three unused character classes: Pirate, Murderer, and Bard. NPCs of
+these classes still exist in the game.
