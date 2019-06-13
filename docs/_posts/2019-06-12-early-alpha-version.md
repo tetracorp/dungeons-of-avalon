@@ -292,3 +292,20 @@ to the final German release at 63,196 bytes.
 
 No game manual is included. This is normal, as game manuals are necessarily one
 of the last parts of a game to be made.
+
+The name "Kham" doesn't appear anywhere in this version. It may have been a
+later inclusion. The final release version manual refers to the good wizard
+Arakus (another likely reference to demoscene coder Ara), but it may be that
+this character's name was changed to Kham without updating the backstory.
+
+Since the Temple of Ara was also renamed, it's possible that references to Ara
+were intentionally changed for some reason, perhaps to reference other
+individuals, with the manual backstory and items named for Ara simply
+overlooked. Kham is a probably derived from H'Khan, in turn from the name of
+the game's programmer, Hakan.
+
+The art for the city Ghale in this release shows a cavern in a hillside outside
+the city. This suggests that perhaps H'Khan and Ghale are separated by a
+mountain, and the Dungeon is a passage between the mountain. This is something
+mentioned in the final game manual where the wizard Arakus was slain by bandits
+on his way between the two cities.
