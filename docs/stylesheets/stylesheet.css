@@ -304,7 +304,7 @@ img {
   cursor: url(https://tetracorp.github.io/dungeons-of-avalon/images/pointer.png), auto;
 }
 
-ul#markdown-toc {
+ol#markdown-toc {
   border: 1px solid #aaa;
   display: inline-block;
   padding: 0.5em 1em 0.5em 3em;
