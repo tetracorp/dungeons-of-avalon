@@ -6,13 +6,13 @@ categories: secrets
 
 ### Deleted character classes
 
-![Beard](../images/npc_beard.png "Beard")
+![Clint](../images/npc_clint.png "Clint")
 {:.right}
 
 ![Hannibal](../images/npc_hannibal.png "Hannibal")
 {:.right}
 
-![Clint](../images/npc_clint.png "Clint")
+![Beard](../images/npc_beard.png "Beard")
 {:.right}
 
 Analysis of text strings appearing in the
