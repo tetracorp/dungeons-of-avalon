@@ -7,16 +7,9 @@ categories: secrets
 ### Deleted character classes
 
 <div class="center">
-
-![Beard](../images/npc_beard.png "Beard")
-{:.right}
-
-![Hanibal](../images/npc_hanibal.png "Hanibal")
-{:.right}
-
-![Clint](../images/npc_clint.png "Clint")
-{:.right}
-
+<img src="../image/npc_beard.png" alt="Beard" title="Beard" class="right">
+<img src="../image/npc_hanibal.png" alt="Hanibal" title="Hanibal" class="right">
+<img src="../image/npc_clint.png" alt="Clint" title="Clint" class="right">
 </div>
 
 Analysis of text strings appearing in the
