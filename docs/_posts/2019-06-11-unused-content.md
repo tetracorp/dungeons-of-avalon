@@ -6,11 +6,14 @@ categories: secrets
 
 ### Deleted character classes
 
-<div class="center">
-<img src="../images/npc_beard.png" alt="Beard" title="Beard" class="right">
-<img src="../images/npc_hanibal.png" alt="Hanibal" title="Hanibal" class="right">
-<img src="../images/npc_clint.png" alt="Clint" title="Clint" class="right">
-</div>
+![Beard](../images/npc_beard.png "Beard")
+{:.right}
+
+![Hannibal](../images/npc_hannibal.png "Hannibal")
+{:.right}
+
+![Clint](../images/npc_clint.png "Clint")
+{:.right}
 
 Analysis of text strings appearing in the
 [early alpha version](../secrets/early-alpha-version) of _Dungeons of Avalon_
