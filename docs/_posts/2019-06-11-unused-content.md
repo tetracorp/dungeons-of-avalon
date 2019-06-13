@@ -9,7 +9,7 @@ categories: secrets
 ![Clint](../images/npc_clint.png "Clint")
 {:.right}
 
-![Hannibal](../images/npc_hannibal.png "Hannibal")
+![Hanibal](../images/npc_hanibal.png "Hanibal")
 {:.right}
 
 ![Beard](../images/npc_beard.png "Beard")
