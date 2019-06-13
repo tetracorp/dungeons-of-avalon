@@ -42,10 +42,10 @@ title: Main Index
     {% endfor %}
   </ul>
 
-  <h3>Data</h3>
+  <h3>Game mechanics</h3>
   <ul class="posts">
     {% for post in sortedPosts %}
-      {% if post.categories contains "data" %}
+      {% if post.categories contains "game" %}
       <li><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
       {% endif %}
     {% endfor %}
@@ -55,6 +55,15 @@ title: Main Index
   <ul class="posts">
     {% for post in sortedPosts %}
       {% if post.categories contains "lore" %}
+      <li><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  <h3>Data</h3>
+  <ul class="posts">
+    {% for post in sortedPosts %}
+      {% if post.categories contains "data" %}
       <li><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
       {% endif %}
     {% endfor %}
