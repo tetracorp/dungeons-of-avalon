@@ -62,10 +62,10 @@ tavern with the adventurer's guild.
 
 ### Dungeon maps
 
-![DUNG00](../images/alpha-dung00.png "DUNG00")<br>`DUNG00`,
+![DUNG00](../images/alpha_dung00.png "DUNG00")<br>`DUNG00`, dungeon level 1
 {:.center}
 
-![DUNG01](../images/alpha-dung01.png "DUNG01")<br>`DUNG01`,
+![DUNG01](../images/alpha_dung01.png "DUNG01")<br>`DUNG01`, dungeon level 2
 {:.center}
 
 ![Dungeons of Avalon, map key](../images/doa1-key.png "Map key")<br>Key
@@ -164,7 +164,7 @@ missing from this early version:
 
 * The spell scrolls 
   Adlerblick (Eagles View), Adlerklaue (Eagles Claw), Allheilung (Restoration),
-  Anti-Aura Antigift (Antipoisen), Antistein (Restone), Eisatem (Ice breath),
+  Anti-Aura, Antigift (Antipoisen), Antistein (Restone), Eisatem (Ice breath),
   Heilung II (Healing II), Magierauge (Magic Eye), Stemberklaue (Stemberfang),
   and Todezblitz (Deadly Flash).
 * Arc's Boolas, Schwert (sword), Speer, and Wurfaxt (Axe) don't appear, although
