@@ -139,7 +139,8 @@ reference to Rudolf Stember, the game's musician.
 4. The German name for wizard is "der Hexer", which would be more accurately
 translated as "warlock".
 5. The human race description describes them as like "Armold S.", a reference to
-actor and bodybuilder Arnold Schwarzenegger.
+actor and bodybuilder Arnold Schwarzenegger. The _Dungeons of Avalon II_ manual
+corrects the spelling to "Arnold S."
 
 ### Deleted classes
 

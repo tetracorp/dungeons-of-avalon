@@ -39,6 +39,20 @@ The fourth set, Troll Bones, raises Ak'Heem, a standard thief class NPC.
 Despite being raised from bones of various races, the game internally treats all
 NPCs as human.
 
+### Rune casting
+
+The manual for the original _Dungeons of Avalon_ describes that characters would
+have a stat called "rune level":
+
+> The rune level is zero because you have to teach your hero to read runes
+> later.
+
+There is also a combat descripion line in the game for "used a rune".
+
+This did not appear in the final game. _Dungeons of Avalon II_ removed all
+mentioned of rune casting and rune level from its manual, and removed the "used
+a rune" string from the game.
+
 ### Unused items (DoA1)
 
 Several items appear in _Dungeons of Avalon_'s game data, but do not appear in
