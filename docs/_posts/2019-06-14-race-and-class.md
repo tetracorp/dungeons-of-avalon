@@ -34,9 +34,9 @@ humans or other races. Their talent for magic is only surpassed by their vanity
 over other races. But they can become very strong allies in an emergency.
 
 __Half-elves:__ Elves would deny that there are half-elves, but they exist. Half
-elves are hybrids between humans and elves. These have all the talents of the
-parents, which are not quite so pronounced. A half-elf can be as strong as a
-human parent.
+elves are hybrids between humans and elves. These have all the talents of their
+parents, but they are not quite so pronounced as the elves, although a half-elf
+can be as strong as their human parent.
 
 __Dwarves:__ The Dwarfs are a race on Avalon who honor and respect every other
 race, or say, almost all. Well, the Gnome does not fall under this privilege.
@@ -44,11 +44,14 @@ Again, history is baffled why that is. Dwarfs are tougher than humans, they also
 have more sense of magic. There were many great fighters and healers in the
 Dwarven ranks.
 
+* The _Dungeons of Avalon II_ manual adds: "...though they are sometimes too
+hot-headed."
+
 __Gnomes:__ Gnomes are smaller than dwarfs; "even smaller" they will think now,
 but it was. The Gnomes have a very high dexterity. This may be because these
 creatures steal everything. A gnom would now say "found something someone lost."
-There is no door lock to a gnom. However, one should not expect strength from a
-gnom.
+There is no door lock to a gnom. However, one should not expect strength from
+these creatures.
 
 __Trolls:__ The trolls are an artificially created race. They were created
 thousands of years ago by powerful mages to protect Avalon. They have been given
@@ -73,10 +76,13 @@ probably due more to their appearance than to their talents.
 ### Class descriptions
 
 __Fighter:__ The fighter enjoys a high reputation on Avalon. It is a profession
-that requires a certain amount of strength and dexterity. A fighter can use
+that requires a certain amount of Strength and Dexterity. A fighter can use
 almost all weapons, with only the knight still beating him in this area. The
 fighter specializes in melee combat, which is only surpassed by the monks. A
 fighter is more agile than a knight.
+
+* In _Dungeons of Avalon II_'s manual, the fighter is instead said to require
+high Strength and Kondition.
 
 __Thief:__ The thief does not enjoy the high reputation of the fighter, but
 does not work without him. The thief can be very useful when opening doors or
@@ -85,16 +91,23 @@ thief is very limited in the choice of his weapons; he can not use heavy
 weapons. Nor is the thief allowed to wear metal armor.
 
 __Hunter:__ The hunter is also a kind of fighter, whereby the hunter has
-specialized more on long-range weapons, which requires a high skill for the
+specialized more on long-range weapons, which requires a high Dexterity for the
 practice of the class. The hunter, like the fighter or the knight, relies only
 on his muscle power and weapon, he can not use magic like the others, unless his
 weapons are enchanted.
+
+* _Dungeons of Avalon II_ adds that the Hunter requires both Dexterity and
+Kondition, and relies on his mobility and strength.
 
 __Knight:__ The knight is arguably the most highly regarded profession on
 Avalon. Every boy dreams of being a knight later on. It can be said that the
 knight compares to the fighter, except that the knight has a high degree of
 discipline. A knight is not limited in the choice of his weapons. He can use
 almost all weapons available in Avalon.
+
+* _Dungeons of Avalon II_ adds that the knight can wield all but a pair of
+magical weapons, and is less mobile than other warriors but better protected
+against attacks.
 
 __Monks:__ The monk generally lives in the monastery and joins an adventurer
 group only if he can serve with it his deity. Monks are very peaceful, but when
