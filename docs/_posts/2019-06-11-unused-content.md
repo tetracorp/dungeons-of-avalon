@@ -53,14 +53,15 @@ This did not appear in the final game. _Dungeons of Avalon II_ removed all
 mentioned of rune casting and rune level from its manual, and removed the "used
 a rune" string from the game.
 
-### Unused items (DoA1)
+### Unused items
 
 Several items appear in _Dungeons of Avalon_'s game data, but do not appear in
 any chest, shop or character inventory, and cannot be obtained.
 
 * __Kel's Crossbow__: Although Kel's Arrows appear in a chest in the top floor
   of Rhateph's tower, Kel's Crossbow doesn't. The item ID is 0x16 and it also
-  appears in _Dungeons of Avalon II_.
+  appears in _Dungeons of Avalon II_, where one Kel's Crossbow can be found
+  in a chest.
 * __Gnom Bones__: A set of bones which, if dragged into an empty party member
   slot and resurrected, forms the NPC character Hanibal. He is level 10,
   has 68 HP, and all his stats are 60. His omission may be a bug, since two
@@ -71,8 +72,10 @@ any chest, shop or character inventory, and cannot be obtained.
   _Dungeons of Avalon II_, its slot is used for the item "PERMISSION".
 * __Stone-Ring__: Unknown use.
   In the early alpha version it was known as Ghal's Ring.
+  Two Stone-Rings can be found in chests in _Dungeons of Avalon II_.
 * __Silver-Ring__: Unknown use.
   In the early alpha version it was known as Perl's Ring.
+  Three Stone-Rings can be found in chests in _Dungeons of Avalon II_.
 * __"Unknown"__: Name for unidentified item. None actually appear in
   _Dungeons of Avalon_, even though shops have the option to identify items.
   One does appear in the
@@ -81,12 +84,40 @@ any chest, shop or character inventory, and cannot be obtained.
   Note that you can't pick up an "Unknown", since it's item 00, which is used
   for empty space (e.g. an empty inventory slot). Actual unknown items have
   their first bit flipped.
-* __Chest__: Unused dummy item.
+* __Chest__: Unused item.
+  In the beta, its slot was used for the dummy item "Empty" to signify an
+  empty chest.
+  In _Dungeons of Avalon II_, you can find these Chests inside chests, which
+  can be sold to the shop for high amounts of cash.
 * The spells Birds View, Deadly Flash, Healing II, Ice Breath, Magic Armour, and
   Restone. They can be cast by spellcasters, but no scrolls of these items
   appear.
+  All appear in chests in _Dungeons of Avalon II_.
 
-### Unused chests (DoA1)
+The following items appear in the item list in _Dungeons of Avalon II_, but
+cannot be found in any chest:
+
+* __Diamond__: In German, called "diamant".
+  In the first _Dungeons of Avalon_, this item's slot was used by the 
+  Wizard-Staff.
+* __Disarm trap__: A scroll of a spell new to _Dungeons of Avalon II_.
+  It can be cast as a level 7 spell for a Healer, or a level 8 spell for
+  a Magician or Wizard.
+* __Dragonslayer__: In German, called "Drachent&ouml;ter".
+  In the first _Dungeons of Avalon_, this item's slot was used by the 
+  Ruby Dagger.
+  In the _Dungeons of Avalon_ early alpha version, this was the name of a
+  beverage available at the tavern.
+* __Scroll 3__: Simply reads "TEXT 2". Scroll 4's slot from DoA1 was replaced
+  with the item Permission.
+
+For completeness' sake, note that some other items appearing in the first
+_Dungeons of Avalon_ were replaced in the second game. Club became Warhammer,
+Staff became Dragonfigure, Magic-Staff became Dragonstone, Troll Bones became
+Flint, and Elf Bones became Rahven. Gnom Bones, Dwarf Bones, and The Rune were
+removed.
+
+### Unused chests
 
 Several chests appear in the game code for _Dungeons of Avalon_ but are never
 used. Based on their order in the list, these chests would appear in the first
@@ -126,6 +157,8 @@ them.
   Killersword.
   Would be either T2 08 or a Tower 3 chest.
   The next chest is T4 00.
+
+There are no unused chests in _Dungons of Avalon II_.
 
 ### End credits (DoA1)
 
