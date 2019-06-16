@@ -9,8 +9,9 @@ The following backstory is translated from the German version of the manual.
 ### Isle of Isla
 
 Now 49 years have passed since the Dark Lord was defeated and killed by a group
-of adventurers who are still our thanks today. The country has since returned to
-its old state. People have been going back to their everyday pursuits for years.
+of adventurers to whom we still owe our gratitude today. The country has since
+returned to its former state. People have been going back to their everyday
+pursuits for years.
 
 The empire AVALON has grown even in the past. An island was colonized. This is
 before AVALON and is the last outpost between AVALON and the big sea.
@@ -33,14 +34,14 @@ find peace.
 
 The dispatch:
 
-"My king sends troops to me immediately or we are lost I dictate these lines in
-my tower. The enemy has surprised us. We have not been able to determine who or
-what it is, we can only say that it is merciless and brutal Residents of the
-city have fled, except for a few brave ones who are still persevering and
-helping me to resist the enemy.
+"My King must send troops to me immediately or we are lost. I dictate these
+lines in my tower. The enemy has surprised us. We have not been able to
+determine who or what it is, we can only say that it is merciless and brutal.
+Residents of the city have fled, except for a few brave ones who are still
+persevering and helping me to resist the enemy.
 
 My King, if only we knew who we were fighting against. I have never seen such
-creatures. It is as if hell has sent its henchmen to overrun Isla and later the
+creatures. It is as if Hell has sent its henchmen to overrun Isla and later the
 Empire of AVALON.
 
 My guard is resisting, but it will not last much longer. My soldiers are simply
@@ -64,12 +65,12 @@ imagine the size of the clouds. The sky over Isla does not have to be seen
 anymore.
 
 After the fifth week, a panic broke out in the city. The dark clouds began to
-move. They moved towards the Reich. AVALON seemed to be in danger again. The
+move. They moved towards the empire. AVALON seemed to be in danger again. The
 king was now more powerless than ever, he could do nothing more. Soldiers did
 not use anything, magicians did not use anything. The enemy had to be very
 powerful.
 
-The Reich was preparing for a merciless struggle, parts of the population fled
+The empire prepared for a merciless struggle. Parts of the population fled
 to the mountains. But no one could say if they were safer there.
 
 The king decided that a small group of people should make their way to Isla to
