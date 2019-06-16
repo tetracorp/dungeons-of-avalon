@@ -6,8 +6,8 @@ categories: lore
 
 The following is an encyclopedia of setting lore relevant to the world of
 _Dungeons of Avalon_. Some of this might help you solve puzzles if you get
-stuck, or just understand the lore. Alternatively, you can just use it for your
-Dungeons & Dragons campaign or something.
+stuck, or feel like understanding the lore better. Alternatively, you can just
+use it for your Dungeons & Dragons campaign or something.
 
 ### Kingdoms and places
 
