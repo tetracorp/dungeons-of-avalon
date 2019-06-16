@@ -12,15 +12,25 @@ _Dungeons of Avalon_.
 Avalon
 : Once a land of sun and fragrant meadows, the conquest of this realm by the
 wizard-tyrant Rhateph led to an era of magically-induced winter which covered
-the land in snow. Following the overthrow of the Dark Lord, Avalon's imperial
-aspirations grew and the kingdom expanded to encompass the isle of Isla.
+the land in snow. Following the overthrow of the Dark Lord, which restored the
+realm's climate to its normal state, Avalon's imperial aspirations grew and the
+kingdom expanded to encompass the isle of Isla.
+One of the realm's rulers was King Leander.
 
-Isla
-: A city on an island a great distance from Ghale, at the edge of the growing
-Empire of Avalon. Originally founded as a strategic outpost, its value as a
-well-positioned trading outpost soon made it one of the richest cities in the
-empire. It is home to an inn known as the Red Tankard, and the city is protected
-by a complex fortress known as the Tower of Roa.
+CT
+: A realm once ruled by King Walter, who once had his castle in Ghale.
+What 2D stands for is unknown except to historians or those who wish to
+undertake some research, but it may be related to the wizard Hakan.
+
+Ghale
+: A major city of Avalon. Founded by the tyrant Rhateph, who forced the local
+people to construct his great castle. Monsters and evil folk from neighbouring
+realms settled around this castle, establishing the city known as Ghale.
+It was home to an inn named Skulls Taverne.
+The former King Walter of 2D and CT also made his castle here, and it is for him
+that the Castle of Rhateph is also named.
+Following the overthrow of the Dark Lord by adventurers, the King of Avalon took
+Ghale as his capital.
 
 H'Khan
 : A small city of Avalon, famed for its hospitality. It is connected to the city
@@ -30,13 +40,27 @@ range.
 It was home to an inn named Dragon's Cave, where the heroes who defeated
 the Dark Lord famously met.
 
-Ghale
-: A major city of Avalon. Founded by the tyrant Rhateph, who forced the local
-people to construct his great castle. Monsters and evil folk from neighbouring
-realms settled around this castle, establishing the city known as Ghale.
-It was home to an inn named Skulls Taverne.
-Following the overthrow of the Dark Lord by adventurers, the King of Avalon took
-Ghale as his capital.
+Isla
+: A city on an island a great distance from Ghale, at the edge of the growing
+Empire of Avalon. Originally founded as a strategic outpost, its value as a
+well-positioned trading outpost soon made it one of the richest cities in the
+empire. It is home to an inn known as the Red Tankard, and the city is protected
+by a complex fortress known as the Tower of Roa.
+The dungeons beneath the city of Isla are used as a prison, but the catacombs
+beneath them are the burial place of seven former rulers of Avalon.
+
+Isodor
+: A realm whose rulers once shared the throne of Avalon: King Ragt, Queen Schan
+(or Queen Shan), and Prince Lean.
+
+Rachon
+: A realm whose rulers once shared the throne of Avalon: King Mithos and Queen
+Liss.
+
+2D
+: A realm once ruled by King Walter, who once had his castle in Ghale.
+What 2D stands for is unknown except to historians or those who wish to
+undertake some research, but it may be related to the wizard Hakan.
 
 ### People and creatures
 
@@ -66,6 +90,9 @@ Arc
  Several of her magical artifacts were found in the labyrinth
 between the cities of H'Khan and Ghale. These include her axe, boolas, helmet,
 speer and sword.
+
+Arthur
+: Owner of the sword Excalibur, according to legend.
 
 Avance
 : A dwarf fighter.
@@ -142,9 +169,21 @@ probably due to a critical shortage of money.
 Kruhl
 : A half-elven knight who lived during the reign of the Dark Lord.
 
+Lean
+: The prince of Avalon and Isodor.
+His remains are buried in the crypts below the city of Isla.
+
+Leander
+: One of the Kings of Avalon.
+His remains are buried in the crypts below the city of Isla.
+
 Letahl
 : A stemb&auml;r thief.
 He was one of the heroes who volunteered for the assault on Lord Roa's tower.
+
+Liss
+: A queen of Avalon and the Isle Rachon.
+Her remains are buried in the crypts below the city of Isla.
 
 Lizzy
 : A lizzard knight who lived during the reign of the Dark Lord.
@@ -164,6 +203,11 @@ Mion Jeh
 who inhabited the city Ghale after the overthrow of the Dark Lord.
 He was one of the heroes who volunteered for the assault on Lord Roa's tower.
 
+Mithos
+: One of the Kings of Avalon. He was also ruler of another kingdom, but
+historians debate whether that is Rachon or Isodor.
+His remains are buried in the crypts below the city of Isla.
+
 Paladin
 : A goddess who had a temple in the city of Isla.
 
@@ -179,6 +223,10 @@ Rabun
 Lord Roa ordered his guards to poison them in order to obtain the whereabouts of
 the key to the map room in the dungeon of Isla.
 
+Ragt
+: One of the Kings of Avalon and Isodor.
+His remains are buried in the crypts below the city of Isla.
+
 Rahven
 : A thief whose bones were stored in the Tower of Roa.
 
@@ -192,7 +240,8 @@ He was one of the heroes who volunteered for the assault on Lord Roa's tower.
 Roa
 : Mayor of the City of Isla, and son of the Dark Lord. Lord Roa attempted to
 use his position to stage a coup and overthrow the king, in order to avenge his
-father.
+father. Roa was infamously evil and possessed the same magical protections as
+his father. He kept his private rooms in the Tower of Roa, in the city of Isla.
 
 Robin
 : A dwarf hunter who volunteered during the quest to overthrow the Dark Lord.
@@ -202,11 +251,19 @@ Rudi
 of the Dark Lord, he moved his shop to the city Isla.
 Known for his beard, turban, and friendly smile.
 
+Schan
+: A queen of Avalon and Isodor.
+Her remains are buried in the crypts below the city of Isla.
+
 Scotty
 : An individual who once visited the Dungeon of Isla.
 
 Sefer
 : A hero of old, famed for his powerful magical helmet.
+
+Shan
+: An alternate spelling of the name of Schan, queen of Avalon and Isodor.
+Her remains are buried in the crypts below the city of Isla.
 
 Shr
 : A legendary elf healer
@@ -221,6 +278,12 @@ The Wise Three
 : A group of anonymous individuals who trained adventurers in the city H'Khan,
 and later the city of Isla. Whether they are the same three individuals is a
 mystery.
+
+Walter
+: One of the kings of "2D and CT", according to his tombstone.
+What those stand for is understood only by historians.
+His remains are buried in the crypts below the city of Isla.
+He once ruled from the Castle of Rhateph.
 
 Wynder
 : An elf wizard who volunteered during the quest to overthrow the Dark Lord.
