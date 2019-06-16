@@ -5,7 +5,9 @@ categories: lore
 ---
 
 The following is an encyclopedia of setting lore relevant to the world of
-_Dungeons of Avalon_.
+_Dungeons of Avalon_. Some of this might help you solve puzzles if you get
+stuck, or just understand the lore. Alternatively, you can just use it for your
+Dungeons & Dragons campaign or something.
 
 ### Kingdoms and places
 
@@ -15,7 +17,8 @@ wizard-tyrant Rhateph led to an era of magically-induced winter which covered
 the land in snow. Following the overthrow of the Dark Lord, which restored the
 realm's climate to its normal state, Avalon's imperial aspirations grew and the
 kingdom expanded to encompass the isle of Isla.
-One of the realm's rulers was King Leander.
+One of the realm's rulers was King Leander. In the past, the
+rulers Isodor and the isle of Rachon have also occupied the throne of Avalon.
 
 CT
 : A realm once ruled by King Walter, who once had his castle in Ghale.
@@ -28,7 +31,7 @@ people to construct his great castle. Monsters and evil folk from neighbouring
 realms settled around this castle, establishing the city known as Ghale.
 It was home to an inn named Skulls Taverne.
 The former King Walter of 2D and CT also made his castle here, and it is for him
-that the Castle of Rhateph is also named.
+that the Castle of Rhateph is alternatively nicknamed.
 Following the overthrow of the Dark Lord by adventurers, the King of Avalon took
 Ghale as his capital.
 
@@ -115,8 +118,9 @@ He was ambushed and slain in an attempt to defeat the Dark Lord.
 Has an identical twin brother, also named Clint.
 
 Dark Lord
-: A tyrant and evil wizard who ruled Avalon from Rhateph's Castle.
-Probably an alias for Rhateph.
+: An undead tyrant and evil wizard who ruled Avalon from Rhateph's Castle.
+He had a son, Lord Roa, who became mayor of the wealthy city of Isla.
+Probably an alias for Rhateph, though it seems few remember his name.
 
 Elinor
 : An ancient dragon, trapped beneath the Tower of Roa for over 200 years.
@@ -236,6 +240,11 @@ who inhabited the city Ghale after the overthrow of the Dark Lord.
 He carried the legendary Ara's Shield and Arc's Helm, and wielded the sword
 Deathbringer.
 He was one of the heroes who volunteered for the assault on Lord Roa's tower.
+
+Rhateph
+: Evil tyrant who conquered Avalon and transformed the realm into a land of
+endless winter. He founded the city Ghale, where he built his fortress called
+Rhateph Castle, also known as the castle of King Walter.
 
 Roa
 : Mayor of the City of Isla, and son of the Dark Lord. Lord Roa attempted to
