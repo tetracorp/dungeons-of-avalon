@@ -171,8 +171,7 @@ into empty floor.
 
 $15: Loose stone wall (DoA1), Forcefield (DoA2)
 : In DoA1, this is a solid wall. The method of breaking it is unknown.
-
-: In DoA2, this is a blue forcefield. The spell scroll Killmagic counters one.
+: In DoA2, this is a blue forcefield. The spell scroll Killmagic counters them.
 
 $16: Wall
 : A solid wall block.
