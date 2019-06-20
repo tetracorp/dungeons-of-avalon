@@ -94,6 +94,9 @@ Arc
 between the cities of H'Khan and Ghale. These include her axe, boolas, helmet,
 speer and sword.
 
+Argha
+: A giant who lived in the Tower of Roa.
+
 Arthur
 : Owner of the sword Excalibur, according to legend.
 

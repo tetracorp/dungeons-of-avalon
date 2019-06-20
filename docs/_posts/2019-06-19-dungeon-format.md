@@ -55,7 +55,8 @@ $04: Treasure chest
 : Subtype determines which chest. Each level has its own list of chests,
 so chest 01 on level 1 has different contents from chest 01 on level 2.
 
-$05: Monster encounter, random : A random monster encounter based on the current
+$05: Monster encounter, random.
+: A random monster encounter based on the current
 dungeon level. If you re-load from the save, you may find that a different
 number of monsters appear.  Monster squares are fixed and can be visually
 identified by a shadow on the floor.
@@ -78,14 +79,23 @@ $09: NPC
 : An encounter with a friendly character, such as Kham or Elistaire.
 : Subtype determines which character.
 : In DoA1:
-:
+* 00: Kham
+* 01: Elistaire
+: In DoA2:
+* 00: Elinor
+* 01: Thiefs Rabun
+* 02: Prison guards
+* 03: Giant Argha
+
+$0a: Monster encounter, fixed
+: A monster encounter whose exact contents are based on fixed list.
+Subtype determines which monster encounter is chosen.
+: In DoA1:
 * $00: 5 worms
 * $01-$1d: That number of worms
 * $1e: 2 fire dragons
 * $1f: Dark Lord, 5 fire trolls, 8 fire trolls
-:
 : In DoA2:
-:
 * $00: 3x Guardian	
 * $01: 3x Guardian	
 * $02: 5x Big Frog	
@@ -104,18 +114,14 @@ $09: NPC
 * $0f: Lord Roa #1, Arc Dragon, Skelleton	
 * $10: Lord Roa #2, 5x Arc Dragon, 6x Skelleton	
 
-$0a: Monster encounter, fixed
-: A monster encounter whose exact contents are based on fixed list.
-Subtype determines which monster encounter is chosen.
-
 $0b: Stairs down
 : Stairs.
 Subtype determines which level the stairs lead to. Almost always the numerically
 next level (in the dungeon) or previous level (in the castle/tower), although 
-Roa' Tower (DoA2) has a branch leading to two levels.
+the Tower of Roa (DoA2) contains a branch leading to two levels.
 
 $0c: Stairs up
-; Stairs.
+: Stairs.
 Subtype determines which level the stairs lead to. Almost always the numerically
 previous level (in the dungeon) or next level (in the castle/tower).
 
@@ -165,7 +171,7 @@ into empty floor.
 
 $15: Loose stone wall (DoA1), Forcefield (DoA2)
 : In DoA1, this is a solid wall. The method of breaking it is unknown.
-:
+
 : In DoA2, this is a blue forcefield. The spell scroll Killmagic counters one.
 
 $16: Wall
