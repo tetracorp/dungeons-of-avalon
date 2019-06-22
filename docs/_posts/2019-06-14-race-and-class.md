@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Race and class"
-categories: game
+categories: lore
 ---
 
 ### Valid race/class combinations

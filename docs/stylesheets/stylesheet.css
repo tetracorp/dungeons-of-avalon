@@ -312,3 +312,13 @@ ol#markdown-toc {
   background: black;
   color: #aaaaaa;
 }
+
+table em {
+  color: red;
+  text-decoration: normal;
+}
+
+table strong {
+  color: lime;
+  font-weight: normal;
+}
