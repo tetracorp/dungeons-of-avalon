@@ -313,12 +313,12 @@ ol#markdown-toc {
   color: #aaaaaa;
 }
 
-table em {
+table td em {
   color: red;
   text-decoration: normal;
 }
 
-table strong {
+table td strong {
   color: lime;
   font-weight: normal;
 }
