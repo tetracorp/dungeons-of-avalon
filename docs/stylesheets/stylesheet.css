@@ -315,7 +315,7 @@ ol#markdown-toc {
 
 table td em {
   color: red;
-  text-decoration: normal;
+  font-style: normal;
 }
 
 table td strong {
