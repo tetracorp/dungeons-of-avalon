@@ -156,7 +156,7 @@ $12: Door
 : A door.
 The subtype determines how the door is opened:
 * 00: Unlocked.
-* 01-05: Pickable by a thief (probably by a thief of this level)
+* 01-06: Pickable by a thief of this character level or higher.
 * 1C: ???
 * 80-83: Can only be opened by Key 1-4 respectively.
 

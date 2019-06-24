@@ -50,6 +50,7 @@ string.
 
 11
 : Bitfield for status effects.
+- Bit 6: Stoned
 
 12-13
 : Current hitpoints as a 16-bit word.

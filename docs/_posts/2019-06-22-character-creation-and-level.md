@@ -4,6 +4,12 @@ title: "Character creation and level up"
 categories: game
 ---
 
+When a character is created or levels up, they receive statistical bonuses
+determined by race.
+
+Unless otherwise specified, all game mechanics in this article were obtained by
+analysis of _Dungeons of Avalon II_. Some mechanics vary between games.
+
 ### Stat increases per level (DoA1)
 
 |              |  IN  |  LU  |  DX  |  ST  |  WI  |  KO  |  HP  |  MP  |
@@ -46,7 +52,94 @@ categories: game
 * Trolls improve from 2 IN per level to 2-4.
 * Gnom drop from 2-4 MP per level to just 2. With the human increase to ST, the
   Gnom is now worse than human in every stat.
-* Stemb&auml;r and lizzard are unchanged.
+* Stemb&auml;r and lizzard are unchanged. However, hit point decreases to other
+  races make them the number one for hit points.
+
+### Character creation
+
+A newly-created character starts at level 1 and receives the following:
+
+* A randomly-determined starting value between 0 and 2 for each stat
+* Two rolls on the "Stat increases per level" chart for their race
+* A random amount of gold between 50 and 113 
+* No items
+
+For example, a human in _Dungeons of Avalon II_ will start with a minimum IN of
+10 (0+5+5) and a maximum of 18 (2+7+7).
+
+Only spellcasting classes can receive MP. All other classes have 0 MP.
+
+You can click the "New" button repeatedly to re-roll your stats until you
+receive a number you like.
+
+### Level up
+
+Each level up gives you one roll on the "Stat increases per level" chart for
+each of the six stats, HP, and MP. Only spellcasting classes can ever gain MP.
+You must pay 75 gold to the training guild in town (the Wise Three) to level up.
+
+Like Advanced Dungeons & Dragons, different character classes actually require
+different amounts of XP to level up. The wizard actually requires something like
+43% more XP than the fighter to gain a level.
+
+Internally, levelling up requires a base value of XP times a multiplier for
+class: x7 for Fighter and Hunter; x8 for Healer, Knight and Thief; x9 for
+Magician and Monk; and x10 for Wizard.
+
+| To reach: | Base XP | Ftr/Hnt     | Hlr/Kt/Thf  | Mag/Monk    | Wizard      |
+|-----------|---------|-------------|-------------|-------------|-------------|
+| Level  1  |     0   |        0    |        0    |        0    |        0    |
+| Level  2  |    20   |      140    |      180    |      180    |      200    |
+| Level  3  |    45   |      315    |      405    |      405    |      450    |
+| Level  4  |   100   |      700    |      900    |      900    |     1000    |
+| Level  5  |   170   |     1190    |     1530    |     1530    |     1700    |
+| Level  6  |   270   |     1890    |     2430    |     2430    |     2700    |
+| Level  7  |   400   |     2800    |     3600    |     3600    |     4000    |
+| Level  8  |   600   |     4200    |     5400    |     5400    |     6000    |
+| Level  9  |   800   |     5600    |     7200    |     7200    |     8000    |
+| Level 10  |  1100   |     7700    |     9900    |     9900    |    11000    |
+| Level 11  |  1500   |    10500    |    13500    |    13500    |    15000    |
+| Level 12  |  2000   |    14000    |    18000    |    18000    |    20000    |
+| Level 13  |  2600   |    18200    |    23400    |    23400    |    26000    |
+| Level 14  |  3100   |    21700    |    27900    |    27900    |    31000    |
+| Level 15  |  3500   |    24500    |    31500    |    31500    |    35000    |
+| Level 16  |  4000   |    28000    |    36000    |    36000    |    40000    |
+| Level 17  |  4700   |    32900    |    42300    |    42300    |    47000    |
+
+In practice, level 17 is unattainable due to a level cap of 16.
+
+Each level grants one round of stat increases, which are determined by race.
+
+### Gaining spells
+
+A spellcasting character qualifies to learn new spells at every two levels after
+the first. This is the same progression used in AD&D, except that you cannot
+reach level 17 and there are no level 9 spells.
+
+| Character level | Spell level | Examples                   |
+|-----------------|-------------|----------------------------|
+|   Level  1      |  Level  1   | Silver Arrow, Healing      |
+|   Level  3      |  Level  2   | Acid Breath, Flame Speer   |
+|   Level  5      |  Level  3   | Magic Eye, Poisened Arrow  |
+|   Level  7      |  Level  4   | Magic Armour, Water Breath |
+|   Level  9      |  Level  5   | Silver Speer, Deadly Flash |
+|   Level 11      |  Level  6   | Restone, Stemberfang       |
+|   Level 13      |  Level  7   | Medusas Eye, Restoration   |
+|   Level 15      |  Level  8   | Giant Fist, New Live       |
+
+Level is the _only_ prerequisite to have the Wise Three teach you new spells.
+Your WI (Wisdom) score doesn't matter, even though the Wise Three will say "YOUR
+WISDOM IS TOO LESS, COME AGAIN IF YOU GOT MORE".
+
+The Wise Three charge 25 gold times the spell level to be gained. For example,
+if your wizard reaches character level 11 and qualifies to learn his level 6
+spells Eagles View and Stemberfang, the Wise Three will charge 150 (6 x 25)
+gold.
+
+Each character learns two new spells per spell level. The exception is in
+the first _Dungeons of Avalon_ game, where the Magician and Wizard gain only one
+level 8 spell. A spell can appear at different level for different classes.
+See the [full list of spells](../game/spells.html) for details.
 
 ### Valid race/class combinations
 
