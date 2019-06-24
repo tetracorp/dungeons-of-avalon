@@ -116,16 +116,16 @@ A spellcasting character qualifies to learn new spells at every two levels after
 the first. This is the same progression used in AD&D, except that you cannot
 reach level 17 and there are no level 9 spells.
 
-| Character level | Spell level | Examples                   |
-|-----------------|-------------|----------------------------|
-|   Level  1      |  Level  1   | Silver Arrow, Healing      |
-|   Level  3      |  Level  2   | Acid Breath, Flame Speer   |
-|   Level  5      |  Level  3   | Magic Eye, Poisened Arrow  |
-|   Level  7      |  Level  4   | Magic Armour, Water Breath |
-|   Level  9      |  Level  5   | Silver Speer, Deadly Flash |
-|   Level 11      |  Level  6   | Restone, Stemberfang       |
-|   Level 13      |  Level  7   | Medusas Eye, Restoration   |
-|   Level 15      |  Level  8   | Giant Fist, New Live       |
+| Character level | Spell level | Examples                   | Cost |
+|-----------------|-------------|----------------------------|------|
+|   Level  1      |  Level  1   | Silver Arrow, Healing      |    0 |
+|   Level  3      |  Level  2   | Acid Breath, Flame Speer   |   50 |
+|   Level  5      |  Level  3   | Magic Eye, Poisened Arrow  |   75 |
+|   Level  7      |  Level  4   | Magic Armour, Water Breath |  100 |
+|   Level  9      |  Level  5   | Silver Speer, Deadly Flash |  125 |
+|   Level 11      |  Level  6   | Restone, Stemberfang       |  150 |
+|   Level 13      |  Level  7   | Medusas Eye, Restoration   |  175 |
+|   Level 15      |  Level  8   | Giant Fist, New Live       |  200 |
 
 Level is the _only_ prerequisite to have the Wise Three teach you new spells.
 Your WI (Wisdom) score doesn't matter, even though the Wise Three will say "YOUR
