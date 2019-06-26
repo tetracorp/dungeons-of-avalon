@@ -142,6 +142,9 @@ Flint
 his bones were buried on the island of Isla, to be discovered by adventurers
 some fifty years later.
 
+Ghal
+: The namesake of Ghal's Ring, perhaps also known as the Stone-Ring.
+
 Ghalf
 : A stemb&auml;r hunter who lived during the reign of the Dark Lord.
 
@@ -220,6 +223,9 @@ His remains are buried in the crypts below the city of Isla.
 
 Paladin
 : A goddess who had a temple in the city of Isla.
+
+Perl
+: The namesake of Perl's Ring, perhaps also known as the Silver-Ring.
 
 Phantic
 : A legendary dwarf hunter
