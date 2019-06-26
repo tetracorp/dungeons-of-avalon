@@ -2,5 +2,8 @@ name: Exploring the Dungeons of Avalon
 baseurl: https://tetracorp.github.io/dungeons-of-avalon
 permalink: none
 
+kramdown:
+  no_auto_typographic: true
+
 plugins:
   - jemoji

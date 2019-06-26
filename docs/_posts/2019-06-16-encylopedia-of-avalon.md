@@ -22,8 +22,9 @@ rulers Isodor and the isle of Rachon have also occupied the throne of Avalon.
 
 CT
 : A realm once ruled by King Walter, who once had his castle in Ghale.
-What 2D stands for is unknown except to historians or those who wish to
+What CT stands for is unknown except to historians or those who wish to
 undertake some research, but it may be related to the wizard Hakan.
+_(Probably a reference to CompuTec, the game's publisher.)_
 
 Ghale
 : A major city of Avalon. Founded by the tyrant Rhateph, who forced the local
@@ -64,6 +65,8 @@ Liss.
 : A realm once ruled by King Walter, who once had his castle in Ghale.
 What 2D stands for is unknown except to historians or those who wish to
 undertake some research, but it may be related to the wizard Hakan.
+_(Probably a reference to Double Density, a scene group name used by
+the game's programmer.)_
 
 ### People and creatures
 
@@ -278,8 +281,8 @@ Shan
 Her remains are buried in the crypts below the city of Isla.
 
 Shr
-: A legendary elf healer
-who inhabited the city Ghale after the overthrow of the Dark Lord.
+: A legendary elf healer, Lady Shr
+inhabited the city Ghale after the overthrow of the Dark Lord.
 She carried the legendary Kel's Crossbow and Kel's Arrows.
 She was one of the heroes who volunteered for the assault on Lord Roa's tower.
 

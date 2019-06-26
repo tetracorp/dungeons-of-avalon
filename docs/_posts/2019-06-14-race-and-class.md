@@ -1,22 +1,12 @@
 ---
 layout: post
-title: "Race and class"
+title: "Race and class lore"
 categories: lore
 ---
 
-### Valid race/class combinations
-
-|         |Human|Elf|Half-elf|Dwarf|Troll|Gnom|Stemb&auml;r|Lizzard |
-|---------|:---:|:-:|:------:|:---:|:---:|:--:|:----------:|:------:|
-|Fighter  | :white_check_mark: |:white_check_mark:|  :white_check_mark:   | :white_check_mark: | :white_check_mark: |:white_check_mark: |    :white_check_mark:     |  :white_check_mark:   |
-|Thief    | :white_check_mark: |:x:|  :white_check_mark:   | :x: | :white_check_mark: |:white_check_mark: |    :white_check_mark:     |  :x:   |
-|Knight   | :white_check_mark: |:white_check_mark:|  :white_check_mark:   | :white_check_mark: | :white_check_mark: |:x: |    :white_check_mark:     |  :x:   |
-|Hunter   | :white_check_mark: |:x:|  :white_check_mark:   | :white_check_mark: | :white_check_mark: |:white_check_mark: |    :white_check_mark:     |  :white_check_mark:   |
-|Monk     | :white_check_mark: |:white_check_mark:|  :white_check_mark:   | :white_check_mark: | :x: |:x: |    :x:     |  :x:   |
-|Magician | :white_check_mark: |:white_check_mark:|  :white_check_mark:   | :x: | :x: |:white_check_mark: |    :x:     |  :white_check_mark:   |
-|Healer   | :white_check_mark: |:white_check_mark:|  :white_check_mark:   | :x: | :x: |:x: |    :x:     |  :x:   |
-|Wizard   | :white_check_mark: |:x:|  :x:   | :x: | :x: |:white_check_mark: |    :x:     |  :white_check_mark:   |
-
+The German manuals of both _Dungeons of Avalon_ and _Dungeons of Avalon II_
+feature sections of backstory detailing the races and classes of this game's
+world.
 
 ### Race descriptions
 
@@ -141,6 +131,19 @@ translated as "warlock".
 5. The human race description describes them as like "Armold S.", a reference to
 actor and bodybuilder Arnold Schwarzenegger. The _Dungeons of Avalon II_ manual
 corrects the spelling to "Arnold S."
+
+### Valid race/class combinations
+
+|         |Human|Elf|Half-elf|Dwarf|Troll|Gnom|Stemb&auml;r|Lizzard |
+|---------|:---:|:-:|:------:|:---:|:---:|:--:|:----------:|:------:|
+|Fighter  | :white_check_mark: |:white_check_mark:|  :white_check_mark:   | :white_check_mark: | :white_check_mark: |:white_check_mark: |    :white_check_mark:     |  :white_check_mark:   |
+|Thief    | :white_check_mark: |:x:|  :white_check_mark:   | :x: | :white_check_mark: |:white_check_mark: |    :white_check_mark:     |  :x:   |
+|Knight   | :white_check_mark: |:white_check_mark:|  :white_check_mark:   | :white_check_mark: | :white_check_mark: |:x: |    :white_check_mark:     |  :x:   |
+|Hunter   | :white_check_mark: |:x:|  :white_check_mark:   | :white_check_mark: | :white_check_mark: |:white_check_mark: |    :white_check_mark:     |  :white_check_mark:   |
+|Monk     | :white_check_mark: |:white_check_mark:|  :white_check_mark:   | :white_check_mark: | :x: |:x: |    :x:     |  :x:   |
+|Magician | :white_check_mark: |:white_check_mark:|  :white_check_mark:   | :x: | :x: |:white_check_mark: |    :x:     |  :white_check_mark:   |
+|Healer   | :white_check_mark: |:white_check_mark:|  :white_check_mark:   | :x: | :x: |:x: |    :x:     |  :x:   |
+|Wizard   | :white_check_mark: |:x:|  :x:   | :x: | :x: |:white_check_mark: |    :x:     |  :white_check_mark:   |
 
 ### Deleted classes
 
