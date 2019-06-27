@@ -75,6 +75,12 @@ string.
 
 29-34
 : Six bytes for the game's six attributes, in order: IN, LU, DX, ST, WI and KO.
+* 29: IN, Intelligence (German: IQ, Inteligenz)
+* 30: LU, Luck (German: GL, Gl&uml;ck)
+* 31: DX, Dexterity (German: GE, Geschick)
+* 32: ST, Strength (German: KR, Kraft)
+* 33: WI, Wisdom (German: WI, Weisheit)
+* 34: KO, Kondition (German: KO, Kondition)
 
 35
 : Magic level. Maximum level of spells user can cast.
@@ -127,10 +133,10 @@ string.
 : Ammunition count? $0a (10) for Simarhon only.
 
 64
-: AC. Improved by weapons.
+: AC. Improved by weapons. (German: Angriffst&auml;rke)
 
 65
-: WC. Improved by armour.
+: WC. Improved by armour. (German: R&uuml;stungst&auml;rke)
 
 66
 : PC/NPC status. $00 for heroes, $80 for NPCs.
