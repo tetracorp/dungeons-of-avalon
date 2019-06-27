@@ -50,7 +50,9 @@ string.
 
 11
 : Bitfield for status effects.
+- Bit 7: Poisened
 - Bit 6: Stoned
+- Bit 4: ???
 
 12-13
 : Current hitpoints as a 16-bit word.
@@ -76,7 +78,7 @@ string.
 29-34
 : Six bytes for the game's six attributes, in order: IN, LU, DX, ST, WI and KO.
 * 29: IN, Intelligence (German: IQ, Inteligenz)
-* 30: LU, Luck (German: GL, Gl&uml;ck)
+* 30: LU, Luck (German: GL, Gl&uuml;ck)
 * 31: DX, Dexterity (German: GE, Geschick)
 * 32: ST, Strength (German: KR, Kraft)
 * 33: WI, Wisdom (German: WI, Weisheit)
@@ -149,8 +151,8 @@ string.
 
 ### $01bc - $0473 (696 bytes)
 
-Unknown. This presumably stores all elements of game state which are not covered
-by the dungeon map.
+A range that stores all other elements of game state which are not covered by
+the dungeon map.
 
 ### Adventurer's Guild ($0474 - $09A7, 1332 bytes)
 
@@ -159,6 +161,6 @@ into the party.
 
 Same data format as party characters.
 
-### ??? ($09A8 - $09A9, 2 bytes)
+### Checksum ($09A8 - $09A9, 2 bytes)
 
-Unknown. Perhaps a checksum to prevent save game editing.
+A checksum to prevent save game editing.
