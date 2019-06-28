@@ -30,6 +30,7 @@ detail below.
 Currently, not all fields have been decoded. The offset given is from the start
 of the encoded section, which in DoA2 is 20480 bytes into the file and can be
 easily spotted by the ASCII appearing in the first character name in the party.
+The encrypted section in DoA2 is 2482 bytes long.
 
 ### Party characters ($0000 - $01bb, 444 bytes)
 
@@ -307,4 +308,10 @@ Same data format as party characters.
 
 ### Checksum ($09b2 - $09b3, 2 bytes)
 
-A two-byte checksum to prevent save game editing.
+A two-byte checksum to prevent save game editing. This adds the other 2482 bytes
+of the encrypted section, one two-byte word at a time, and stores the result
+here.
+
+The checksum is calculated prior to encryption. The entire section, starting
+from the party list, is encrypted as previously mentioned by XOR-ing it with the
+string SEFERSALAP. It is appended to the dungeon map, which is not encrypted.
