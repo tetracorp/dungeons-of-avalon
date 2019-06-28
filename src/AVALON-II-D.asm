@@ -3460,27 +3460,30 @@ LAB_01A4:
 	DBF	D0,LAB_01A3		;02e7c: 51c8fff2
 	RTS				;02e80: 4e75
 LAB_01A5:
+; Calculating displayed WC/AC (RS/AS)
 	MOVEM.L	D0-D7/A0-A6,-(A7)	;02e82: 48e7fffe
 	MOVE.B	LAB_0637,LAB_0668	;02e86: 13f90000f02b0000f923
 	MOVE.B	LAB_0638,LAB_0667	;02e90: 13f90000f02c0000f922
 	MOVE.B	(9,A4),Class_0676	;02e9a: 13ec00090000f934
+; Iterate over worn items
 	MOVEQ	#5,D1			;02ea2: 7205
 LAB_01A6:
 	MOVE.W	D1,D2			;02ea4: 3401
 	ADDQ.W	#8,D2			;02ea6: 5042
 	MOVE.B	(36,A4,D2.W),D5		;02ea8: 1a342024
 	TST.B	D5			;02eac: 4a05
-	BMI.S	LAB_01A8		;02eae: 6b38
+; Item must be identified to use
+	BMI.S	Next_01A8		;02eae: 6b38
 	TST.B	D5			;02eb0: 4a05
-	BEQ.S	LAB_01A8		;02eb2: 6734
+	BEQ.S	Next_01A8		;02eb2: 6734
 	BSR.W	LAB_045A		;02eb4: 6100499c
-	BEQ.S	LAB_01A8		;02eb8: 672e
+	BEQ.S	Next_01A8		;02eb8: 672e
 	CMPI.B	#$0f,(3,A0)		;02eba: 0c28000f0003
 	BNE.S	LAB_01A7		;02ec0: 6602
 	MOVEQ	#15,D2			;02ec2: 740f
 LAB_01A7:
 	CMP.B	(3,A0),D2		;02ec4: b4280003
-	BNE.S	LAB_01A8		;02ec8: 661e
+	BNE.S	Next_01A8		;02ec8: 661e
 	MOVE.B	(7,A0),D0		;02eca: 10280007
 	ANDI.B	#$0f,D0			;02ece: 0200000f
 	ADD.B	D0,LAB_0668		;02ed2: d1390000f923
@@ -3488,7 +3491,7 @@ LAB_01A7:
 	ANDI.B	#$f0,D0			;02edc: 020000f0
 	LSR.W	#4,D0			;02ee0: e848
 	ADD.B	D0,LAB_0667		;02ee2: d1390000f922
-LAB_01A8:
+Next_01A8:
 	DBF	D1,LAB_01A6		;02ee8: 51c9ffba
 	CLR.L	D3			;02eec: 4283
 ; luck + character level
@@ -8824,22 +8827,31 @@ LAB_0458:
 	MOVEA.L	LAB_0571,A0		;0783c: 20790000b5d0
 	MOVEQ	#8,D0			;07842: 7008
 LAB_0459:
+; gets an item offset
+; d5 = item ID regardless of identify status
+; d0 = 12 or 8, row width on different item tables probably
 	ANDI.L	#$0000007f,D5		;07844: 02850000007f
 	MULU	D5,D0			;0784a: c0c5
 	ADDA.L	D0,A0			;0784c: d1c0
 	CLR.L	D0			;0784e: 4280
 	RTS				;07850: 4e75
 LAB_045A:
+; called from 13 places. D5 is item ID
 	MOVE.B	D5,LAB_05C2		;07852: 13c50000e34a
+; Probably refers to table at $09c1a
 	MOVEA.L	LAB_0573,A0		;07858: 20790000b5d8
 	MOVEQ	#12,D0			;0785e: 700c
+; get item location into A0
 	BSR.S	LAB_0459		;07860: 61e2
+; reverse class ID?
 	MOVE.B	Class_0676,D0		;07862: 10390000f934
 	EORI.B	#$07,D0			;07868: 0a000007
+; item data byte 8 appears to be a bitfield for which classes can
+; use each item.
 	BTST	D0,(8,A0)		;0786c: 01280008
 	BEQ.W	Return_0016		;07870: 67008b5a
 	TST.B	LAB_068C		;07874: 4a390000f94a
-	BNE.S	LAB_045C		;0787a: 6614
+	BNE.S	Return_045C		;0787a: 6614
 	CMPI.B	#$0f,(3,A0)		;0787c: 0c28000f0003
 	BNE.S	LAB_045D		;07882: 660e
 ; Shield?
@@ -8847,7 +8859,7 @@ LAB_045A:
 	BEQ.S	LAB_045D		;07888: 6708
 LAB_045B:
 	CLR.L	LAB_05F5		;0788a: 42b90000e42e
-LAB_045C:
+Return_045C:
 	RTS				;07890: 4e75
 LAB_045D:
 ; DX
@@ -11755,9 +11767,8 @@ CUST_0004:
 	DC.L	$5445522e,$6d710057,$72697474,$656e2062 ;0b536
 	DC.L	$79204861,$6b616e20,$416b6269,$79696b20 ;0b546
 	DC.L	$a9203139,$39312f32,$205a4552,$45540000 ;0b556
-; The level-up code references LAB_056C
+; The level-up code referenced by LAB_056C
 ; as the table containing the level-up multiplier.
-; However, it's here instead, 86 bytes earlier.
 	DS.L	1			;0b566
 	DC.L	$00140000,$002d0000,$00640000,$00aa0000 ;0b56a
 	DC.L	$010e0000,$01900000,$02580000,$03200000 ;0b57a
@@ -11765,34 +11776,49 @@ CUST_0004:
 	DC.L	$0c1c0000,$0dac0000,$0fa00000,$125c0000 ;0b59a
 	DS.W	1			;0b5aa
 LAB_0568:
+; $abfa
 	DC.L	$000015ec		;0b5ac
 LAB_0569:
+; $aecc
 	DC.L	$000018be		;0b5b0
 LAB_056A:
+; $b03c
 	DC.L	$00001a2e		;0b5b4
 LAB_056B:
+; $a828
 	DC.L	$0000121a		;0b5b8
 LAB_056C:
+; $b566
 	DC.L	$00001f58		;0b5bc
 LAB_056D:
+; $ad4f
 	DC.L	$00001741		;0b5c0
 LAB_056E:
+; $ae04
 	DC.L	$000017f6		;0b5c4
 LAB_056F:
+; $a686
 	DC.L	$00001078		;0b5c8
 LAB_0570:
+; $a868
 	DC.L	$0000125a		;0b5cc
 LAB_0571:
+; $aa82
 	DC.L	$00001474		;0b5d0
 LAB_0572:
+; $96fc
 	DC.L	$000000ee		;0b5d4
 LAB_0573:
+; $9c1c
 	DC.L	$0000060e		;0b5d8
 LAB_0574:
+; $9fe8
 	DC.L	$000009da		;0b5dc
 LAB_0575:
+; $a364
 	DC.L	$00000d56		;0b5e0
 LAB_0576:
+; $a5f6
 	DC.L	$00000fe8		;0b5e4
 LAB_0577:
 	DS.L	512			;0b5e8
