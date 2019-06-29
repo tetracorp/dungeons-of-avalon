@@ -8838,7 +8838,7 @@ LAB_0459:
 LAB_045A:
 ; called from 13 places. D5 is item ID
 	MOVE.B	D5,LAB_05C2		;07852: 13c50000e34a
-; Probably refers to table at $09c1a
+; Refers to Item table at $09c1a
 	MOVEA.L	LAB_0573,A0		;07858: 20790000b5d8
 	MOVEQ	#12,D0			;0785e: 700c
 ; get item location into A0
@@ -8852,6 +8852,7 @@ LAB_045A:
 	BEQ.W	Return_0016		;07870: 67008b5a
 	TST.B	LAB_068C		;07874: 4a390000f94a
 	BNE.S	Return_045C		;0787a: 6614
+; Ranged weapon (Crossbow, Longbow, Kel's Crossbow)
 	CMPI.B	#$0f,(3,A0)		;0787c: 0c28000f0003
 	BNE.S	LAB_045D		;07882: 660e
 ; Shield?
@@ -10959,7 +10960,106 @@ LAB_0567:
 	DS.L	1			;09b66
 	DC.L	$02000000,$40008000,$00100000 ;09b6a
 	DS.L	41			;09b76
-CUST_0000:
+; Item table!
+;
+; 01: Price?
+; 02: ??
+; 03: Type (08 Armour, 09 Shield, 0A Ring, 0B Helmet, 0C Melee Weapon,
+;           0D Arrows, 0F Ranged Weapon, FF Unknown, 00 Other)
+; 04-05: always 00
+; 06: Unknown. More powerful weapons have a higher value. Damage?
+;     Strength prerequisite?
+; 07: ?? Bitfield?
+; 08: Bitfield for which class can use it
+; 09: ?? Bitfield?
+; 0A: ??
+; 0B: Usage code? 80-83 for Key 1-4, same code used by doors.
+;     Most spells have their own unique code.
+;     Ara's Shield and Sefer's Helmet share a code with Ice Breath.
+;
+;    |                | 0001 02 03 04 05 06 07 08 09 0A 0B
+;----|----------------|-----------------------------------
+; 00 | UNKNOWN        | 0000 00 ff 00 00 03 00 ff 00 00 00
+; 01 | ARA'S SHIELD   | 05dc 01 09 00 00 00 14 b0 11 32 22
+; 02 | WOOD SHIELD    | 000f 02 09 00 00 00 01 ff 40 ff 00
+; 03 | METAL SHIELD   | 00af 03 09 00 00 00 02 b0 40 ff 00
+; 04 | BUCKLER        | 0096 04 09 00 00 00 03 f0 40 ff 00
+; 05 | FIRE SHIELD    | 03e8 05 09 00 00 00 14 b0 11 32 1f
+; 06 | SWORD          | 000f 06 0c 00 00 0c 30 f8 01 ff 00
+; 07 | DAGGER         | 0005 07 0c 00 00 05 10 ff 87 ff 00
+; 08 | WARHAMMER      | 000c 08 0c 00 00 0d 10 f0 0b ff 00
+; 09 | BATTLE AXE     | 0011 09 0c 00 00 0f 20 b0 85 ff 00
+; 0A | WARSTAFF       | 0010 0a 0c 00 00 0f 20 b0 0a ff 00
+; 0B | DRAGONFIGURE   | 01f4 0b 00 00 00 00 40 ff 40 ff 00
+; 0C | DRAGONSTONE    | 0064 0c 00 00 00 00 40 ff 40 ff 00
+; 0D | DIAMOND        | 01f4 3b 00 00 00 00 40 ff 40 ff 00
+; 0E | MACE           | 0014 0e 0c 00 00 0f 20 b0 09 ff 00
+; 0F | BROADSWORD     | 0019 0f 0c 00 00 11 40 a0 01 ff 00
+; 10 | NEW LIVE       | 0064 10 00 00 00 0b 30 ff 11 01 2b
+; 11 | SPELLBOOK      | 0005 11 00 00 00 00 40 0f 40 ff 00
+; 12 | DEADLY FLASH   | 002d 13 00 00 00 00 40 ff 11 01 2a
+; 13 | ANTI-AURA      | 1388 1e 00 00 00 00 40 ff 11 01 2c
+; 14 | CROSSBOW       | 0023 14 0f 00 00 07 30 f0 82 ff 00
+; 15 | LONGBOW        | 0019 15 0f 00 00 05 20 ff 82 ff 00
+; 16 | KEL'S CROSSBOW | 0032 16 0f 00 00 0a 40 b2 82 ff 00
+; 17 | ARROWS         | 0005 17 0d 00 00 05 40 ff 8f 0a 00
+; 18 | ELF ARROWS     | 0007 18 0d 00 00 07 40 ff 8f 0f 00
+; 19 | KEL'S ARROWS   | 00c8 19 0d 00 00 05 40 b2 8f ff 00
+; 1A | BEE-RING       | 002d 1a 0a 00 00 00 01 ff 11 0a 13
+; 1B | STONE-RING     | 00eb 1c 0a 00 00 00 10 ff 11 05 28
+; 1C | SILVER-RING    | 002d 1b 0a 00 00 00 11 ff 11 0f 1a
+; 1D | ----           | 0000 3b 00 00 00 00 40 ff 40 00 00
+; 1E | WASP STING     | 000a 13 00 00 00 00 40 ff 11 01 12
+; 1F | BATTLE HELMET  | 0032 1f 0b 00 00 00 03 b0 40 ff 00
+; 20 | POWER HELMET   | 001e 20 0b 00 00 00 02 b0 40 ff 00
+; 21 | HELMET         | 0014 21 0b 00 00 00 01 ff 40 ff 00
+; 22 | ARC'S HELMET   | 0064 22 0b 00 00 00 02 b0 11 32 1e
+; 23 | SEFER'S HELMET | 0096 23 0b 00 00 00 02 f0 11 4b 22
+; 24 | ARMOUR         | 001e 24 08 00 00 00 02 f0 40 ff 00
+; 25 | ARA'S ARMOUR   | 0064 25 08 00 00 00 03 b0 40 ff 00
+; 26 | KNIGHT ARMOUR  | 004b 32 08 00 00 00 03 a0 40 ff 00
+; 27 | ROBE           | 0005 26 08 00 00 00 01 ff 40 ff 00
+; 28 | HEALING ROBE   | 0028 27 08 00 00 00 01 0f 11 0f 02
+; 29 | BOLAS          | 002d 30 0c 00 00 12 20 ff 8d 14 00
+; 2A | FIREDAGGER     | 0096 31 0c 00 00 0c 30 0f 87 19 1c
+; 2B | DEATHBRINGER   | 00c8 33 0c 00 00 2d 41 b0 01 ff 00
+; 2C | CHEST          | 01f4 34 00 00 00 00 40 ff 40 ff 00
+; 2D | DRAGONSLAYER   | 0096 35 0c 00 00 28 21 f0 01 ff 00
+; 2E | HEALING POTION | 000a 36 00 00 00 00 40 ff 44 01 00
+; 2F | HEALING POTION | 000a 37 00 00 00 00 40 ff 44 01 01
+; 30 | SCROLL 1       | 0002 2f 00 00 00 00 40 ff 42 ff 00
+; 31 | SCROLL 2       | 0002 2f 00 00 00 00 40 ff 42 ff 01
+; 32 | SCROLL 3       | 0002 2f 00 00 00 00 40 ff 42 ff 02
+; 33 | PERMISSION     | 0002 0d 00 00 00 00 40 ff 42 ff 03
+; 34 | ANTIPOISEN     | 0008 10 00 00 00 00 40 ff 11 01 05
+; 35 | RESTONE        | 0009 10 00 00 00 00 40 ff 11 01 08
+; 36 | RESTORATION    | 0013 10 00 00 00 00 40 ff 11 01 04
+; 37 | ICE BREATH     | 0007 13 00 00 00 00 40 ff 11 01 22
+; 38 | EAGLEFANG      | 0014 13 00 00 00 00 40 ff 11 01 29
+; 39 | HEALING II     | 0006 10 00 00 00 00 40 ff 11 01 02
+; 3A | MAGIC EYE      | 0004 1d 00 00 00 00 40 ff 11 01 0b
+; 3B | MAGIC ARMOUR   | 0005 1d 00 00 00 00 40 ff 11 01 0d
+; 3C | FLINT          | 0005 2c 00 00 00 00 40 ff 43 01 00
+; 3D | RAHVEN         | 0005 2c 00 00 00 00 40 ff 43 01 01
+; 3E | ----           | 0005 3b 00 00 00 00 40 ff 40 00 00
+; 3F | ----           | 0005 3b 00 00 00 00 40 ff 40 00 00
+; 40 | STEMBERFANG    | 0019 13 00 00 00 00 40 ff 11 01 27
+; 41 | ARC'S SPEER    | 03e8 2d 0c 00 00 19 41 b0 83 ff 00
+; 42 | ARC'S AXE      | 044c 2e 0c 00 00 14 41 bf 85 ff 00
+; 43 | ARC'S SWORD    | 04b0 0f 0c 00 00 50 41 b0 01 ff 00
+; 44 | ARC'S BOOLAS   | 04b0 38 0c 00 00 1e 31 0f 8d 28 00
+; 45 | KILLERSWORD    | 00c8 39 0c 00 00 2d 41 b0 01 ff 00
+; 46 | KEY 1          | 0001 28 00 00 00 00 40 ff 41 01 80
+; 47 | KEY 2          | 0001 29 00 00 00 00 40 ff 41 01 81
+; 48 | KEY 3          | 0001 2a 00 00 00 00 40 ff 41 01 82
+; 49 | KEY 4          | 0001 2b 00 00 00 00 40 ff 41 01 83
+; 4A | EAGLES VIEW    | 0023 1d 00 00 00 00 40 ff 11 01 0f
+; 4B | BIRDS VIEW     | 0019 1d 00 00 00 00 40 ff 11 01 2d
+; 4C | LEVITATION     | 0001 1d 00 00 00 00 40 ff 11 01 09
+; 4D | KILLMAGIC      | 0001 1d 00 00 00 00 40 ff 11 01 0e
+; 4E | DISARM TRAP    | 0001 1d 00 00 00 00 40 ff 11 01 2e
+; 4F | LEFT           | 0000 3a 00 00 00 00 40 ff 40 00 00
+; 50 | RIGHT          | 0000 12 00 00 00 00 40 ff 40 00 00
 	DC.L	$000000ff,$00000300,$ff000000,$05dc0109 ;09c1a
 	DC.L	$00000014,$b0113222,$000f0209,$00000001 ;09c2a
 	DC.L	$ff40ff00,$00af0309,$00000002,$b040ff00 ;09c3a
@@ -11021,6 +11121,8 @@ CUST_0000:
 	DC.L	$00000040,$ff11010e,$00011d00,$00000040 ;09fba
 	DC.L	$ff11012e,$00003a00,$00000040,$ff400000 ;09fca
 CUST_0001:
+; Item names!
+;
 ; UNBEKANNT
 ; ARA`S_SCHILD
 ; HOLZSCHILD
