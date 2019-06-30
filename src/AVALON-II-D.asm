@@ -732,14 +732,20 @@ LAB_0052:
 LAB_0053:
 	BSR.W	LAB_0050		;00904: 6100ff46
 	BMI.W	LAB_005A		;00908: 6b0000fe
-	BSR.W	LAB_045A		;0090c: 61006f44
+	BSR.W	GetItem_045A		;0090c: 61006f44
 	BEQ.W	LAB_005A		;00910: 670000f6
-	MOVE.B	(6,A0),LAB_0627		;00914: 13e800060000ee0a
+; If character can use this item:
+; Damage value? Higher for stronger wepaons
+	MOVE.B	(6,A0),Damage_0627	;00914: 13e800060000ee0a
 	MOVE.B	(9,A0),D0		;0091c: 10280009
 	BTST	#6,D0			;00920: 08000006
 	BNE.W	LAB_005D		;00924: 660000fe
+; Bit 6 is set for several items but I'm not sure what links them
+; Armour, some shields, bones, keys, spellbook, quest items
 	CMPI.B	#$08,LAB_0687		;00928: 0c3900080000f945
 	BNE.S	LAB_0054		;00930: 661c
+; 11 appears to be an ID number for special use, such as a spell
+; scroll's effect
 	TST.B	(11,A0)			;00932: 4a28000b
 	BEQ.S	LAB_0054		;00936: 6716
 	MOVE.B	LAB_0688,D1		;00938: 12390000f946
@@ -756,13 +762,15 @@ LAB_0055:
 	MOVE.B	(49,A4),D5		;0095c: 1a2c0031
 	BEQ.W	LAB_0059		;00960: 6700009e
 	MOVE.B	D0,D7			;00964: 1e00
-	BSR.W	LAB_045A		;00966: 61006eea
+	BSR.W	GetItem_045A		;00966: 61006eea
 	BEQ.W	LAB_005A		;0096a: 6700009c
 	MOVE.B	D7,D0			;0096e: 1007
 	CMPI.B	#$8f,(9,A0)		;00970: 0c28008f0009
 	BNE.W	LAB_0059		;00976: 66000088
+; Arrows:
+; Arrows and Kel's Arrows are 5, Elf Arrows are 7
 	MOVE.B	(6,A0),D7		;0097a: 1e280006
-	ADD.B	D7,LAB_0627		;0097e: df390000ee0a
+	ADD.B	D7,Damage_0627		;0097e: df390000ee0a
 	BSR.W	LAB_0331		;00984: 61004e94
 	MOVE.B	#$0c,LAB_0660		;00988: 13fc000c0000f91b
 	BSR.W	LAB_0493		;00990: 610075cc
@@ -792,8 +800,8 @@ LAB_0058:
 	BSR.W	LAB_006C		;009e4: 610001da
 	CLR.L	D0			;009e8: 4280
 	CLR.L	D1			;009ea: 4281
-	MOVE.B	LAB_0627,D0		;009ec: 10390000ee0a
-; ST / 8
+	MOVE.B	Damage_0627,D0		;009ec: 10390000ee0a
+; ST / 8 - presumably added to damage at some point?
 	MOVE.B	(32,A4),D1		;009f2: 122c0020
 	LSR.B	#3,D1			;009f6: e609
 	BSR.W	LAB_007B		;009f8: 61000350
@@ -994,7 +1002,7 @@ LAB_0077:
 	CMP.W	D1,D6			;00ca8: bc41
 	BHI.S	LAB_0077		;00caa: 62f6
 	ADD.W	D0,D6			;00cac: dc40
-	MOVE.W	D6,LAB_0627		;00cae: 33c60000ee0a
+	MOVE.W	D6,Damage_0627		;00cae: 33c60000ee0a
 	LEA	LAB_060F,A6		;00cb4: 4df90000e808
 	CLR.L	D0			;00cba: 4280
 	MOVE.B	LAB_0665,D0		;00cbc: 10390000f920
@@ -1024,7 +1032,7 @@ LAB_0079:
 	BSR.W	LAB_006D		;00d0c: 6100feb8
 	LEA	LAB_072D,A2		;00d10: 45f900010c62
 	BSR.W	LAB_0290		;00d16: 61003954
-	MOVE.W	LAB_0627,D3		;00d1a: 36390000ee0a
+	MOVE.W	Damage_0627,D3		;00d1a: 36390000ee0a
 	BSR.W	LAB_014F		;00d20: 61001828
 	LEA	LAB_072E,A2		;00d24: 45f900010c83
 	BSR.W	LAB_0290		;00d2a: 61003940
@@ -1172,9 +1180,9 @@ LAB_008E:
 	CMPI.B	#$02,(4,A0)		;00ee6: 0c2800020004
 	BNE.S	LAB_008F		;00eec: 6620
 	BSR.S	LAB_0091		;00eee: 613e
-	MOVE.W	D6,LAB_0627		;00ef0: 33c60000ee0a
+	MOVE.W	D6,Damage_0627		;00ef0: 33c60000ee0a
 	BSR.S	LAB_008D		;00ef6: 61ac
-	MOVE.W	LAB_0627,D6		;00ef8: 3c390000ee0a
+	MOVE.W	Damage_0627,D6		;00ef8: 3c390000ee0a
 	MOVE.B	LAB_0661,D0		;00efe: 10390000f91c
 	MOVEA.L	A2,A4			;00f04: 284a
 	BSR.W	LAB_040A		;00f06: 6100612a
@@ -1195,7 +1203,7 @@ LAB_0091:
 	CMP.W	D5,D6			;00f32: bc45
 	BHI.S	LAB_0091		;00f34: 62f8
 	ADD.W	D4,D6			;00f36: dc44
-	MOVE.W	D6,LAB_0627		;00f38: 33c60000ee0a
+	MOVE.W	D6,Damage_0627		;00f38: 33c60000ee0a
 ; WC, armor class
 	MOVE.B	(65,A4),D2		;00f3e: 142c0041
 	CMPI.B	#$0a,(0,A1,D1.W)	;00f42: 0c31000a1000
@@ -1208,9 +1216,9 @@ LAB_0092:
 	SUBI.B	#$10,D6			;00f56: 04060010
 	BCS.S	LAB_0093		;00f5a: 6506
 ; 10/256 or 3.9% chance to skip this clear:
-	CLR.L	LAB_0627		;00f5c: 42b90000ee0a
+	CLR.L	Damage_0627		;00f5c: 42b90000ee0a
 LAB_0093:
-	MOVE.W	LAB_0627,D6		;00f62: 3c390000ee0a
+	MOVE.W	Damage_0627,D6		;00f62: 3c390000ee0a
 	RTS				;00f68: 4e75
 LAB_0094:
 	MOVEM.L	D0-D7/A0-A6,-(A7)	;00f6a: 48e7fffe
@@ -1659,7 +1667,7 @@ LAB_00C9:
 	MOVE.B	LAB_0688,D0		;0153a: 10390000f946
 	MOVEA.L	LAB_05C3,A4		;01540: 28790000e34e
 	MOVE.B	(36,A4,D0.W),D5		;01546: 1a340024
-	BSR.W	LAB_045A		;0154a: 61006306
+	BSR.W	GetItem_045A		;0154a: 61006306
 	MOVE.B	(11,A0),D5		;0154e: 1a28000b
 	BEQ.W	LAB_00CF		;01552: 6700008e
 LAB_00CA:
@@ -3476,7 +3484,7 @@ LAB_01A6:
 	BMI.S	Next_01A8		;02eae: 6b38
 	TST.B	D5			;02eb0: 4a05
 	BEQ.S	Next_01A8		;02eb2: 6734
-	BSR.W	LAB_045A		;02eb4: 6100499c
+	BSR.W	GetItem_045A		;02eb4: 6100499c
 	BEQ.S	Next_01A8		;02eb8: 672e
 	CMPI.B	#$0f,(3,A0)		;02eba: 0c28000f0003
 	BNE.S	LAB_01A7		;02ec0: 6602
@@ -3757,7 +3765,7 @@ LAB_01C9:
 	TST.B	(0,A4,D5.W)		;0326c: 4a345000
 	BEQ.S	LAB_01C9		;03270: 67e4
 	MOVE.B	#$20,(A5)+		;03272: 1afc0020
-	BSR.W	LAB_045A		;03276: 610045da
+	BSR.W	GetItem_045A		;03276: 610045da
 	BNE.S	LAB_01CA		;0327a: 660c
 	MOVE.B	#$66,(-2,A5)		;0327c: 1b7c0066fffe
 	MOVE.B	#$27,(-1,A5)		;03282: 1b7c0027ffff
@@ -3850,7 +3858,7 @@ LAB_01D6:
 LAB_01D7:
 	MOVEM.L	D0-D7/A0-A6,-(A7)	;033b6: 48e7fffe
 	MOVE.W	D1,D5			;033ba: 3a01
-	BSR.W	LAB_045A		;033bc: 61004494
+	BSR.W	GetItem_045A		;033bc: 61004494
 	ANDI.W	#$0080,D1		;033c0: 02410080
 	OR.B	(2,A0),D1		;033c4: 82280002
 	MOVE.B	D1,LAB_0623		;033c8: 13c10000ee00
@@ -3924,7 +3932,7 @@ LAB_01E1:
 	MOVEM.L	D0-D7/A0-A6,-(A7)	;034aa: 48e7fffe
 	CLR.B	LAB_0675		;034ae: 42390000f933
 	MOVE.W	LAB_0624,D5		;034b4: 3a390000ee04
-	BSR.W	LAB_045A		;034ba: 61004396
+	BSR.W	GetItem_045A		;034ba: 61004396
 	BEQ.S	LAB_01E2		;034be: 6716
 	MOVE.B	#$01,LAB_0675		;034c0: 13fc00010000f933
 	TST.L	LAB_05F5		;034c8: 4ab90000e42e
@@ -6521,7 +6529,7 @@ LAB_0326:
 	TST.B	D5			;056ee: 4a05
 	BEQ.S	LAB_0322		;056f0: 67aa
 	MOVE.L	D5,D2			;056f2: 2405
-	BSR.W	LAB_045A		;056f4: 6100215c
+	BSR.W	GetItem_045A		;056f4: 6100215c
 	MOVE.L	A0,LAB_05BF		;056f8: 23c80000e33e
 	MOVE.W	D1,LAB_05BE		;056fe: 33c10000e33a
 	MOVE.B	(11,A0),LAB_0675	;05704: 13e8000b0000f933
@@ -6892,7 +6900,7 @@ LAB_0354:
 LAB_0355:
 	MOVE.B	Gold_05EF,(A4)		;05c10: 18b90000e416
 	MOVE.B	Gold_05EF,D5		;05c16: 1a390000e416
-	BSR.W	LAB_045A		;05c1c: 61001c34
+	BSR.W	GetItem_045A		;05c1c: 61001c34
 	MOVE.B	(10,A0),(14,A4)		;05c20: 1968000a000e
 	MOVEA.L	LAB_05E8,A6		;05c26: 2c790000e3fa
 	MOVEM.L	D0-D7/A0-A6,-(A7)	;05c2c: 48e7fffe
@@ -8700,7 +8708,7 @@ LAB_0446:
 	MOVEA.L	LAB_05C3,A4		;0766a: 28790000e34e
 LAB_0447:
 	ADDA.L	#$00000024,A4		;07670: d9fc00000024
-	BSR.W	LAB_045A		;07676: 610001da
+	BSR.W	GetItem_045A		;07676: 610001da
 	CLR.L	D0			;0767a: 4280
 	MOVE.B	(3,A0),D0		;0767c: 10280003
 	CMP.B	#$0f,D0			;07680: b03c000f
@@ -8778,7 +8786,7 @@ LAB_0451:
 	MOVE.B	D4,(A4)			;0777e: 1884
 	MOVEM.L	D0-D7/A0-A6,-(A7)	;07780: 48e7fffe
 	MOVE.B	D4,D5			;07784: 1a04
-	BSR.W	LAB_045A		;07786: 610000ca
+	BSR.W	GetItem_045A		;07786: 610000ca
 	MOVE.B	(10,A0),(14,A4)		;0778a: 1968000a000e
 	MOVEM.L	(A7)+,D0-D7/A0-A6	;07790: 4cdf7fff
 	TST.B	(0,A0,D4.W)		;07794: 4a304000
@@ -8827,7 +8835,7 @@ LAB_0458:
 	MOVEA.L	LAB_0571,A0		;0783c: 20790000b5d0
 	MOVEQ	#8,D0			;07842: 7008
 LAB_0459:
-; gets an item offset
+; adds item offset to A0
 ; d5 = item ID regardless of identify status
 ; d0 = 12 or 8, row width on different item tables probably
 	ANDI.L	#$0000007f,D5		;07844: 02850000007f
@@ -8835,8 +8843,10 @@ LAB_0459:
 	ADDA.L	D0,A0			;0784c: d1c0
 	CLR.L	D0			;0784e: 4280
 	RTS				;07850: 4e75
-LAB_045A:
+GetItem_045A:
 ; called from 13 places. D5 is item ID
+; Given item ID D5, return item index A0. Set zero flag if
+; item cannot be equipped by current character.
 	MOVE.B	D5,LAB_05C2		;07852: 13c50000e34a
 ; Refers to Item table at $09c1a
 	MOVEA.L	LAB_0573,A0		;07858: 20790000b5d8
@@ -8850,28 +8860,33 @@ LAB_045A:
 ; use each item.
 	BTST	D0,(8,A0)		;0786c: 01280008
 	BEQ.W	Return_0016		;07870: 67008b5a
+; ?
 	TST.B	LAB_068C		;07874: 4a390000f94a
 	BNE.S	Return_045C		;0787a: 6614
 ; Ranged weapon (Crossbow, Longbow, Kel's Crossbow)
 	CMPI.B	#$0f,(3,A0)		;0787c: 0c28000f0003
 	BNE.S	LAB_045D		;07882: 660e
-; Shield?
+; Shield slot - ranged weapon must require other hand to be empty
 	TST.B	(45,A4)			;07884: 4a2c002d
 	BEQ.S	LAB_045D		;07888: 6708
 LAB_045B:
+; return false
 	CLR.L	LAB_05F5		;0788a: 42b90000e42e
 Return_045C:
 	RTS				;07890: 4e75
 LAB_045D:
-; DX
-; only reference to DX I can find
+; Can use item A0 - do we meet its stat prerequisites?
+; only reference to DX I can find:
 	MOVE.B	(31,A4),D0		;07892: 102c001f
+; In every item in DoA1/2, byte 4 and 5 are 00
+; so it's possible DX does nothing in this game
 	SUB.B	(4,A0),D0		;07896: 90280004
 	BCS.S	LAB_045B		;0789a: 65ee
 ; ST
 	MOVE.B	(32,A4),D0		;0789c: 102c0020
 	SUB.B	(5,A0),D0		;078a0: 90280005
 	BCS.S	LAB_045B		;078a4: 65e4
+; Return 1 if item usable
 	MOVEQ	#1,D0			;078a6: 7001
 	RTS				;078a8: 4e75
 LAB_045E:
@@ -8932,10 +8947,11 @@ LAB_0466:
 	BSR.W	LAB_0195		;07950: 6100b378
 	MOVE.W	D1,LAB_0629		;07954: 33c10000ee0e
 	MOVE.B	(36,A4,D1.W),D5		;0795a: 1a341024
-	BSR.W	LAB_045A		;0795e: 6100fef2
+	BSR.W	GetItem_045A		;0795e: 6100fef2
 	CLR.L	D3			;07962: 4283
 	MOVE.W	(A0),D3			;07964: 3610
 	MOVE.L	D3,D4			;07966: 2803
+; Selling an item: 1/8 (rounded down) less than full buy price.
 	LSR.W	#3,D4			;07968: e64c
 	SUB.L	D4,D3			;0796a: 9684
 	MOVE.L	D3,Price_05E6		;0796c: 23c30000e3ee
@@ -9003,7 +9019,7 @@ LAB_046E:
 ; inventory
 	MOVE.W	D1,LAB_0629		;07a4c: 33c10000ee0e
 	MOVE.B	(36,A4,D1.W),D5		;07a52: 1a341024
-	BSR.W	LAB_045A		;07a56: 6100fdfa
+	BSR.W	GetItem_045A		;07a56: 6100fdfa
 	CLR.L	D3			;07a5a: 4283
 	MOVE.W	(A0),D3			;07a5c: 3610
 	LSR.W	#5,D3			;07a5e: ea4b
@@ -10962,22 +10978,48 @@ LAB_0567:
 	DS.L	41			;09b76
 ; Item table!
 ;
-; 01: Price?
-; 02: ??
+; 00-01: Buy price. Sells for 1/8th less.
+; 02: Unknown
 ; 03: Type (08 Armour, 09 Shield, 0A Ring, 0B Helmet, 0C Melee Weapon,
 ;           0D Arrows, 0F Ranged Weapon, FF Unknown, 00 Other)
-; 04-05: always 00
+; 04: Dex requirement (always 00)
+; 05: Str requirement (always 00)
 ; 06: Unknown. More powerful weapons have a higher value. Damage?
-;     Strength prerequisite?
 ; 07: ?? Bitfield?
 ; 08: Bitfield for which class can use it
-; 09: ?? Bitfield?
-; 0A: ??
-; 0B: Usage code? 80-83 for Key 1-4, same code used by doors.
+; 09: Bitfield, unknown. Value/bits set:
+;      01: 0
+;      09: 3,0
+;      0a: 3,1
+;      0b: 3,1,0
+;      11: 4,0
+;      40: 6
+;      41: 6,0
+;      42: 6,1
+;      43: 6,1,0
+;      44: 6,2
+;      82: 7,1
+;      83: 7,1,0
+;      85: 7,2,0
+;      87: 7,2,1,0
+;      8d: 7,3,2,0
+;      8f: 7,3,2,1,0
+; GUESSES for bit 9:
+;      Bit 0: 
+;      Bit 1: 
+;      Bit 2: 
+;      Bit 3: 
+;      Bit 4: 
+;      Bit 5: Unused
+;      Bit 6: 
+;      Bit 7: Can attack at range?
+;   
+; 10: ??
+; 11: Usage code? 80-83 for Key 1-4, same code used by doors.
 ;     Most spells have their own unique code.
 ;     Ara's Shield and Sefer's Helmet share a code with Ice Breath.
 ;
-;    |                | 0001 02 03 04 05 06 07 08 09 0A 0B
+;    |                | 0001 02 03 04 05 06 07 08 09 10 11
 ;----|----------------|-----------------------------------
 ; 00 | UNKNOWN        | 0000 00 ff 00 00 03 00 ff 00 00 00
 ; 01 | ARA'S SHIELD   | 05dc 01 09 00 00 00 14 b0 11 32 22
@@ -12434,7 +12476,7 @@ LAB_0625:
 	DS.W	1			;0ee06
 LAB_0626:
 	DS.W	1			;0ee08
-LAB_0627:
+Damage_0627:
 	DS.W	1			;0ee0a
 LAB_0628:
 	DS.W	1			;0ee0c
