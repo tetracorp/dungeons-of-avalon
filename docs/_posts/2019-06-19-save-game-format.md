@@ -269,7 +269,7 @@ conditions.
 
 A bug in the first _Dungeons of Avalon_ prevented the numbers from registering
 defeated fixed-encounter monsters correctly, which made the game unwinnable
-(see [How to see the Dungeons of Avalon 1 ending](secrets/doa1-ending.html)).
+(see [How to see the Dungeons of Avalon 1 ending](../secrets/doa1-ending.html)).
 
 | ID | Monster 1            | Monster 2     | Monster 3    |
 |----|----------------------|---------------|--------------|
