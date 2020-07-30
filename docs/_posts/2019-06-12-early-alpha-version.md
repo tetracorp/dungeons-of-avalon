@@ -78,8 +78,8 @@ level of the dungeon and `DUNG01` containing the level below.
 
 The maps are surprisingly lacking any of block 16 (hexadecimal), which is the
 most popular block in the final game and represents a solid wall. Instead, it
-uses block 15, loose stone wall, although without any way to break that, it's
-functionally identical.
+uses block 15, which appears in the finished game as the loose stone wall,
+although without any way to break that, it's functionally identical to wall.
 
 Also not present are any of block 03 (dispel magic), 05 (random monster), 0a
 (fixed monster), 10 (start point upon entering the dungeon from a city),
@@ -105,9 +105,8 @@ filename, e.g. the character HAKAN is stored in a file named "H.HAKAN   ". In
 the final game, each character is 74 bytes long, and they are no longer stored
 in individual files.
 
-The Skidrow release has ten characters stored on disk. Six were 
-
-Ten characters are stored on disk, of which six were added at the initial disk
+The Skidrow release has ten characters stored on disk, of which six were added
+at the initial disk
 write time of 1:06am to 1:07am on 8 May 1991, and can be presumed authentic. In
 the order given by the AmigaDOS "list" command:
 

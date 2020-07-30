@@ -433,9 +433,10 @@ Decompressing that DMS archive gives this exact disk, making it a rare verified
 unmodified version.
 
 There are two strange things about this release. Firstly, the six ready-made
-characters: Raymon, Phantic, Mion Jeh, Hakan, Lady Shr, and Rahven. All are very
-high level. Loading a save game returns the original characters: Avance, Aratak,
-Letahl, Kresta, Mercus and Beacon.
+characters: Raymon, Phantic, Mion Jeh, Hakan, Lady Shr, and Rahven. All are
+maximum level (16), except for Rahven who is incredibly level 32, though you
+can't see this as Rahven is an NPC. Loading a save game returns the original
+characters: Avance, Aratak, Letahl, Kresta, Mercus and Beacon.
 
 The second oddity is the game executable, which has a different filesize
 (119,540 bytes vs 119,480 bytes for other German versions, a difference of 60
@@ -446,9 +447,9 @@ other files.
 
 Disassembly of this file suggests it may in fact be an updated build released in
 by the actual developer. Two CLR.W instructions have been inserted at 0x1d80
-which are probably a bugfix for something, all subsequent address references
-have been updated to match, and data for the new characters has replaced the old
-in the executable.
+which are probably a bugfix for something (some graphical bug is my best guess),
+all subsequent address references have been updated to match, and data for the
+new characters has replaced the old in the executable.
 
 This theory is also supported by the character names. Hakan is the name of the
 game's programmer, and a character by that name appears in the early _Dungeons
@@ -595,9 +596,14 @@ The executable has been hex edited to correct spelling mistakes in the game:
 
 Also, bytes $71d2 to $71d5 of the main game executable have been edited from
 $6100ff4a to $534061d2, changing a `BSR.W` instruction into a `SUBQ.W #1,D0`
-followed by a one-byte `BSR.S` to a separate location. I'm not fully certain of
-its effect, but this may be a bugfix, some kind of copy-protection bypass,
-or a cheat mod.
+followed by a one-byte `BSR.S` to a separate location. It occurs in the function
+for handling NPC encounters, and appears to fix an off-by-one issue. It may fix
+one or both reported bugs in an earlier English release: A screenshot in
+[The CRPG Addict's review](https://crpgaddict.blogspot.com/2020/01/game-352-dungeons-of-avalon-ii-island.html)
+depicts text appearing one character late; and 
+[an older review](http://www.syntax2000.co.uk/issues/51/avalon2.rev.txt)
+describes NPCs behaving incorrectly (e.g. Thiefs Rabun don't give key, Prison
+Guards don't accept Permission item).
 
 The cracktro has been removed from the startup-sequence. It's edited on 9 Oct
 1992, while the modified executable itself has a 1980 date from an Amiga without
