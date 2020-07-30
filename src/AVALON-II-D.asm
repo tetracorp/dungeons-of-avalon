@@ -3420,7 +3420,7 @@ LAB_019C:
 	BSR.W	LAB_01B9		;02ddc: 610002a8
 	MOVEA.L	LAB_05C3,A4		;02de0: 28790000e34e
 	BSR.W	LAB_01A5		;02de6: 6100009a
-	LEA	MsgArmClass,A5		;02dea: 4bf90001055e
+	LEA	MsgRusClass,A5		;02dea: 4bf90001055e
 	BSR.W	Print_015B		;02df0: 6100f86e
 LAB_019D:
 	MOVEA.L	LAB_05D7,A0		;02df4: 20790000e3aa
@@ -3472,6 +3472,7 @@ LAB_01A4:
 LAB_01A5:
 ; Calculating displayed WC/AC (RS/AS)
 	MOVEM.L	D0-D7/A0-A6,-(A7)	;02e82: 48e7fffe
+; base values
 	MOVE.B	LAB_0637,LAB_0668	;02e86: 13f90000f02b0000f923
 	MOVE.B	LAB_0638,LAB_0667	;02e90: 13f90000f02c0000f922
 	MOVE.B	(9,A4),Class_0676	;02e9a: 13ec00090000f934
@@ -3484,32 +3485,52 @@ LAB_01A6:
 	TST.B	D5			;02eac: 4a05
 ; Item must be identified to use
 	BMI.S	Next_01A8		;02eae: 6b38
+; Item slot must not be empty
 	TST.B	D5			;02eb0: 4a05
 	BEQ.S	Next_01A8		;02eb2: 6734
 	BSR.W	GetItem_045A		;02eb4: 6100499c
 	BEQ.S	Next_01A8		;02eb8: 672e
 	CMPI.B	#$0f,(3,A0)		;02eba: 0c28000f0003
 	BNE.S	LAB_01A7		;02ec0: 6602
+; Ranged weapons count as being in slot $0f / #15
+; regardless of where they are actually held
 	MOVEQ	#15,D2			;02ec2: 740f
 LAB_01A7:
+; Item must be in the correct slot
+; Handedness appears to be enforced
 	CMP.B	(3,A0),D2		;02ec4: b4280003
 	BNE.S	Next_01A8		;02ec8: 661e
 	MOVE.B	(7,A0),D0		;02eca: 10280007
+; LAB_0668 is equal to the last digit of item 7
+; armor class bonus
+; 1: Arc's Axe, Arc's Boolas, Arc's Speer, Arc's Sword, Bee-Ring,
+;    Deathbringer, Dragonslayer, Healing Robe, Helmet, Killersword,
+;    Robe, Silver-Ring, Wood Shield
+; 2: Armour, Metal Shield, Sefer's/Arc's/Power Helmet
+; 3: Ara's Armour, Knight Armour, Battle Helmet, Buckler
+; 4: Ara's Shield, Fire Shield
 	ANDI.B	#$0f,D0			;02ece: 0200000f
 	ADD.B	D0,LAB_0668		;02ed2: d1390000f923
 	MOVE.B	(7,A0),D0		;02ed8: 10280007
+; LAB_0667 is equal to the first digit of item byte 7
+; attack bonus
+; 1: Dagger, warhammer, stone-ring, silver-ring, ara's shield, fire shield
+; 2: Battle Axe, Warstaff, Mace, Longbow, Bolas, Dragonslayer
+; 3: Sword, New Live, Crossbow, Firedagger, Arc's Boolas
+; 4: Arc's Axe, Arc's Speer, Arc's Sword, Broadsword, Killersword, Deathbringer,
+;    Arrows, Elf Arrows, Kel's Arrows, Kel's Crossbow
 	ANDI.B	#$f0,D0			;02edc: 020000f0
 	LSR.W	#4,D0			;02ee0: e848
 	ADD.B	D0,LAB_0667		;02ee2: d1390000f922
 Next_01A8:
 	DBF	D1,LAB_01A6		;02ee8: 51c9ffba
 	CLR.L	D3			;02eec: 4283
-; luck + character level
+; ((luck + character level) / 32) + item
 	MOVE.B	(30,A4),D3		;02eee: 162c001e
 	ADD.B	(28,A4),D3		;02ef2: d62c001c
 	LSR.B	#5,D3			;02ef6: ea0b
 	ADD.B	LAB_0668,D3		;02ef8: d6390000f923
-; status effect 4
+; status effect 4 causes a -2 penalty to armor class
 	BTST	#4,(11,A4)		;02efe: 082c0004000b
 	BEQ.S	LAB_01A9		;02f04: 6706
 	SUBQ.B	#2,D3			;02f06: 5503
@@ -3521,9 +3542,12 @@ LAB_01A9:
 	BSR.W	IntToASCII		;02f10: 6100f5c6
 	MOVE.B	D1,LAB_06F9		;02f14: 13c100010565
 ; This byte is 0 and represents the displayed ARMOR class (RS/WC)
-	MOVE.B	D0,MsgAtkClass		;02f1a: 13c000010566
+	MOVE.B	D0,MsgArmClass		;02f1a: 13c000010566
+; 
+; Next: attack stat.
+; 
 ; Testing confirms that this is the calculation for ATTACK (AC)
-; ((RS + KO + Level)/16  + ST)/16 + LAB_0667
+; ((KO + Level)/16  + ST)/16 + LAB_0667
 ; This is the only reference to KO that I can find
 	MOVE.B	(34,A4),D3		;02f20: 162c0022
 	ADD.B	(28,A4),D3		;02f24: d62c001c
@@ -5269,7 +5293,7 @@ LAB_0286:
 	BSR.W	LAB_01B9		;045a6: 6100eade
 	BSR.W	LAB_019E		;045aa: 6100e852
 LAB_0287:
-	LEA	MsgArmClass,A5		;045ae: 4bf90001055e
+	LEA	MsgRusClass,A5		;045ae: 4bf90001055e
 	BSR.W	Print_015B		;045b4: 6100e0aa
 LAB_0288:
 	BSR.W	LAB_045E		;045b8: 610032f0
@@ -10982,12 +11006,12 @@ LAB_0567:
 ;
 ; 00-01: Buy price. Sells for 1/8th less.
 ; 02: Unknown
-; 03: Type (08 Armour, 09 Shield, 0A Ring, 0B Helmet, 0C Melee Weapon,
+; 03: Slot (08 Armour, 09 Shield, 0A Ring, 0B Helmet, 0C Melee Weapon,
 ;           0D Arrows, 0F Ranged Weapon, FF Unknown, 00 Other)
 ; 04: Dex requirement (always 00)
 ; 05: Str requirement (always 00)
 ; 06: Unknown. More powerful weapons have a higher value. Damage?
-; 07: ?? Bitfield?
+; 07: First digit: attack bonus. Second digit: armor bonus.
 ; 08: Bitfield for which class can use it
 ; 09: Bitfield, unknown. Value/bits set:
 ;      01: 0
@@ -13506,14 +13530,14 @@ LAB_06F7:
 	DC.L	$20202020,$20202020,$206d474f,$4c445354 ;10548
 	DC.L	$dc434b45		;10558
 	DC.W	$2e00			;1055c
-MsgArmClass:
+MsgRusClass:
 	;1055e
 	;DC.B	$63,$65,$52,$53,$3a,$20,$68
 	DC.B	"ceRS: h"
 LAB_06F9:
 ; 0
 	DC.B	$30			;10565
-MsgAtkClass:
+MsgArmClass:
 	;10566
 	;DC.B	$30,$20,$20,$65,$41,$53,$3a,$20,$68
 	DC.B	"0  eAS: h"

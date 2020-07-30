@@ -12,7 +12,7 @@ in 1992 for the Commodore Amiga.
 
 ### Development
 
-Work on the original _Dungeons of Avalon_ began as early as 1991, with an early
+Work on the original _Dungeons of Avalon_ began no later than 1991, with an early
 alpha build of that game completed in May of that year. The primary developers
 were coder/artist Hakan Akbiyik of newly-formed group A-Cron (later named Zeret)
 and musician/artist Rudolf "Rudi" Stember of group Cyberstyle. The duo had
@@ -20,16 +20,33 @@ worked together on other games, including _The Curse of Ra_ (Oct 1990),
 Commodore 64 title _Cylogic_ (Apr 1991), and Amiga puzzle game _Log!cal_ (May
 1991).
 
-The game's art, music and sound were largely completed by December 1991, with
-both German and English versions of the final build completed in Februrary 1992,
-along with a German-only game manual. The team Zeret had now risen to four
-members: Hakan, Rudi, bugtester Christian Awizio and Andre Willms, who had
-worked with Hakan and Rudi on _The Curse of Ra_.
+In terms of development time, file dates place the completion of Zeret's
+previous game _Log!cal_ on 24 May 1991. Development of _Dungeons of Avalon_ was
+clearly already underway at this point. An [early
+alpha](../secrets/early-alpha-version.html) build of _Dungeons of Avalon_ is
+file-dated to 8 May 1991 in the early hours of the morning. The user interface
+is functional, but it lacks art, dungeon layout, and audio.
 
-Additionally credited are Frank Matzke of CAT! for monster sketches, Klaus
-Ehrhardt for the monster art, and Thomas Jakowatz for the final level design,
-with additional thanks to Thomas Scholl (who worked with Akbiyik on _Log!cal_)
-and Michael Niedecken.
+Based on file dates in the completed official English release, the game's sound,
+music, and most of its art were completed by 26 December 1991, 233 days later.
+On 28 January 1992, both English and German game text was complete, along with
+the end graphics (unattainable due to [a bug](../secrets/doa1-ending.html)) and
+final dungeon graphics.
+
+At this point, the team Zeret had now risen to four members: Hakan, Rudi,
+bugtester Christian Awizio and Andre Willms, who had worked with Hakan and Rudi
+on _The Curse of Ra_. Additionally credited are Frank Matzke of CAT! for monster
+sketches, Klaus Ehrhardt for the monster art, and Thomas Jakowatz for the final
+level design, with additional thanks to Thomas Scholl (who worked with Akbiyik
+on _Log!cal_) and Michael Niedecken.
+
+By 7 Feb 1992 the English game executable and dungeon map were finalized. The
+final end credits were now updated to the copyright date of "91/92" instead of
+91, and a sequel is teased.
+
+On 17 Feb 1992, 286 days or just over 9 months after the alpha, the final
+English release was complete. It is likely that the German build was completed
+on the same day.
 
 The end credits indicate that _Dungeons of Avalon_ was written in HiSoft Devpac
 Assembler, a popular choice for commercial Amiga games at the time.
@@ -41,17 +58,22 @@ Amiga games, such as Lee Bamber's
 [Weapon Masters](https://www.youtube.com/watch?v=KuNIDZyel5I).
 
 A sequel, _Dungeons of Avalon II_, was already planned by the first game's
-completion, and would be complete by July 1992.
+completion, and would be complete by 17 July 1992, five months later.
 
 ### Publication
 
-_Dungeons of Avalon_ was released on a coverdisk with the
-[April issue](https://www.kultboy.com/magazin/4214/)
-of _Amiga
-Fun_, a German magazine published by CompuTec Verlag. A copyright notice in the
-game manual indicates that CT Verlag may have published exclusive rights to
-publish _Dungeons of Avalon_, although Zeret retained the trademark on the
-title.
+Contrary to popular belief in the English-speaking Amiga community, the
+_Dungeons of Avalon_ games were never released into the public domain, but were
+distributed exclusively as coverdisks with some Amiga magazines. Pirate releases
+and miscommunication led to the English release being redistributed in PD
+channels.
+
+The first _Dungeons of Avalon_ was released on a coverdisk with the
+[April-May 1992 issue](https://www.kultboy.com/magazin/4214/)
+of _Amiga Fun_, a German magazine published by CompuTec Verlag. A copyright
+notice in the game manual indicates that CT Verlag may have published exclusive
+rights to publish _Dungeons of Avalon_, although Zeret retained the trademark on
+the title.
 
 Like many Amiga games of this era, pirate copies of _Dungeons of Avalon_ were
 distributed almost immediately. Pirate group Tequila released a version on 13
@@ -66,11 +88,11 @@ also poorly done.
 
 This bootleg translation found its way to the editors of UK magazine _Amiga
 Mania_, who were authorized to release the English version of _Dungeons of
-Avalon_ with their July 1992 issue. However, this magazine issue displays
-screenshots of the bootleg translation, suggesting the magazine didn't receive
-the English disk in time. At least one distributed version of _Dungeons of
-Avalon_ dated 30 April 1992, perhaps the deadline for the July issue, simply
-strips the pirate cracktro from the bootleg.
+Avalon_ with their [July 1992 issue](http://amr.abime.net/issue_422). However,
+this magazine issue displays screenshots of the bootleg translation, suggesting
+the magazine didn't receive the English disk in time. At least one distributed
+version of _Dungeons of Avalon_ dated 30 April 1992, perhaps the deadline for
+the July issue, simply strips the pirate cracktro from the bootleg.
 
 Whether _Amiga Mania_ #4 actually distributed the bootleg by mistake, or
 actually released the official English version, is uncertain. The correct
@@ -81,24 +103,24 @@ German as a coverdisk with the
 [October 1992 issue](https://www.kultboy.com/magazin/4213/).
 of _Amiga Fun_, and in English as a coverdisk with the
 [October 1992 issue](http://amr.abime.net/issue_425)
-of _Amiga Mania_.
+of _Amiga Mania_. These issues likely hit the stands in Sept 1992.
 
 The English version of _Dungeons of Avalon II_ was quickly pirated by group
 DYTEC, who released it on 4 October 1992. A trainer, or cheat program, was added
 by Palace on 6 October, who distributed it via dial-up BBS on 8th April.
 
 An unofficial patched version of _Dungeons of Avalon II_ (English) was released
-which corrected some minor spelling errors. This did not cause disk problems, as
-the original executable of this game was not compressed like its predecessor.
-This is made possible by _Dungeons of Avalon II_'s smaller levels: 32 x 32
-squares instead of 50 x 50.
+which corrected some bugs and minor spelling errors. This did not cause disk
+problems, as the original executable of this game was not compressed like its
+predecessor.  This is made possible by _Dungeons of Avalon II_'s smaller levels:
+32 x 32 squares instead of 50 x 50.
 
-Shortly after the October issue's publication, author Hakan Akbiyik created a
-slightly updated version which fixes one bug. This version also has six
-very high level starting characters, perhaps intended for testing.
-
-_Amiga Games_ magazine later distributed _Dungeons of Avalon II_ on a magazine
-CD-ROM in September 1995 and May 1996.
+On 15 October 1992, author Hakan Akbiyik created a slightly updated version of
+the German executable which fixes one bug. This version also has six very high
+level starting characters, perhaps intended for testing the game. _Amiga Games_
+magazine later distributed this edition of _Dungeons of Avalon II_ on its
+"Sonderausgabe 1/95" magazine CD-ROM in September 1995, and released an unknown
+version of DoA2 on a CD-ROM again in May 1996.
 
 Despite being a copyrighted game, the English releases of _Dungeons of Avalon_
 and _Dungeons of Avalon II_ were widely distributed as public domain disks.
@@ -114,9 +136,40 @@ In May 1992, Amiga Joker
 [reviewed](https://www.kultboy.com/index.php?site=t&id=17539)
 the original _Dungeons of Avalon_, giving it a score of 72%.
 
-In November 1992, Amiga joker 
+In November 1992, Amiga Joker 
 [reviewed](https://www.kultboy.com/index.php?site=t&id=1684)
 _Dungeons of Avalon II_, giving it a score of 70%.
+
+In 1993, in SynTax diskmagazine issue 27, Bill Commons
+[reviewed](http://www.syntax2000.co.uk/issues/27/avalon1.rev.txt)
+_Dungeons of Avalon_, saying "I have been playing this game now for seven weeks
+and I am absolutely hooked on it." The reviewer was unable to defeat the final
+boss.
+
+In September 1997, P A Hardy of SynTax diskmagazine issue 51
+[reviewed](http://www.syntax2000.co.uk/issues/51/avalon2.rev.txt)
+_Dungeons of Avalon II_, which the group mistook for public domain. The review
+notes a bug regarding NPC encounters, which makes the game impossible.
+
+In 2015, The CRPG Addict played _Dungeons of Avalon_, reviewing it in four parts
+([part 1](https://crpgaddict.blogspot.com/2015/08/game-196-dungeons-of-avalon-1991.html),
+[part 2](https://crpgaddict.blogspot.com/2015/08/dungeons-of-avalon-breaking-mold.html),
+[part 3](https://crpgaddict.blogspot.com/2015/08/dungeons-of-avalon-defeated-with-final.html),
+[part 4](https://crpgaddict.blogspot.com/2015/08/dungeons-of-avalon-better-not-to-know.html)).
+He praised the "grotesque and beautiful" graphics, but criticized the
+interface. The final score was 31/100, "recommended", the highest-scoring
+diskmagazine game to date and an average score overall. He was unable to defeat
+the final boss without cheats.
+
+In 2020, The CRPG addict played _Dungeons of Avalon II_, reviewing it in 2 parts
+([part 1](https://crpgaddict.blogspot.com/2020/01/game-352-dungeons-of-avalon-ii-island.html),
+[part 2](https://crpgaddict.blogspot.com/2020/01/dungeons-of-avalon-ii-summary-and-rating.html)).
+He criticized the linear dungeon layout, but again praised the monster graphics,
+rating the _Dungeons of Avalon_ series in the top 5% of monster graphics out of
+360 games he has played. He rated the game 30/100 overall. Due to bugs, he was
+forced to switch to the German version, and was unable to pass the door which
+requires resurrecting the NPC thief Rahven, a feature only mentioned in the
+German manual.
 
 ### Detailed timeline
 
@@ -128,7 +181,7 @@ _Dungeons of Avalon II_, giving it a score of 70%.
   Willms release _The Curse of Ra_ for Commodore Amiga.
 * __Nov 1990__: English-language magazine _Amiga Fun_ first published in the UK
   by MC Publications.
-  (Source: [Amiga History Guide](http://www.amigahistory.plus.com/amigafun.html)
+  (Source: [Amiga History Guide](http://www.amigahistory.plus.com/amigafun.html)))
 
 #### 1991
 
@@ -149,7 +202,7 @@ _Dungeons of Avalon II_, giving it a score of 70%.
 #### 1992
 
 * __Jan 1992__: Last issue of _Amiga Fun_ (UK).
-  (Source: [Amiga History Guide](http://www.amigahistory.plus.com/amigafun.html)
+  (Source: [Amiga History Guide](http://www.amigahistory.plus.com/amigafun.html)(
 * __28 Jan 1992__: English and German text added to the German version of
   _Dungeons of Avalon_, suggesting an international release is now planned.
 * __7 Feb 1992__: Final build of _Dungeons of Avalon_ completed in both
@@ -160,7 +213,7 @@ _Dungeons of Avalon II_, giving it a score of 70%.
   completed.
 * __Mar 1992__: First issue of English-language magazine _Amiga Mania_ published
   in UK by MC Publications.
-  (Source: [Amiga History Guide](http://www.amigahistory.plus.com/amigamania.html)
+  (Source: [Amiga History Guide](http://www.amigahistory.plus.com/amigamania.html))
 * __~12 Mar 1992__: _Dungeons of Avalon_ released as a coverdisk for
   the [April issue](https://www.kultboy.com/magazin/4214/) of German magazine
   _Amiga Fun_.

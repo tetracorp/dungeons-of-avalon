@@ -72,11 +72,18 @@ Only spellcasting classes can receive MP. All other classes have 0 MP.
 You can click the "New" button repeatedly to re-roll your stats until you
 receive a number you like.
 
+See [Basic game mechanics](../game/basics.html) for explanation of what the game
+stats actually do.
+
 ### Level up
 
-Each level up gives you one roll on the "Stat increases per level" chart for
-each of the six stats, HP, and MP. Only spellcasting classes can ever gain MP.
+Each level up gives you one roll on the "Stat increases per level" chart above
+for HP, MP, and each of the six basic stats (IN, LU, DX, ST, WI, and KO). Only
+spellcasting classes can ever gain MP.
+
 You must pay 75 gold to the training guild in town (the Wise Three) to level up.
+You don't get to pick stat increases like some RPGs. You can save and reload to
+try and get better rolls on level up, though.
 
 Like Advanced Dungeons & Dragons, different character classes actually require
 different amounts of XP to level up. The wizard actually requires something like
@@ -104,11 +111,9 @@ Magician and Monk; and x10 for Wizard.
 | Level 14  |  3100   |    21700    |    27900    |    27900    |    31000    |
 | Level 15  |  3500   |    24500    |    31500    |    31500    |    35000    |
 | Level 16  |  4000   |    28000    |    36000    |    36000    |    40000    |
-| Level 17  |  4700   |    32900    |    42300    |    42300    |    47000    |
+| (Level 17)|  4700   |    32900    |    42300    |    42300    |    47000    |
 
 In practice, level 17 is unattainable due to a level cap of 16.
-
-Each level grants one round of stat increases, which are determined by race.
 
 ### Gaining spells
 
