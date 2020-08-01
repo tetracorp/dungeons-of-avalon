@@ -11005,12 +11005,12 @@ LAB_0567:
 ; Item table!
 ;
 ; 00-01: Buy price. Sells for 1/8th less.
-; 02: Unknown
-; 03: Slot (08 Armour, 09 Shield, 0A Ring, 0B Helmet, 0C Melee Weapon,
-;           0D Arrows, 0F Ranged Weapon, FF Unknown, 00 Other)
+; 02: Sprite number
+; 03: Slot (08 Armour, 09 Shield, 0A Ring, 0B Helmet, 0C One-Handed Weapon,
+;           0D Arrows, 0F Two-Handed Weapon, FF Unknown, 00 Other)
 ; 04: Dex requirement (always 00)
 ; 05: Str requirement (always 00)
-; 06: Unknown. More powerful weapons have a higher value. Damage?
+; 06: Damage
 ; 07: First digit: attack bonus. Second digit: armor bonus.
 ; 08: Bitfield for which class can use it
 ; 09: Bitfield, unknown. Value/bits set:
@@ -11030,7 +11030,7 @@ LAB_0567:
 ;      87: 7,2,1,0
 ;      8d: 7,3,2,0
 ;      8f: 7,3,2,1,0
-; GUESSES for bit 9:
+; Meaning of bit 9:
 ;      Bit 0: 
 ;      Bit 1: 
 ;      Bit 2: 
@@ -11038,9 +11038,9 @@ LAB_0567:
 ;      Bit 4: 
 ;      Bit 5: Unused
 ;      Bit 6: 
-;      Bit 7: Can attack at range?
+;      Bit 7: Ranged weapon
 ;   
-; 10: ??
+; 10: Number of uses. Item disappears once gone.
 ; 11: Usage code? 80-83 for Key 1-4, same code used by doors.
 ;     Most spells have their own unique code.
 ;     Ara's Shield and Sefer's Helmet share a code with Ice Breath.

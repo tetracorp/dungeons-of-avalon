@@ -27,6 +27,8 @@ bones into an empty party members lot and raise them at a temple as normal.
 * __Pirate__: Beard, a level 16 NPC raised from Elf Bones.
   They can be found in a chest on dungeon level 2.
   Beard has 135 HP and all his stats are 160.
+  In _Dungeons of Avalon II_, Flint is a level 32 NPC pirate with 168 HP and all
+  stats at 160.
 * __Murderer__: Hanibal, a level 10 NPC raised from Gnom Bones.
   Does not appear in any chest in the dungeon, and can only be acquired by
   cheating.
@@ -37,7 +39,9 @@ bones into an empty party members lot and raise them at a temple as normal.
 
 The fourth set, Troll Bones, raises Ak'Heem, a standard thief class NPC.
 Despite being raised from bones of various races, the game internally treats all
-NPCs as human.
+NPCs in the first _Dungeons of Avalon_ as elf. The other NPC in _DoA2_ is the
+legendary Rahven, a level 32 thief internally considered an elf, and having 96
+HP with all stats at 160. Only Flint is internally considered human.
 
 ### Rune casting
 

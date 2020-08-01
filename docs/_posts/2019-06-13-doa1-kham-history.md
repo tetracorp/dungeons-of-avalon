@@ -10,33 +10,33 @@ don't appear in the official English translation.
 
 ### Kham's dialogue
 
-My name is Kham. We then went out to kill the Dark Lord, but our mission failed.
-A traitor lured us into a trap and the party fell in battle. My spirit will not
-find peace while the Dark Lord is still alive. I created a spell to defeat the
-Dark Lord, but you need the Rune of Hakan. This is hidden in the dungeon. Bring
-me that rune and I'll give you the magic.
+> My name is Kham. We then went out to kill the Dark Lord, but our mission failed.
+> A traitor lured us into a trap and the party fell in battle. My spirit will not
+> find peace while the Dark Lord is still alive. I created a spell to defeat the
+> Dark Lord, but you need the Rune of Hakan. This is hidden in the dungeon. Bring
+> me that rune and I'll give you the magic.
 
-Also, look for my old companions in the dungeon, they can help you with your
-quest. They all fell, but you should be able to revive them in the temples. Now
-hurry, before the evil takes possession of the other city. I wish you luck more
-than we had on our mission.
+> Also, look for my old companions in the dungeon, they can help you with your
+> quest. They all fell, but you should be able to revive them in the temples. Now
+> hurry, before the evil takes possession of the other city. I wish you luck more
+> than we had on our mission.
 
 ### Kham's dialogue #2
 
-I see you have found the rune. I will now give you the spell that you can use to
-defeat the Dark Lord. This spell only works once. It will not kill the Dark
-Lord, but it makes him vulnerable to your weapons. So always remember you have
-only one try, may the good power be with you.
+> I see you have found the rune. I will now give you the spell that you can use to
+> defeat the Dark Lord. This spell only works once. It will not kill the Dark
+> Lord, but it makes him vulnerable to your weapons. So always remember you have
+> only one try, may the good power be with you.
 
 ### Elistaire's dialogue
 
-My name is Elistaire, I guard a treasure, if you bring the Ruby Dagger the
-treasure belongs to you.
+> My name is Elistaire, I guard a treasure, if you bring the Ruby Dagger the
+> treasure belongs to you.
 
 ### Elistaire's dialogue #2
 
-Oh, I owe you too much thanks, through the dagger, I am able to free myself and
-therefore the treasure should be yours. Go only a few steps further.
+> Oh, I owe you too much thanks, through the dagger, I am able to free myself and
+> therefore the treasure should be yours. Go only a few steps further.
 
 ### Notes
 
