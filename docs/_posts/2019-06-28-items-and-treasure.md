@@ -13,7 +13,7 @@ arrow.
 
 ### Armour
 
-| Item                 |  Buy  | Sell  | Name 
+| Item                 |  Buy  | Sell  | Description 
 |----------------------|------:|------:|------------------------------------------
 | Armour               |   30g |   27g |  Adds +2 armor. Unknown bit 6. 
 | Ara's Armour         |  100g |   88g |  Adds +3 armor. Unknown bit 6. 
@@ -25,7 +25,7 @@ arrow.
 
 ### Shields
 
-| Item                 |  Buy  | Sell  | Name 
+| Item                 |  Buy  | Sell  | Description 
 |----------------------|------:|------:|------------------------------------------
 | Ara's Shield         | 1500g | 1313g |  Adds +1 attack. Adds +4 armor. When used, casts Frost Breath. Can be used 50 times. Unknown bits 4, 0. 
 | Wood Shield          |   15g |   14g |  Adds +1 armor. Unknown bit 6. 
@@ -35,7 +35,7 @@ arrow.
 
 ### Rings
 
-| Item                 |  Buy  | Sell  | Name 
+| Item                 |  Buy  | Sell  | Description 
 |----------------------|------:|------:|------------------------------------------
 | Bee-Ring             |   45g |   40g |  Adds +1 armor. When used, casts Swarm Of Bees. Can be used 10 times. Unknown bits 4, 0. 
 | Stone-Ring           |  235g |  206g |  Adds +1 attack. When used, casts Medusas Eye. Can be used 5 times. Unknown bits 4, 0. 
@@ -43,7 +43,7 @@ arrow.
 
 ### Helmets
 
-| Item                 |  Buy  | Sell  | Name 
+| Item                 |  Buy  | Sell  | Description 
 |----------------------|------:|------:|------------------------------------------
 | Battle Helmet        |   50g |   44g |  Adds +3 armor. Unknown bit 6. 
 | Power Helmet         |   30g |   27g |  Adds +2 armor. Unknown bit 6. 
@@ -53,7 +53,7 @@ arrow.
 
 ### One-handed weapons
 
-| Item                 |  Buy  | Sell  | Name 
+| Item                 |  Buy  | Sell  | Description 
 |----------------------|------:|------:|------------------------------------------
 | Sword                |   15g |   14g |  Deals 12 damage. Adds +3 attack. Unknown bit 0. 
 | Dagger               |    5g |    5g |  Deals 5 damage. Effective at range. Adds +1 attack. Unknown bits 2, 1, 0. 
@@ -79,7 +79,7 @@ arrow.
 
 ### Arrows
 
-| Item                 |  Buy  | Sell  | Name 
+| Item                 |  Buy  | Sell  | Description 
 |----------------------|------:|------:|------------------------------------------
 | Arrows               |    5g |    5g |  Deals 5 damage. Effective at range. Adds +4 attack. Can be used 10 times. Unknown bits 3, 2, 1, 0. 
 | Elf Arrows           |    7g |    7g |  Deals 7 damage. Effective at range. Adds +4 attack. Can be used 15 times. Unknown bits 3, 2, 1, 0. 
@@ -87,7 +87,7 @@ arrow.
 
 ### Two-handed weapons
 
-| Item                 |  Buy  | Sell  | Name 
+| Item                 |  Buy  | Sell  | Description 
 |----------------------|------:|------:|------------------------------------------
 | Staff&sup1;          |    8g |    7g |  Deals 8 damage. Adds +3 attack. Unknown bits 3, 2. 
 | Magic-Staff&sup1;    |  100g |   88g |  Deals 10 damage. Adds +1 attack. When used, casts Falconfang. Can be used 50 times. Unknown bits 3, 2. 
@@ -99,13 +99,13 @@ arrow.
 
 ### Unknowns
 
-| Item                 |  Buy  | Sell  | Name 
+| Item                 |  Buy  | Sell  | Description 
 |----------------------|------:|------:|------------------------------------------
 | Unknown              |    0g |    0g |  Deals 3 damage. 
 
 ### Other items
 
-| Item                 |  Buy  | Sell  | Name 
+| Item                 |  Buy  | Sell  | Description 
 |----------------------|------:|------:|------------------------------------------
 | Dragonfigure&sup1;   |  500g |  438g |  Unknown bit 6. 
 | Dragonstone&sup1;    |  100g |   88g |  Unknown bit 6. 
