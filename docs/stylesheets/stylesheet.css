@@ -271,6 +271,13 @@ a {
   color: #aaaaaa;
 }
 
+img.double, .double img {
+  transform:scale(2.0);
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
 footer {
   width: 90%;
   max-width: 900px;
@@ -294,7 +301,7 @@ footer p a:hover{
   text-decoration: underline;
 }
 
-code {
+p code, li code {
   font-size: 120%;
   background: #333333;
   padding: 0 2px;
