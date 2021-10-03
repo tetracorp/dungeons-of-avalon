@@ -10,7 +10,7 @@ analysis of the save game format, an index of cut or unused content, a
 retranslation of game lore from the original German release, and a partially
 annotated disassembled executable for _Dungeons of Avalon II_.
 
-All findings are published on the website here:
+All findings are published on the website here: 
 
 > [https://tetracorp.github.io/dungeons-of-avalon/](https://tetracorp.github.io/dungeons-of-avalon/)
 
