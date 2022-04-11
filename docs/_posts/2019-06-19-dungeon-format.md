@@ -22,15 +22,22 @@ first byte stores the subtype of that block, such as which key opens a door or
 which level a staircase descends to. Many blocks have no subtypes and simply
 read 00, such as 0016 for a wall block.
 
+Squares can also have their highest bit set in order to signify that the player
+has encountered it before, i.e. adding 80 hex to the type value. In other words,
+if 00 is an empty square, 80 is a visited empty square. One of the DUNG
+files can often be found marked in this way.
+
 Each level in _Dungeons of Avalon_ is 50 squares wide and 50 squares tall, with
 9 levels (five in the dungeon, and four in the castle). Each 100 bytes thus
 represents one row of the map, with 5000 bytes representing each level. The
 total `DUNG` file is 45000 bytes. It is stored unencrypted and uncompressed.
+Since it's stored twice on disk and once in each save file, 135,000 bytes or
+15% of the entire disk capacity is used up just storing the game map.
 
 In _Dungeons of Avalon II_, each map is instead 32 by 32 squares, with 10 levels
 in total. The `DUNG` file for this is therefore only 20480 bytes.
 
-In _Dungeons of Avalon II_ exclusively, the map loops around when the player
+In _Dungeons of Avalon II_ only, the map loops around when the player
 reaches the edge. A player who steps off the edge finds themself back on the
 opposite side of the map.
 
