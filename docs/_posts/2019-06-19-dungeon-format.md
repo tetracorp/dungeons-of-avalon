@@ -44,7 +44,7 @@ opposite side of the map.
 ### Map squares
 
 $00: Empty floor
-: A square on which you can freely walk.
+: An empty square on which you can safely walk.
 
 $01: Message
 : Text which appears when you step on this square, such as the line
@@ -64,9 +64,11 @@ so chest 01 on level 1 has different contents from chest 01 on level 2.
 
 $05: Monster encounter, random.
 : A random monster encounter based on the current
-dungeon level. If you re-load from the save, you may find that a different
-number of monsters appear.  Monster squares are fixed and can be visually
-identified by a shadow on the floor.
+dungeon level. If you re-load from a save, you may find that a different
+number of monsters appear. Fleeing a battle will also cause the square to
+generate a different number of monsters on next visit, which can be used
+to farm XP indefinitely. Defeating all monsters clears the square.
+Monster squares can be visually identified by a shadow on the floor.
 
 $06: Teleporter
 : Teleports the party to another teleporter on the same level.
@@ -99,7 +101,7 @@ $0a: Monster encounter, fixed
 Subtype determines which monster encounter is chosen.
 : In DoA1:
 * $00: 5 worms
-* $01-$1d: That number of worms
+* $01-$1d: That number of worms (i.e. $1d = 29 worms)
 * $1e: 2 fire dragons
 * $1f: Dark Lord, 5 fire trolls, 8 fire trolls
 : In DoA2:
@@ -118,8 +120,8 @@ Subtype determines which monster encounter is chosen.
 * $0c: 3x Big Spider, 2x Guardian	
 * $0d: 3x Big Spider, 2x Pest Baby	
 * $0e: 5x Werewolf, 3x Big Frog, Guardian	
-* $0f: Lord Roa #1, Arc Dragon, Skelleton	
-* $10: Lord Roa #2, 5x Arc Dragon, 6x Skelleton	
+* $0f: Lord Roa #1, Arc Dragon, Skelleton	(illusory Lord Roa)
+* $10: Lord Roa #2, 5x Arc Dragon, 6x Skelleton	(true Lord Roa)
 
 $0b: Stairs down
 : Stairs.
@@ -164,7 +166,8 @@ $12: Door
 The subtype determines how the door is opened:
 * 00: Unlocked.
 * 01-06: Pickable by a thief of this character level or higher.
-* 1C: ???
+* 1C: Pickable only by a level 28+ thief; i.e. the NPC thief Rahven.
+  See [Tower of Roa, level 2](../maps/doa2-tower2.html).
 * 80-83: Can only be opened by Key 1-4 respectively.
 
 $13: Button switch
@@ -174,10 +177,15 @@ All four sides of this square have the same button on them.
 
 $14: Secret door
 : A solid wall with a hidden handle in the corner which can be clicked to turn
-into empty floor.
+it into empty floor.
 
 $15: Loose stone wall (DoA1), Forcefield (DoA2)
-: In DoA1, this is a solid wall. The method of breaking it is unknown.
+: In DoA1, this is a solid wall. The method of breaking it is unknown. Appears
+in [the Dungeon, level 3](../maps/doa1-dungeon3.html), next to a note saying
+"THE ROCKS ARE VERY LOOSE HERE!" They also appear in
+[level 4](../maps/doa1-dungeon4.html) and [level 5](../maps/doa1-dungeon5.html).
+Using the mapping spell Eagles View, loose stone walls can be seen to use a
+different icon than normal walls.
 : In DoA2, this is a blue forcefield. The spell scroll Killmagic counters them.
 
 $16: Wall
@@ -202,7 +210,7 @@ $1a: Temple of the Rose
 
 $1b: Wall block
 : DoA2 only. A solid wall block with a small square at the top.
-Has a subtype.
+Has a subtype. Still uncertain what exactly this does.
 
 $1c: Pit
 : DoA2 only. A dark pit.
