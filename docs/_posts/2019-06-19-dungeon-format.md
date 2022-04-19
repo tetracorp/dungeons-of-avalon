@@ -61,7 +61,25 @@ $01: Message
 
 $02: Trap
 : A trap triggers when you enter this square.
-: The subtype determines the type of trap.
+: The subtype determines the type of trap. The same types appear in both games,
+although some games do not use every type of trap. Notably, the chest traps
+aren't used in either game, because traps are handled as items in the chest.
+* 00: Banshee wail (unused in DoA2)
+* 01: Tiny sharp blades
+* 02: Icewave
+* 03: Drops of acid
+* 04: Poisened arrows (unused in DoA1)
+* 05: Poisened arrows
+* 06: Cloud of poisen
+* 07: Cloud of poisen (unused in DoA2)
+* 08: Great explosion
+* 09: Trapdoor (unused in both)
+* 0a: Trapdoor (unused in DoA2)
+* 0b: Stones falling
+* 0c: Flames comming
+* 0d: Lock of chest covered in poisened thorns (unused in both)
+* 0e: Lock of chest covered in poisened blades (unused in both)
+* 0f: A small explosion (unused in both)
 
 $03: Dispel magic
 : Antimagic effect causes all spells active on the party to end.
@@ -70,6 +88,7 @@ Foils mapping and levitation.
 $04: Treasure chest
 : Subtype determines which chest. Each level has its own list of chests,
 so chest 01 on level 1 has different contents from chest 01 on level 2.
+The contents of each chest are listed at this site each individual map page.
 
 $05: Monster encounter, random.
 : A random monster encounter based on the current
