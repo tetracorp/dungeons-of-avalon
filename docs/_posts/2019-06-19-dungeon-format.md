@@ -31,15 +31,24 @@ Each level in _Dungeons of Avalon_ is 50 squares wide and 50 squares tall, with
 9 levels (five in the dungeon, and four in the castle). Each 100 bytes thus
 represents one row of the map, with 5000 bytes representing each level. The
 total `DUNG` file is 45000 bytes. It is stored unencrypted and uncompressed.
-Since it's stored twice on disk and once in each save file, 135,000 bytes or
-15% of the entire disk capacity is used up just storing the game map.
+Since it's stored twice on disk and once in each of the three save files,
+225,000 bytes or 25% of the entire disk capacity is used up just storing the
+game map.
 
 In _Dungeons of Avalon II_, each map is instead 32 by 32 squares, with 10 levels
-in total. The `DUNG` file for this is therefore only 20480 bytes.
+in total. The `DUNG` file for this is therefore only 20480 bytes. It's still
+stored five times, but only totals up to 102,400 bytes, about 11% of the disk
+capacity. This allowed the main game executable to be stored uncompressed on
+disk, which makes it easier to analyze and modify.
 
 In _Dungeons of Avalon II_ only, the map loops around when the player
 reaches the edge. A player who steps off the edge finds themself back on the
-opposite side of the map.
+opposite side of the map. DoA2 uses this to great effect, allowing the map
+designer to fit more stuff into the map. It also saves them from having to
+put a one-block wall around the edge of the map, as you see in most DoA1
+maps. See [Dungeon of Isla, level 4](../maps/doa2-dungeon4.html) and
+[Tower of Roa, level B2](maps/doa2-tower-b1.html) for examples of map
+looping.
 
 ### Map squares
 
@@ -157,6 +166,8 @@ Subtype determines which city:
 * 00: H'Khan (DoA1) / Isla (DoA2)
 * 01: Ghale (DoA1)
 * 1f: Tower of Roa (DoA2)
+Additionally, the start point tile is used to determine where the party respawns
+if they fall down a pit in DoA2.
 
 $11: Rest point
 : A square with a "C" where the party can camp and rest safely.
@@ -208,14 +219,19 @@ $19: Shop of No One
 $1a: Temple of the Rose
 : A temple appearing in the dungeon.
 
-$1b: Wall block
-: DoA2 only. A solid wall block with a small square at the top.
-Has a subtype. Still uncertain what exactly this does.
+$1b: Small magic button switch
+: DoA2 only. A solid wall block with a small button at the top. Click the button
+to toggle it, same as a normal button. However, if you press it a second time, it
+transforms into a forcefield. A Killmagic scroll will get rid of the forcefield.
+Bugged in the English language release so that you can't click the button.
+Only appears in the final two levels of DoA 2 (B1 and B2).
 
 $1c: Pit
-: DoA2 only. A dark pit.
-Subtype is usually 00, but can be 5, 83, or 84.
+: DoA2 only. A dark pit. Don't fall down it! It won't kill you, but it will
+respawn you at the start of the current level. Levitation doesn't help.
+Notably, Tower B1 has a start point marker tile for this purpose.
+Subtype is usually 00, but some on Tower B1 have the subtype 5, 83, or 84.
+Not sure what subtype does.
 
 $1d: Wall message
 : DoA2 only. A wall with a message written on it.
-
