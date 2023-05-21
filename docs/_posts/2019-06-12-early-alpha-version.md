@@ -255,8 +255,8 @@ Rhateph's castle was renamed from a "Schloss" (palace) to a "Burg" (fortified
 castle).
 
 The Monster Gallery is not mentioned in the alpha, which does not have the
-finished art. The concept was probably intended to be added after the final
-monster art was produced.
+finished art. The final release has a Monster Gallery, which can be accessed by
+pressing `G` on the Adventurer's Guild screen.
 
 ### Spells
 
