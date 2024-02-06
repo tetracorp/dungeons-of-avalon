@@ -210,7 +210,7 @@ copyright holder:
 * __Date__: April 1992 (_Amiga Fun_), August 1998 onward (disk image)
 
 Based on file dates, this appears to be identical to the above except for
-DAT/Dung, which would be modified on play. They differ only be minutes: this one
+DAT/Dung, which would be modified on play. They differ only by minutes: this one
 modified the directory DAT on 12 Aug 1998 at 16:40:01 and its file Dung seconds
 later at 16:40:05; the previous ADF's DAT and Dung were modified at 16:42:28 and
 16:42:31 respectively.
@@ -299,7 +299,7 @@ executable is 62,352 bytes, compared to 63,196 for the original, so it's not
 merely a hex-edit.
 
 The city is named The City H'Khan. The tavern / adventurer's guild is called
-Dragon's Cave. The "Armour Shop" (notably a British spelling ) is named Rudi's
+Dragon's Cave. The "Armour Shop" (notably a British spelling) is named Rudi's
 Shop, and there you can "Identify Items", not "Indify Items" as in the bootleg
 translation; even so, Rudi greets you with "GREETIMG HEROS,HOW CAN I HELP YOU?"
 The temple is called The Temple of Jahdt, and the trainers The Wise Three.
@@ -396,19 +396,21 @@ HD-INSTALL-E.
 A modified version of the above. The only difference is that the
 startup-sequence has been modified to comment out the cracktro.
 
-It's possible that _this_ is _Amiga Mania_ #4 coverdisk. For some reason,
-instead of using the official English version that existed, they published this
-bootleg pirate version with the pirate markings hastily removed.
+It's possible that _this_ is _Amiga Mania_ #4 coverdisk. If this is true, then
+for some reason, instead of using the official English version that existed,
+they published this bootleg pirate version with the pirate markings hastily
+removed.
 
 The startup-sequence was edited around 1400 hours on 30 April, plausibly a
-deadline date for the coverdisk of the July issue. The editors probably didn't
+deadline date for the coverdisk of the July issue. Perhaps the editors didn't
 receive the disk on time, and published a pirate copy instead, believing it to
 be a working copy of a commercial release of the official English version.
 
-If this is true, then when was the official English version released?
+However, if this is true, then when was the official English version released?
 
 Another possibility is that Amiga Mania only ever released the official version
 noted in the IPF, and that both of these are incorrectly named pirate copies.
+What we do know is that screenshots of the pirate copy appear in the magazine.
 
 The empty dungeon bug is still present. The DAT/Dung is also modified on 30
 April, meaning they probably tested the game by loading a save file.

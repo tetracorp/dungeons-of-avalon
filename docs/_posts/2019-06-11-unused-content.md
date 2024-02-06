@@ -51,7 +51,7 @@ have a stat called "rune level":
 > The rune level is zero because you have to teach your hero to read runes
 > later.
 
-There is also a combat descripion line in the game for "used a rune".
+There is also a combat description line in the game for "used a rune".
 
 This did not appear in the final game. _Dungeons of Avalon II_ removed all
 mentioned of rune casting and rune level from its manual, and removed the "used
@@ -124,43 +124,24 @@ removed.
 ### Unused chests
 
 Several chests appear in the game code for _Dungeons of Avalon_ but are never
-used. Based on their order in the list, these chests would appear in the first
-three levels of the Rhateph's Castle, which only have two actual chests betweem
-them.
+used.
 
-* #48: Closed chest containing Key 4, Fire Shield, Stone-Ring, Scroll 4, Kel's
-  Arrows, two Healing Potions, two poison Healing Potions.
-  Only chest containing Stone-Ring.
-  Would be Castle 1 chest 01.
-  Note that Castle 1's only placed chest, #47 (Castle 1 chest 00) contains Key 4,
-  Fire Shield, Bee-Ring and Troll Bones, and is unlocked.
-* #49: Closed chest containing Key 4, two Healing Potions, and two poison
-  Healing Potions.
-  Would be Castle 1 chest 02.
-* #50: Closed chest containing Key 4, Antipoisen spell, and Silver-Ring.
-  Only chest containing Silver-Ring.
-  Would be Castle 1 chest 03.
-* #51: Open chest containing an Eagles View spell.
-  Would be Castle 2 chest 00.
-* #52: Closed chest containing an Eagles View spell.
-  Would be Castle 2 chest 01.
-  Note that the following chest, #53 Castle 2 chest 02, is identical, and is the
-  only chest placed on that level.
-* #54: Closed chest containing an Eagles View spell.
-  Would be Castle 2 chest 03.
-* #55: Open chest containing two Healing Potions.
-  Would be either T2 04 or a Castle 3 chest&mdash;there are no other Castle 3
-  chests to compare it to.
-* #56: Closed chest containing two Healing Potions.
-  Would be either T2 05 or a Castle 3 chest.
-* #57: Small explosion trap. Empty.
-  Would be either T2 06 or a Castle 3 chest.
-* #58: Small explosion trap. Empty.
-  Would be either T2 07 or a Castle 4 chest.
-* #59: Open chest containing Arc's Axe, Arc's Sword, Arc's Boolas, and
-  Killersword.
-  Would be either T2 08 or a Castle 3 chest.
-  The next chest is T4 00.
+| ID  | Level| Chest | State    | Content
+|-----|----------|---|----------|--------------
+| #48 | Castle 1 | 1 | Closed   | Key 4, Fire Shield, Stone-Ring, Scroll 4, Kel's Arrows, Healing Potion x2, Healing Potion (anti-poisen) x3
+| #49 | Castle 1 | 2 | Closed   | Key 4, Healing Potion x2, and Healing Potion (anti-poisen) x2
+| #50 | Castle 1 | 3 | Closed   | Key 4, Antipoisen scroll, Silver-Ring
+| #51 | Castle 2 | 0 | Unlocked | Eagles View scroll
+| #52 | Castle 2 | 1 | Closed   | Eagles View scroll
+| #54 | Castle 2 | 3 | Closed   | Eagles View Scroll
+| #55 | Castle 2 | 4 | Unlocked | Healing Potion x2
+| #56 | Castle 2 | 5 | Closed   | Healing Potion x2
+| #57 | Castle 2 | 6 | Trapped  | Small explosion trap, Empty
+| #58 | Castle 2 | 7 | Trapped  | Cold wave trap, Empty
+| #59 | Castle 3 | 0 | Unlocked | Arc's Axe, Arc's Sword, Arc's Boolas, Killersword
+
+These unused chests are the only sources of Stone-Ring, Silver-Ring, and Scroll
+4 in the game.
 
 There are no unused chests in _Dungons of Avalon II_.
 

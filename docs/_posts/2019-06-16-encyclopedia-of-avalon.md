@@ -70,7 +70,7 @@ the game's programmer.)_
 
 ### People and creatures
 
-Ak'heem
+Ak'Heem
 : A troll thief, and companion of the good wizard Kham.
 He was ambushed and slain in an attempt to defeat the Dark Lord.
 

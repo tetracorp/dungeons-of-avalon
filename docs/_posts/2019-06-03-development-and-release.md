@@ -202,7 +202,7 @@ German manual.
 #### 1992
 
 * __Jan 1992__: Last issue of _Amiga Fun_ (UK).
-  (Source: [Amiga History Guide](http://www.amigahistory.plus.com/amigafun.html)(
+  (Source: [Amiga History Guide](http://www.amigahistory.plus.com/amigafun.html))
 * __28 Jan 1992__: English and German text added to the German version of
   _Dungeons of Avalon_, suggesting an international release is now planned.
 * __7 Feb 1992__: Final build of _Dungeons of Avalon_ completed in both

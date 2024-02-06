@@ -36,7 +36,7 @@ The following backstory is translated from the German version of the manual.
 > So it happened that the wise sorcerer Arakus set out to banish the evil sorcerer
 > Rhateph from his kingdom and put an end to the curse of the cold. But on the way
 > through the labyrinth to the city Ghale he was attacked by robbers and killed.
-> His secret of how he wanted to defeat the evil Rhateph, he hid in the Dungens
+> His secret of how he wanted to defeat the evil Rhateph, he hid in the dungeons
 > through hidden and cryptic riddles, so that an equally good magician would
 > finish his task and free the land Avalon.
 > 
