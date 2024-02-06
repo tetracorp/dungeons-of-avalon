@@ -11,7 +11,6 @@ game, or change between games.  Items with limited uses only apply when it is
 "used", i.e. casting a spell from the item, throwing a weapon or shooting an
 arrow.
 
-
 ### Armours
 
 | DoA1 | DoA2 | Item                 |  Buy  | Sell  | Name 
@@ -108,9 +107,9 @@ arrow.
 
 | DoA1 | DoA2 | Item                 |  Buy  | Sell  | Name 
 |------|------|----------------------|------:|------:|------------------------------------------
-| ![doa item blk](../images/doa_item_blk.png "doa item blk") | ![doa2 item 11](../images/doa2_item_11.png "doa2 item 11") |  Dragonfigure&sup1;   |  500g |  438g |  Unknown bit 6. 
-| ![doa item blk](../images/doa_item_blk.png "doa item blk") | ![doa2 item 12](../images/doa2_item_12.png "doa2 item 12") |  Dragonstone&sup1;    |  100g |   88g |  Unknown bit 6. 
-| ![doa item blk](../images/doa_item_blk.png "doa item blk") | ![doa2 item 59](../images/doa2_item_59.png "doa2 item 59") |  Diamond&sup1;        |  500g |  438g |  Unknown bit 6. 
+| ![doa item blk](../images/doa_item_blk.png "doa item blk") | ![doa2 item 11](../images/doa2_item_11.png "doa2 item 11") |  Dragonfigure&sup2;   |  500g |  438g |  Unknown bit 6. 
+| ![doa item blk](../images/doa_item_blk.png "doa item blk") | ![doa2 item 12](../images/doa2_item_12.png "doa2 item 12") |  Dragonstone&sup2;    |  100g |   88g |  Unknown bit 6. 
+| ![doa item blk](../images/doa_item_blk.png "doa item blk") | ![doa2 item 59](../images/doa2_item_59.png "doa2 item 59") |  Diamond&sup2;        |  500g |  438g |  Unknown bit 6. 
 | ![doa1 item 16](../images/doa1_item_16.png "doa1 item 16") | ![doa2 item 16](../images/doa2_item_16.png "doa2 item 16") |  New Live             |  100g |   88g |  Deals 11 damage. When used, casts New Live. Can only be used once. Unknown bits 4, 0. 
 | ![doa1 item 17](../images/doa1_item_17.png "doa1 item 17") | ![doa item blk](../images/doa_item_blk.png "doa item blk") |  Spellbook&sup1;      |    1g |    1g |  Unknown bit 6. 
 | ![doa item blk](../images/doa_item_blk.png "doa item blk") | ![doa2 item 17](../images/doa2_item_17.png "doa2 item 17") |  Spellbook&sup2;      |    5g |    5g |  Unknown bit 6. 
@@ -164,6 +163,7 @@ arrow.
 | ![doa1 item 59](../images/doa1_item_59.png "doa1 item 59") | ![doa item blk](../images/doa_item_blk.png "doa item blk") |  -----&sup1;          |    1g |    1g |  Unknown bits 6, 0. 
 | ![doa item blk](../images/doa_item_blk.png "doa item blk") | ![doa2 item 29](../images/doa2_item_29.png "doa2 item 29") |  Disarm Trap&sup2;    |    1g |    1g |  When used, casts Disarm Trap. Can only be used once. Unknown bits 4, 0. 
 | ![doa1 item 58](../images/doa1_item_58.png "doa1 item 58") | ![doa2 item 58](../images/doa2_item_58.png "doa2 item 58") |  Left                 |    0g |    0g |  Unknown bit 6. 
+| ![doa1 item 18](../images/doa1_item_18.png "doa1 item 18") | ![doa2 item 18](../images/doa2_item_18.png "doa2 item 18") |  Right                |    0g |    0g |  Unknown bit 6. 
 
 ### Items by bonus
 
