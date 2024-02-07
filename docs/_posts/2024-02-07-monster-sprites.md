@@ -4,8 +4,8 @@ title: "Monster and town graphics"
 categories: data
 ---
 
-The following are graphics extracted `DAT/PICS`. They represent all graphics
-which fill the main box; i.e. town scenes and monster graphics.
+The following are graphics extracted from the file `DAT/PICS`. They represent
+all graphics which fill the main box; i.e. town scenes and monster graphics.
 
 ### Dungeons of Avalon I
 
@@ -80,3 +80,21 @@ which fill the main box; i.e. town scenes and monster graphics.
 ![doa2 pic 26](../images/doa2_pic_26.png "doa2 pic 26"){:width="256" height="224"}
 ![doa2 pic 27](../images/doa2_pic_27.png "doa2 pic 27"){:width="256" height="224"}
 ![doa2 pic 28](../images/doa2_pic_28.png "doa2 pic 28"){:width="256" height="224"}
+
+### Notes
+
+Each `PICS` file consists of a set of images concatenated together. Each image
+is compressed with PowerPacker, but the first four bytes have been changed from
+`PP20` to `XX50` in a form of obfuscation. Interestingly, this specific
+obfuscation is mentioned in the documentation for the Track2File decruncher
+tool, dated 29 December 1996. This means that even back then, someone was trying
+to analyze the _Dungeons of Avalon_ games.
+
+Each decompressed image is 7,200 bytes in size. It begins with a 128 x 112 pixel
+16-colour image, stored in 4 bitplanes. This accounts for the first 7,168 bytes
+of the file. The next 32 bytes store the image's palette as 16 two-byte values.
+Each half-word stores one hexadecimal digit, where the first digit is 0 and the
+remaining three are R, G, B.
+
+In DoA1 only, the PICS file has a few zeroes at the end for padding, which need
+to be trimmed to unpack with `xfddecrunch`.
