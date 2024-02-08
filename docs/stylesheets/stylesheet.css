@@ -267,6 +267,7 @@ a {
 }
 
 .left {
+  float: left;
   font-size: 80%;
   color: #aaaaaa;
 }

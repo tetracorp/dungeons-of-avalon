@@ -165,7 +165,6 @@ Unused graphic
 Gnom Fighter
 {:left}
 
-
 ### Dungeons of Avalon II
 
 ![doa2 pic 00](../images/doa2_pic_00.png "doa2 pic 00"){:width="256" height="224"}
