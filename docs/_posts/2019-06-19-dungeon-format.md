@@ -194,14 +194,12 @@ turns all appearing-wall 01 into walls. Pushing it again turns them back into
 empty squares.
 
 $10: Start point
-: Determines the square where the party will start if they enter this from a
-city.
+: Determines the square where the party will start if they enter this level from
+a city, or where they will respawn after falling down a pit in DoA2.
 Subtype determines which city:
 * 00: H'Khan (DoA1) / Isla (DoA2)
 * 01: Ghale (DoA1)
 * 1f: Tower of Roa (DoA2)
-Additionally, the start point tile is used to determine where the party respawns
-if they fall down a pit in DoA2.
 
 $11: Rest point
 : A square with a "C" where the party can camp and rest safely.
