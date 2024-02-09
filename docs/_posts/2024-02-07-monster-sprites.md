@@ -10,7 +10,7 @@ all graphics which fill the main box; i.e. town scenes and monster graphics.
 ### Dungeons of Avalon I
 
 ![doa1 pic 00](../images/doa1_pic_00.png "doa1 pic 00"){:width="256" height="224"}<br>
-"PIC #00", unused
+"PIC #00" (unused)
 {:.left}
 
 ![doa1 pic 01](../images/doa1_pic_01.png "doa1 pic 01"){:width="256" height="224"}<br>
@@ -46,7 +46,7 @@ The Wise Three
 {:.left}
 
 ![doa1 pic 09](../images/doa1_pic_09.png "doa1 pic 09"){:width="256" height="224"}<br>
-"PIC #09", unused
+"PIC #09" (unused)
 {:.left}
 
 ![doa1 pic 10](../images/doa1_pic_10.png "doa1 pic 10"){:width="256" height="224"}<br>
@@ -54,19 +54,19 @@ Thorndragon (unused enemy)
 {:.left}
 
 ![doa1 pic 11](../images/doa1_pic_11.png "doa1 pic 11"){:width="256" height="224"}<br>
-Worm, Hellworm
+Worm<br>Hellworm
 {:.left}
 
 ![doa1 pic 12](../images/doa1_pic_12.png "doa1 pic 12"){:width="256" height="224"}<br>
-Troll, Master Troll
+Troll<br>Master Troll
 {:.left}
 
 ![doa1 pic 13](../images/doa1_pic_13.png "doa1 pic 13"){:width="256" height="224"}<br>
-Silly Guard, Guard
+Silly Guard<br>Guard
 {:.left}
 
 ![doa1 pic 14](../images/doa1_pic_14.png "doa1 pic 14"){:width="256" height="224"}<br>
-Elistaire, Green Dragon (unused enemy), Dragon (unused enemy)
+Elistaire<br>Green Dragon (unused enemy)<br>Dragon (unused enemy)
 {:.left}
 
 ![doa1 pic 15](../images/doa1_pic_15.png "doa1 pic 15"){:width="256" height="224"}<br>
@@ -74,7 +74,7 @@ Unused graphic
 {:.left}
 
 ![doa1 pic 16](../images/doa1_pic_16.png "doa1 pic 16"){:width="256" height="224"}<br>
-Spider, Great Spider (unused enemy)
+Spider<br>Great Spider (unused enemy)
 {:.left}
 
 ![doa1 pic 17](../images/doa1_pic_17.png "doa1 pic 17"){:width="256" height="224"}<br>
@@ -86,7 +86,7 @@ Vampire (unused enemy)
 {:.left}
 
 ![doa1 pic 19](../images/doa1_pic_19.png "doa1 pic 19"){:width="256" height="224"}<br>
-Gnom, Master Gnom
+Gnom<br>Master Gnom
 {:.left}
 
 ![doa1 pic 20](../images/doa1_pic_20.png "doa1 pic 20"){:width="256" height="224"}<br>
@@ -94,11 +94,11 @@ Phantom (unused enemy)
 {:.left}
 
 ![doa1 pic 21](../images/doa1_pic_21.png "doa1 pic 21"){:width="256" height="224"}<br>
-Magician, Master Mage (unused enemy)
+Magician<br>Master Mage (unused enemy)
 {:.left}
 
 ![doa1 pic 22](../images/doa1_pic_22.png "doa1 pic 22"){:width="256" height="224"}<br>
-Silver Ninja, Ninja (unused enemy)
+Silver Ninja<br>Ninja (unused enemy)
 {:.left}
 
 ![doa1 pic 23](../images/doa1_pic_23.png "doa1 pic 23"){:width="256" height="224"}<br>
@@ -142,7 +142,7 @@ Fire Dragon
 {:.left}
 
 ![doa1 pic 33](../images/doa1_pic_33.png "doa1 pic 33"){:width="256" height="224"}<br>
-Gnom King, Hellgnom
+Gnom King<br>Hellgnom
 {:.left}
 
 ![doa1 pic 34](../images/doa1_pic_34.png "doa1 pic 34"){:width="256" height="224"}<br>
@@ -165,6 +165,7 @@ Unused graphic
 Gnom Fighter
 {:.left}
 
+<br clear="left">
 ### Dungeons of Avalon II
 
 ![doa2 pic 00](../images/doa2_pic_00.png "doa2 pic 00"){:width="256" height="224"}<br>
@@ -207,7 +208,7 @@ Big Turtle
 Pest Baby
 {:.left}
 ![doa2 pic 13](../images/doa2_pic_13.png "doa2 pic 13"){:width="256" height="224"}<br>
-Slime Twin, Thiefs Rabun
+Slime Twin<br>Thiefs Rabun
 {:.left}
 ![doa2 pic 14](../images/doa2_pic_14.png "doa2 pic 14"){:width="256" height="224"}<br>
 Eagle (unused enemy)
@@ -231,10 +232,10 @@ Zombi
 Big Spider
 {:.left}
 ![doa2 pic 21](../images/doa2_pic_21.png "doa2 pic 21"){:width="256" height="224"}<br>
-Dragon, Elinor
+Dragon<br>Elinor
 {:.left}
 ![doa2 pic 22](../images/doa2_pic_22.png "doa2 pic 22"){:width="256" height="224"}<br>
-Devil, Giant Argha
+Devil<br>Giant Argha
 {:.left}
 ![doa2 pic 23](../images/doa2_pic_23.png "doa2 pic 23"){:width="256" height="224"}<br>
 Fire Troll
@@ -246,14 +247,31 @@ Arc Dragon
 Skelleton
 {:.left}
 ![doa2 pic 26](../images/doa2_pic_26.png "doa2 pic 26"){:width="256" height="224"}<br>
-Guardian, prison guard
+Guardian<br>Prison guard
 {:.left}
 ![doa2 pic 27](../images/doa2_pic_27.png "doa2 pic 27"){:width="256" height="224"}<br>
 Magician
 {:.left}
 ![doa2 pic 28](../images/doa2_pic_28.png "doa2 pic 28"){:width="256" height="224"}<br>
-Lord Roa, fake Lord Roa
+Lord Roa<br>Fake Lord Roa
 {:.left}
+
+### Notes
+
+A large number of unused monster graphics appear in the `PICS` file for the
+first _Dungeons of Avalon_, mostly because of monsters which do not appear
+anywhere in the dungeon. All of the unused art appeared in _Dungeons of Avalon
+II_ in some form.
+
+The Thorndragon and Blue Dragon became DoA2's Dragon and the NPC Elinor. Phantom
+became Lord Roa. Woodoo Man became Voodoo Man. Devil DoA2's Devil and the NPC
+Giant Argha. Alien became Alien. Unused graphics became DoA2's Big Turtle,
+Invisible, and Zombi.
+
+DoA2 featured only two pieces of completely original monster art: Big Frog, Pest
+Baby, Slime Twin, Eagle, and Werewolf. Of those, Eagle never appears in the
+game. The other art is re-used, sometimes with a different palette or graphic
+changes.
 
 ### Technical notes
 
