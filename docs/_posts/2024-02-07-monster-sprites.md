@@ -6,6 +6,8 @@ categories: data
 
 The following are graphics extracted from the file `DAT/PICS`. They represent
 all graphics which fill the main box; i.e. town scenes and monster graphics.
+Monsters marked with a &dagger; symbol are unused; i.e. they appear in the game
+files but cannot normally be encountered in the game.
 
 ### Dungeons of Avalon I
 
@@ -50,59 +52,59 @@ The Wise Three
 {:.left}
 
 ![doa1 pic 10](../images/doa1_pic_10.png "doa1 pic 10"){:width="256" height="224"}<br>
-Thorndragon (unused enemy)
+Thorndragon&dagger;
 {:.left}
 
 ![doa1 pic 11](../images/doa1_pic_11.png "doa1 pic 11"){:width="256" height="224"}<br>
-Worm<br>Hellworm
+Worm, Hellworm
 {:.left}
 
 ![doa1 pic 12](../images/doa1_pic_12.png "doa1 pic 12"){:width="256" height="224"}<br>
-Troll<br>Master Troll
+Troll, Master Troll
 {:.left}
 
 ![doa1 pic 13](../images/doa1_pic_13.png "doa1 pic 13"){:width="256" height="224"}<br>
-Silly Guard<br>Guard
+Silly Guard, Guard
 {:.left}
 
 ![doa1 pic 14](../images/doa1_pic_14.png "doa1 pic 14"){:width="256" height="224"}<br>
-Elistaire<br>Green Dragon (unused enemy)<br>Dragon (unused enemy)
+Elistaire, Green Dragon,&dagger; Dragon&dagger;
 {:.left}
 
 ![doa1 pic 15](../images/doa1_pic_15.png "doa1 pic 15"){:width="256" height="224"}<br>
-Unused graphic
+Unused graphic&dagger;
 {:.left}
 
 ![doa1 pic 16](../images/doa1_pic_16.png "doa1 pic 16"){:width="256" height="224"}<br>
-Spider<br>Great Spider (unused enemy)
+Spider, Great Spider&dagger;
 {:.left}
 
 ![doa1 pic 17](../images/doa1_pic_17.png "doa1 pic 17"){:width="256" height="224"}<br>
-Silly Walker
+Silly Walker, &nbsp;
 {:.left}
 
 ![doa1 pic 18](../images/doa1_pic_18.png "doa1 pic 18"){:width="256" height="224"}<br>
-Vampire (unused enemy)
+Vampire&dagger;
 {:.left}
 
 ![doa1 pic 19](../images/doa1_pic_19.png "doa1 pic 19"){:width="256" height="224"}<br>
-Gnom<br>Master Gnom
+Gnom, Master Gnom
 {:.left}
 
 ![doa1 pic 20](../images/doa1_pic_20.png "doa1 pic 20"){:width="256" height="224"}<br>
-Phantom (unused enemy)
+Phantom&dagger;
 {:.left}
 
 ![doa1 pic 21](../images/doa1_pic_21.png "doa1 pic 21"){:width="256" height="224"}<br>
-Magician<br>Master Mage (unused enemy)
+Magician, Master Mage&dagger;
 {:.left}
 
 ![doa1 pic 22](../images/doa1_pic_22.png "doa1 pic 22"){:width="256" height="224"}<br>
-Silver Ninja<br>Ninja (unused enemy)
+Silver Ninja, Ninja&dagger;
 {:.left}
 
 ![doa1 pic 23](../images/doa1_pic_23.png "doa1 pic 23"){:width="256" height="224"}<br>
-Woodoo man (unused enemy)
+Woodoo man&dagger;
 {:.left}
 
 ![doa1 pic 24](../images/doa1_pic_24.png "doa1 pic 24"){:width="256" height="224"}<br>
@@ -110,15 +112,15 @@ Vulture
 {:.left}
 
 ![doa1 pic 25](../images/doa1_pic_25.png "doa1 pic 25"){:width="256" height="224"}<br>
-Devil (unused enemy)
+Devil&dagger;
 {:.left}
 
 ![doa1 pic 26](../images/doa1_pic_26.png "doa1 pic 26"){:width="256" height="224"}<br>
-Alien (unused enemy)
+Alien&dagger;
 {:.left}
 
 ![doa1 pic 27](../images/doa1_pic_27.png "doa1 pic 27"){:width="256" height="224"}<br>
-Unused graphic
+Unused graphic&dagger;
 {:.left}
 
 ![doa1 pic 28](../images/doa1_pic_28.png "doa1 pic 28"){:width="256" height="224"}<br>
@@ -126,11 +128,11 @@ Dark Lord
 {:.left}
 
 ![doa1 pic 29](../images/doa1_pic_29.png "doa1 pic 29"){:width="256" height="224"}<br>
-Unused graphic
+Unused graphic&dagger;
 {:.left}
 
 ![doa1 pic 30](../images/doa1_pic_30.png "doa1 pic 30"){:width="256" height="224"}<br>
-Blue Dragon (unused enemy)
+Blue Dragon&dagger;
 {:.left}
 
 ![doa1 pic 31](../images/doa1_pic_31.png "doa1 pic 31"){:width="256" height="224"}<br>
@@ -142,7 +144,7 @@ Fire Dragon
 {:.left}
 
 ![doa1 pic 33](../images/doa1_pic_33.png "doa1 pic 33"){:width="256" height="224"}<br>
-Gnom King<br>Hellgnom
+Gnom King, Hellgnom
 {:.left}
 
 ![doa1 pic 34](../images/doa1_pic_34.png "doa1 pic 34"){:width="256" height="224"}<br>
@@ -150,15 +152,15 @@ Pure Worm
 {:.left}
 
 ![doa1 pic 35](../images/doa1_pic_35.png "doa1 pic 35"){:width="256" height="224"}<br>
-Unused graphic
+Unused graphic&dagger;
 {:.left}
 
 ![doa1 pic 36](../images/doa1_pic_36.png "doa1 pic 36"){:width="256" height="224"}<br>
-Unused graphic
+Unused graphic&dagger;
 {:.left}
 
 ![doa1 pic 37](../images/doa1_pic_37.png "doa1 pic 37"){:width="256" height="224"}<br>
-Unused graphic
+Unused graphic&dagger;
 {:.left}
 
 ![doa1 pic 38](../images/doa1_pic_38.png "doa1 pic 38"){:width="256" height="224"}<br>
@@ -208,10 +210,10 @@ Big Turtle
 Pest Baby
 {:.left}
 ![doa2 pic 13](../images/doa2_pic_13.png "doa2 pic 13"){:width="256" height="224"}<br>
-Slime Twin<br>Thiefs Rabun
+Slime Twin, Thiefs Rabun
 {:.left}
 ![doa2 pic 14](../images/doa2_pic_14.png "doa2 pic 14"){:width="256" height="224"}<br>
-Eagle (unused enemy)
+Eagle&dagger;
 {:.left}
 ![doa2 pic 15](../images/doa2_pic_15.png "doa2 pic 15"){:width="256" height="224"}<br>
 Werewolf
@@ -232,10 +234,10 @@ Zombi
 Big Spider
 {:.left}
 ![doa2 pic 21](../images/doa2_pic_21.png "doa2 pic 21"){:width="256" height="224"}<br>
-Dragon<br>Elinor
+Dragon, Elinor
 {:.left}
 ![doa2 pic 22](../images/doa2_pic_22.png "doa2 pic 22"){:width="256" height="224"}<br>
-Devil<br>Giant Argha
+Devil, Giant Argha
 {:.left}
 ![doa2 pic 23](../images/doa2_pic_23.png "doa2 pic 23"){:width="256" height="224"}<br>
 Fire Troll
@@ -247,15 +249,16 @@ Arc Dragon
 Skelleton
 {:.left}
 ![doa2 pic 26](../images/doa2_pic_26.png "doa2 pic 26"){:width="256" height="224"}<br>
-Guardian<br>Prison guard
+Guardian, Prison guard
 {:.left}
 ![doa2 pic 27](../images/doa2_pic_27.png "doa2 pic 27"){:width="256" height="224"}<br>
 Magician
 {:.left}
 ![doa2 pic 28](../images/doa2_pic_28.png "doa2 pic 28"){:width="256" height="224"}<br>
-Lord Roa<br>Fake Lord Roa
+Lord Roa, Fake Lord Roa
 {:.left}
 
+<br clear="left">
 ### Notes
 
 A large number of unused monster graphics appear in the `PICS` file for the
