@@ -66,7 +66,7 @@ Silly Guard, Guard
 {:.left}
 
 ![doa1 pic 14](../images/doa1_pic_14.png "doa1 pic 14"){:width="256" height="224"}<br>
-Elistaire, Green Dragon (unused enemy)
+Elistaire, Green Dragon (unused enemy), Dragon (unused enemy)
 {:.left}
 
 ![doa1 pic 15](../images/doa1_pic_15.png "doa1 pic 15"){:width="256" height="224"}<br>
@@ -167,37 +167,95 @@ Gnom Fighter
 
 ### Dungeons of Avalon II
 
-![doa2 pic 00](../images/doa2_pic_00.png "doa2 pic 00"){:width="256" height="224"}
-![doa2 pic 01](../images/doa2_pic_01.png "doa2 pic 01"){:width="256" height="224"}
-![doa2 pic 02](../images/doa2_pic_02.png "doa2 pic 02"){:width="256" height="224"}
-![doa2 pic 03](../images/doa2_pic_03.png "doa2 pic 03"){:width="256" height="224"}
-![doa2 pic 04](../images/doa2_pic_04.png "doa2 pic 04"){:width="256" height="224"}
-![doa2 pic 05](../images/doa2_pic_05.png "doa2 pic 05"){:width="256" height="224"}
-![doa2 pic 06](../images/doa2_pic_06.png "doa2 pic 06"){:width="256" height="224"}
-![doa2 pic 07](../images/doa2_pic_07.png "doa2 pic 07"){:width="256" height="224"}
-![doa2 pic 08](../images/doa2_pic_08.png "doa2 pic 08"){:width="256" height="224"}
-![doa2 pic 09](../images/doa2_pic_09.png "doa2 pic 09"){:width="256" height="224"}
-![doa2 pic 10](../images/doa2_pic_10.png "doa2 pic 10"){:width="256" height="224"}
-![doa2 pic 11](../images/doa2_pic_11.png "doa2 pic 11"){:width="256" height="224"}
-![doa2 pic 12](../images/doa2_pic_12.png "doa2 pic 12"){:width="256" height="224"}
-![doa2 pic 13](../images/doa2_pic_13.png "doa2 pic 13"){:width="256" height="224"}
-![doa2 pic 14](../images/doa2_pic_14.png "doa2 pic 14"){:width="256" height="224"}
-![doa2 pic 15](../images/doa2_pic_15.png "doa2 pic 15"){:width="256" height="224"}
-![doa2 pic 16](../images/doa2_pic_16.png "doa2 pic 16"){:width="256" height="224"}
-![doa2 pic 17](../images/doa2_pic_17.png "doa2 pic 17"){:width="256" height="224"}
-![doa2 pic 18](../images/doa2_pic_18.png "doa2 pic 18"){:width="256" height="224"}
-![doa2 pic 19](../images/doa2_pic_19.png "doa2 pic 19"){:width="256" height="224"}
-![doa2 pic 20](../images/doa2_pic_20.png "doa2 pic 20"){:width="256" height="224"}
-![doa2 pic 21](../images/doa2_pic_21.png "doa2 pic 21"){:width="256" height="224"}
-![doa2 pic 22](../images/doa2_pic_22.png "doa2 pic 22"){:width="256" height="224"}
-![doa2 pic 23](../images/doa2_pic_23.png "doa2 pic 23"){:width="256" height="224"}
-![doa2 pic 24](../images/doa2_pic_24.png "doa2 pic 24"){:width="256" height="224"}
-![doa2 pic 25](../images/doa2_pic_25.png "doa2 pic 25"){:width="256" height="224"}
-![doa2 pic 26](../images/doa2_pic_26.png "doa2 pic 26"){:width="256" height="224"}
-![doa2 pic 27](../images/doa2_pic_27.png "doa2 pic 27"){:width="256" height="224"}
-![doa2 pic 28](../images/doa2_pic_28.png "doa2 pic 28"){:width="256" height="224"}
+![doa2 pic 00](../images/doa2_pic_00.png "doa2 pic 00"){:width="256" height="224"}<br>
+Unused
+{:.left}
+![doa2 pic 01](../images/doa2_pic_01.png "doa2 pic 01"){:width="256" height="224"}<br>
+Shop
+{:.left}
+![doa2 pic 02](../images/doa2_pic_02.png "doa2 pic 02"){:width="256" height="224"}<br>
+Temple
+{:.left}
+![doa2 pic 03](../images/doa2_pic_03.png "doa2 pic 03"){:width="256" height="224"}<br>
+Quiz giver
+{:.left}
+![doa2 pic 04](../images/doa2_pic_04.png "doa2 pic 04"){:width="256" height="224"}<br>
+Unused
+{:.left}
+![doa2 pic 05](../images/doa2_pic_05.png "doa2 pic 05"){:width="256" height="224"}<br>
+The City Isla
+{:.left}
+![doa2 pic 06](../images/doa2_pic_06.png "doa2 pic 06"){:width="256" height="224"}<br>
+Tavern
+{:.left}
+![doa2 pic 07](../images/doa2_pic_07.png "doa2 pic 07"){:width="256" height="224"}<br>
+Tower of Roa
+{:.left}
+![doa2 pic 08](../images/doa2_pic_08.png "doa2 pic 08"){:width="256" height="224"}<br>
+The Wise Three
+{:.left}
+![doa2 pic 09](../images/doa2_pic_09.png "doa2 pic 09"){:width="256" height="224"}<br>
+Unused
+{:.left}
+![doa2 pic 10](../images/doa2_pic_10.png "doa2 pic 10"){:width="256" height="224"}<br>
+Big Frog
+{:.left}
+![doa2 pic 11](../images/doa2_pic_11.png "doa2 pic 11"){:width="256" height="224"}<br>
+Big Turtle
+{:.left}
+![doa2 pic 12](../images/doa2_pic_12.png "doa2 pic 12"){:width="256" height="224"}<br>
+Pest Baby
+{:.left}
+![doa2 pic 13](../images/doa2_pic_13.png "doa2 pic 13"){:width="256" height="224"}<br>
+Slime Twin, Thiefs Rabun
+{:.left}
+![doa2 pic 14](../images/doa2_pic_14.png "doa2 pic 14"){:width="256" height="224"}<br>
+Eagle (unused enemy)
+{:.left}
+![doa2 pic 15](../images/doa2_pic_15.png "doa2 pic 15"){:width="256" height="224"}<br>
+Werewolf
+{:.left}
+![doa2 pic 16](../images/doa2_pic_16.png "doa2 pic 16"){:width="256" height="224"}<br>
+Invisible
+{:.left}
+![doa2 pic 17](../images/doa2_pic_17.png "doa2 pic 17"){:width="256" height="224"}<br>
+Voodoo Man
+{:.left}
+![doa2 pic 18](../images/doa2_pic_18.png "doa2 pic 18"){:width="256" height="224"}<br>
+Alien
+{:.left}
+![doa2 pic 19](../images/doa2_pic_19.png "doa2 pic 19"){:width="256" height="224"}<br>
+Zombi
+{:.left}
+![doa2 pic 20](../images/doa2_pic_20.png "doa2 pic 20"){:width="256" height="224"}<br>
+Big Spider
+{:.left}
+![doa2 pic 21](../images/doa2_pic_21.png "doa2 pic 21"){:width="256" height="224"}<br>
+Dragon, Elinor
+{:.left}
+![doa2 pic 22](../images/doa2_pic_22.png "doa2 pic 22"){:width="256" height="224"}<br>
+Devil, Giant Argha
+{:.left}
+![doa2 pic 23](../images/doa2_pic_23.png "doa2 pic 23"){:width="256" height="224"}<br>
+Fire Troll
+{:.left}
+![doa2 pic 24](../images/doa2_pic_24.png "doa2 pic 24"){:width="256" height="224"}<br>
+Arc Dragon
+{:.left}
+![doa2 pic 25](../images/doa2_pic_25.png "doa2 pic 25"){:width="256" height="224"}<br>
+Skelleton
+{:.left}
+![doa2 pic 26](../images/doa2_pic_26.png "doa2 pic 26"){:width="256" height="224"}<br>
+Guardian, prison guard
+{:.left}
+![doa2 pic 27](../images/doa2_pic_27.png "doa2 pic 27"){:width="256" height="224"}<br>
+Magician
+{:.left}
+![doa2 pic 28](../images/doa2_pic_28.png "doa2 pic 28"){:width="256" height="224"}<br>
+Lord Roa, fake Lord Roa
+{:.left}
 
-### Notes
+### Technical notes
 
 Each `PICS` file consists of a set of images concatenated together. Each image
 is compressed with PowerPacker, but the first four bytes have been changed from

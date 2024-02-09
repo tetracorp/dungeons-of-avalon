@@ -23,6 +23,7 @@ section {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 20px;
+  clear: both;
 }
 
 li {
@@ -270,6 +271,7 @@ a {
   float: left;
   font-size: 80%;
   color: #aaaaaa;
+  margin: 0 1em 0 0;
 }
 
 img {
