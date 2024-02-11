@@ -19,38 +19,44 @@ A random encounter's composition depends on the current dungeon level.
 _Dungeons of Avalon_:
 
 | Level | Groups | Number | Monsters |
-|-----------|---|---|---------------------------------------|
-| Dungeon 1 | 1 | 3 | Gnom, Worm                            |
-| Dungeon 2 | 2 | 4 | Worm, Troll, Vulture                  |
-| Dungeon 3 | 2 | 4 | Vulture, Gnom Fighter, Silver Ninja   |
-| Dungeon 4 | 3 | 3 | Silver Ninja, Master Troll, Gnom King |
-| Dungeon 5 | 4 | 4 | Gnom King, Spider, Master Gnom        |
-| Castle 1  | 2 | 3 | Master Gnom, Pure Worm, Silly Walker  |
-| Castle 2  | 3 | 4 | Silly Walker, Magician, Silly Guard   |
-| Castle 3  | 4 | 5 | Silly Guard, Hellgnom, Green Dragon   |
-| Castle 4  | 5 | 6 | Green Dragon, Guard, Hellworm         |
+|-----------|-----------|-----------|---------------------------------------|
+| Dungeon 1 | 1         | 1&ndash;3 | Gnom, Worm                            |
+| Dungeon 2 | 1&ndash;2 | 1&ndash;4 | Worm, Troll, Vulture                  |
+| Dungeon 3 | 1&ndash;2 | 1&ndash;4 | Vulture, Gnom Fighter, Silver Ninja   |
+| Dungeon 4 | 1&ndash;3 | 1&ndash;3 | Silver Ninja, Master Troll, Gnom King |
+| Dungeon 5 | 1&ndash;4 | 1&ndash;4 | Gnom King, Spider, Master Gnom        |
+| Castle 1  | 1&ndash;2 | 1&ndash;3 | Master Gnom, Pure Worm, Silly Walker  |
+| Castle 2  | 1&ndash;3 | 1&ndash;4 | Silly Walker, Magician, Silly Guard   |
+| Castle 3  | 1&ndash;4 | 1&ndash;5 | Silly Guard, Hellgnom, Green Dragon   |
+| Castle 4  | 1&ndash;5 | 1&ndash;6 | Green Dragon, Guard, Hellworm         |
 
 _Dungeons of Avalon II_:
 
 | Level | Groups | Number | Monsters |
-|-----------|---|---|---------------------------------------|
-| Dungeon 1 | 1 | 3 | 01 00 | Big Frog, Big Turtle
-| Dungeon 2 | 2 | 4 | 02 01 | Big Turtle, Pest Baby, Slime Twin
-| Dungeon 3 | 3 | 3 | 02 05 | Werewolf, Invisible, Voodoo Man
-| Dungeon 4 | 4 | 4 | 02 07 | Voodoo Man, Alien, Zombi
-| Dungeon 5 | 2 | 3 | 02 09 | Zombi, Big Spider, Dragon
-| Tower 1   | 3 | 4 | 02 0b | Dragon, Devil, Fire Troll
-| Tower 2   | 4 | 5 | 02 0d | Fire Troll, Arc Dragon, Skelleton
-| Tower 3   | 5 | 6 | 02 0f | Skelleton, Guardian, Magician
-| Tower B1  | 5 | 6 | 02 07 | Voodoo Man, Alien, Zombi
-| Tower B2  | 5 | 6 | 02 0f | Skelleton, Guardian, Magician
+|-----------|-----------|-----------|-----------------------------------|
+| Dungeon 1 | 1         | 1&ndash;3 | Big Frog, Big Turtle              |
+| Dungeon 2 | 1&ndash;2 | 1&ndash;4 | Big Turtle, Pest Baby, Slime Twin |
+| Dungeon 3 | 1&ndash;3 | 1&ndash;3 | Werewolf, Invisible, Voodoo Man   |
+| Dungeon 4 | 1&ndash;4 | 1&ndash;4 | Voodoo Man, Alien, Zombi          |
+| Dungeon 5 | 1&ndash;2 | 1&ndash;3 | Zombi, Big Spider, Dragon         |
+| Tower 1   | 1&ndash;3 | 1&ndash;4 | Dragon, Devil, Fire Troll         |
+| Tower 2   | 1&ndash;4 | 1&ndash;5 | Fire Troll, Arc Dragon, Skelleton |
+| Tower 3   | 1&ndash;5 | 1&ndash;6 | Skelleton, Guardian, Magician     |
+| Tower B1  | 1&ndash;5 | 1&ndash;6 | Voodoo Man, Alien, Zombi          |
+| Tower B2  | 1&ndash;5 | 1&ndash;6 | Skelleton, Guardian, Magician     |
 
-- "Groups" refers to the maximum number of sets of monsters found in a random
-  encounter on this level. The minimum is 1 group. It's possible to encounter
-  multiple groups of the same monster type.
-- "Number" refers to the maximum number of monsters in each group. The minimum
-  is 1 monster.
-- "Monsters" is the list of monsters.
+- "Groups" refers to the number of sets of monsters found in a random encounter
+  on this level. It is possible to encounter multiple groups of the same monster
+  type.
+- "Number" refers to the number of monsters in each group.
+- "Monsters" is the list of monsters which can be found in random encounters on
+  this level.
+
+For example, on DoA1 dungeon level 1, random encounter tiles will always give
+you a single group of enemies, and it will be either 1 to 3 Gnoms or 1 to 3
+Worms. On DoA1 castle level 4, you will encounter 1 to 5 groups of enemies,
+each group will have 1 to 6 monsters, and the only monsters you will encounter
+are Green Dragon, Guard, and Hellworm.
 
 ### fixed encounters
 

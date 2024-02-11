@@ -80,7 +80,7 @@ Spider, Great Spider&dagger;
 {:.left}
 
 ![doa1 pic 17](../images/doa1_pic_17.png "doa1 pic 17"){:width="256" height="224"}<br>
-Silly Walker, &nbsp;
+Silly Walker
 {:.left}
 
 ![doa1 pic 18](../images/doa1_pic_18.png "doa1 pic 18"){:width="256" height="224"}<br>
@@ -104,7 +104,7 @@ Silver Ninja, Ninja&dagger;
 {:.left}
 
 ![doa1 pic 23](../images/doa1_pic_23.png "doa1 pic 23"){:width="256" height="224"}<br>
-Woodoo man&dagger;
+Woodoo Man&dagger;
 {:.left}
 
 ![doa1 pic 24](../images/doa1_pic_24.png "doa1 pic 24"){:width="256" height="224"}<br>
@@ -260,6 +260,11 @@ Lord Roa, Fake Lord Roa
 
 <br clear="left">
 ### Notes
+
+The game credits Klaus Erhardt with "monster grafix" and Frank Matzke for
+"monster sketches". Matzke went on to have
+[numerous credits](https://www.mobygames.com/person/56269/frank-matzke/credits/sort:date/),
+becoming managing director of Bethesda around the time Skyrim was released.
 
 A large number of unused monster graphics appear in the `PICS` file for the
 first _Dungeons of Avalon_, mostly because of monsters which do not appear
