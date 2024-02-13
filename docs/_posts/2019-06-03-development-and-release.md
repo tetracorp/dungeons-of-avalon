@@ -237,7 +237,7 @@ German manual.
   of _Dungeons of Avalon_, rating
   it 72%. It praises the game's cheap price of 19 Deutsche Marks (approx
   US$12.35 at the time).
-* __Jun 1992__: MC Publications sold to German company CompuTec Verlang around
+* __Jun 1992__: MC Publications sold to German company CompuTec Verlag around
   this time. _Amiga Mania_ gets a re-design.
   (Source: [Amiga History Guide](http://www.amigahistory.plus.com/amigamania.html),
   [Amiga Magazine Rack](http://amr.abime.net/cover_scans_11))
@@ -264,7 +264,7 @@ German manual.
    _Amiga Mania_ [issue 7](http://amr.abime.net/issue_425)
   releases the full English version of _Dungeons of Avalon II_ on its
   coverdisk.
-  In the same month, CompuTech Verlang launches _Amiga Games_ magazine
+  In the same month, CompuTech Verlag launches _Amiga Games_ magazine
   in German. Its 
   [first issue](http://amr.abime.net/issue_1616)
   has a nearly identical cover to _Amiga Mania_ #7.
@@ -291,18 +291,22 @@ German manual.
 
 * __2 July 1995__: A readme with HD install instructions is either added or
   modified on a popular German distribution of the first _Dungeons of Avalon_.
-* __2 Sep 1995__: The cover CD-ROM of a
-  [special edition](https://www.ebay.com/itm/8-JEUX-DEMO-SUPER-STREET-FIGHTER-COMMODORE-AMIGA-CD-ROM-BRAINMAN-ONLY-1-EBAY/132734728699))
+* __2 Sep 1995__: The cover CD-ROM of _Amiga Games_ Sonderausgabe 1/95, a
+  [special edition](https://www.ebay.com/itm/8-JEUX-DEMO-SUPER-STREET-FIGHTER-COMMODORE-AMIGA-CD-ROM-BRAINMAN-ONLY-1-EBAY/132734728699)),
   of _Amiga Games_ is completed. It includes a demo of _Super Street Fighter II_
   and eight complete games, including _Dungeons of Avalon II_ and another Zeret
-  game, _Ramses_.
+  game, _Ramses_. The German version is available on CD-ROM as
+  [a DMS archive](https://discmaster.textfiles.com/view/4712/amigagames-1995-01.iso/spiele/vollversionen/dungeonsofavalon2.dms).
+  It is bugfixed release with level 16 characters.
 * __May? 1996__: _Amiga Games_ "Extra" CD-ROM 5/96 (presumably a subscriber-only
   or special mail-order disc)
   features a full version of _Dungeons of Avalon 2_, according to 
   [an Ebay
 listing](https://www.ebay.com/itm/16-Stuck-Amiga-Games-und-Amiga-Games-Extra-CDs-Auflistung-in-der-Beschreibung/223505318906).
   It can be run directly from the CD and is available as a DMS file which can be
-  written to disk.
+  written to disk. It's [the same file](https://discmaster.textfiles.com/view/4722/Amiga_Games_Extra_CD_5-96.bin/spiele/vollversionen/dungeonsofavalon2.dms)
+  as on Sonderausgabe 1/95, and there's also an extracted archive to run from
+  CD-ROM (e.g. on a CD32).
 * __Dec 1996__: Last regular issues of _Amiga Games_ and _Amiga Fun_.
   (Source: [AMR](http://amr.abime.net/coverdisk_index_33),
   [Kultboy](https://www.kultboy.com/Amiga-Fun-Zeitschrift/24/))
