@@ -10,7 +10,7 @@ main game executable, and
 from the `PICS` file.
 
 1. Table of Contents
-:{toc}
+{:toc}
 
 ### Dungeons of Avalon
 
