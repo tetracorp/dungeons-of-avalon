@@ -284,9 +284,26 @@ Dragon to make its elemental affinity clear), Master Magician (though there is a
 Master Mage), Wizard, Master Wizard, and Skelleton (perhaps the art re-used for
 the final boss).
 
+![doa1_alpha_pic_10](../images/doa1_alpha_pic_10.png "doa1_alpha_pic_10"){:width="256" height="224"}<br> 10 Thorndragon
+{:.left}
+
+![doa1_alpha_pic_11](../images/doa1_alpha_pic_11.png "doa1_alpha_pic_11"){:width="256" height="224"}<br> 11 Hell-Worm
+{:.left}
+
+![doa1_alpha_pic_12](../images/doa1_alpha_pic_12.png "doa1_alpha_pic_12"){:width="256" height="224"}<br> 12 Troll
+{:.left}
+
+<br clear="left">
+
+### Other graphics
+
+See [Monster and town graphics](../data/monster-sprites.html),
+[Decoded graphics](../data/decoded-graphics.html), and
+[Sprite rip](../data/sprite-rip.html).
+
 ### Other game data
 
-The executable file is much smaller, at only 47,612 bytes powerpacked, compared
+The executable file is much smaller, at only 47,612 bytes Powerpacked, compared
 to the final German release at 63,196 bytes.
 
 No game manual is included. This is normal, as game manuals are necessarily one

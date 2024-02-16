@@ -264,37 +264,37 @@ Lord Roa, Fake Lord Roa
 
 Mostly unused early development art. There are entries from #00 to #29 but aside from the ones shown here, the others are blank.
 
-![doa1_alpha_pic_01](../images/doa1_alpha_pic_01.png "doa1_alpha_pic_01"){:width="256" height="224"<br> 01 Shop
+![doa1_alpha_pic_01](../images/doa1_alpha_pic_01.png "doa1_alpha_pic_01"){:width="256" height="224"}<br> 01 Shop
 {:.left}
 
-![doa1_alpha_pic_02](../images/doa1_alpha_pic_02.png "doa1_alpha_pic_02"){:width="256" height="224"<br> 02 Temple
+![doa1_alpha_pic_02](../images/doa1_alpha_pic_02.png "doa1_alpha_pic_02"){:width="256" height="224"}<br> 02 Temple
 {:.left}
 
-![doa1_alpha_pic_03](../images/doa1_alpha_pic_03.png "doa1_alpha_pic_03"){:width="256" height="224"<br> 03 Riddle
+![doa1_alpha_pic_03](../images/doa1_alpha_pic_03.png "doa1_alpha_pic_03"){:width="256" height="224"}<br> 03 Riddle
 {:.left}
 
-![doa1_alpha_pic_04](../images/doa1_alpha_pic_04.png "doa1_alpha_pic_04"){:width="256" height="224"<br> 04 City
+![doa1_alpha_pic_04](../images/doa1_alpha_pic_04.png "doa1_alpha_pic_04"){:width="256" height="224"}<br> 04 City
 {:.left}
 
-![doa1_alpha_pic_05](../images/doa1_alpha_pic_05.png "doa1_alpha_pic_05"){:width="256" height="224"<br> 05 Inn / Adventurer's Guild
+![doa1_alpha_pic_05](../images/doa1_alpha_pic_05.png "doa1_alpha_pic_05"){:width="256" height="224"}<br> 05 Inn / Adventurer's Guild
 {:.left}
 
-![doa1_alpha_pic_06](../images/doa1_alpha_pic_06.png "doa1_alpha_pic_06"){:width="256" height="224"<br> 06 Tavern
+![doa1_alpha_pic_06](../images/doa1_alpha_pic_06.png "doa1_alpha_pic_06"){:width="256" height="224"}<br> 06 Tavern
 {:.left}
 
-![doa1_alpha_pic_07](../images/doa1_alpha_pic_07.png "doa1_alpha_pic_07"){:width="256" height="224"<br> 07 Castle
+![doa1_alpha_pic_07](../images/doa1_alpha_pic_07.png "doa1_alpha_pic_07"){:width="256" height="224"}<br> 07 Castle
 {:.left}
 
-![doa1_alpha_pic_08](../images/doa1_alpha_pic_08.png "doa1_alpha_pic_08"){:width="256" height="224"<br> 08 The Three Wises
+![doa1_alpha_pic_08](../images/doa1_alpha_pic_08.png "doa1_alpha_pic_08"){:width="256" height="224"}<br> 08 The Three Wises
 {:.left}
 
-![doa1_alpha_pic_10](../images/doa1_alpha_pic_10.png "doa1_alpha_pic_10"){:width="256" height="224"<br> 10 Thorndragon
+![doa1_alpha_pic_10](../images/doa1_alpha_pic_10.png "doa1_alpha_pic_10"){:width="256" height="224"}<br> 10 Thorndragon
 {:.left}
 
-![doa1_alpha_pic_11](../images/doa1_alpha_pic_11.png "doa1_alpha_pic_11"){:width="256" height="224"<br> 11 Hell-Worm
+![doa1_alpha_pic_11](../images/doa1_alpha_pic_11.png "doa1_alpha_pic_11"){:width="256" height="224"}<br> 11 Hell-Worm
 {:.left}
 
-![doa1_alpha_pic_12](../images/doa1_alpha_pic_12.png "doa1_alpha_pic_12"){:width="256" height="224"<br> 12 Troll
+![doa1_alpha_pic_12](../images/doa1_alpha_pic_12.png "doa1_alpha_pic_12"){:width="256" height="224"}<br> 12 Troll
 {:.left}
 
 <br clear="left">
