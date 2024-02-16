@@ -9,6 +9,9 @@ main game executable, and
 [Monster sprites](../data/monster-sprites.html) for the town and monster graphics
 from the `PICS` file.
 
+1. Table of Contents
+:{toc}
+
 ### Dungeons of Avalon
 
 #### DGFX
@@ -47,27 +50,27 @@ See [Monster and town graphics](../data/monster-sprites.html).
 
 #### DGFX_1
 
-![doa2_DGFX_1](../images/doa2_DGFX_1.png "DGFX_1"){:width="640" height="480"}
+![doa2_DGFX_1](../images/doa2_DGFX_1.png "DGFX_1"){:width="640" height="400"}
 
 #### DGFX_2
 
-![doa2_DGFX_2](../images/doa2_DGFX_2.png "DGFX_2"){:width="640" height="480"}
+![doa2_DGFX_2](../images/doa2_DGFX_2.png "DGFX_2"){:width="640" height="400"}
 
 #### END1
 
-![doa2_END1](../images/doa2_END1.png "END1"){:width="640" height="480"}
+![doa2_END1](../images/doa2_END1.png "END1"){:width="640" height="400"}
 
 #### END2
 
-![doa2_END2](../images/doa2_END2.png "END2"){:width="640" height="480"}
+![doa2_END2](../images/doa2_END2.png "END2"){:width="640" height="400"}
 
 #### GRUND
 
-![doa2_GRUND](../images/doa2_GRUND.png "GRUND"){:width="640" height="480"}
+![doa2_GRUND](../images/doa2_GRUND.png "GRUND"){:width="640" height="400"}
 
 #### MENU
 
-![doa2_MENU](../images/doa2_MENU.png "MENU"){:width="640" height="480"}
+![doa2_MENU](../images/doa2_MENU.png "MENU"){:width="640" height="400"}
 
 #### PART_D
 
@@ -79,19 +82,19 @@ See [Monster and town graphics](../data/monster-sprites.html).
 
 #### SEL_D
 
-![doa2_SEL_D](../images/doa2_SEL_D.png "SEL_D"){:width="640" height="480"}
+![doa2_SEL_D](../images/doa2_SEL_D.png "SEL_D"){:width="640" height="400"}
 
 #### SEL_E
 
-![doa2_SEL_E](../images/doa2_SEL_E.png "SEL_E"){:width="640" height="480"}
+![doa2_SEL_E](../images/doa2_SEL_E.png "SEL_E"){:width="640" height="400"}
 
 #### TITEL_1
 
-![doa2_TITEL_1](../images/doa2_TITEL_1.png "TITEL_1"){:width="640" height="480"}
+![doa2_TITEL_1](../images/doa2_TITEL_1.png "TITEL_1"){:width="640" height="400"}
 
 #### TITEL_2
 
-![doa2_TITEL_2](../images/doa2_TITEL_2.png "TITEL_2"){:width="640" height="480"}
+![doa2_TITEL_2](../images/doa2_TITEL_2.png "TITEL_2"){:width="640" height="400"}
 
 #### DATA/PICS
 

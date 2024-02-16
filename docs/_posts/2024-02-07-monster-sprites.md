@@ -337,3 +337,5 @@ remaining three are R, G, B.
 
 In DoA1 only, the PICS file has a few zeroes at the end for padding, which need
 to be trimmed to unpack with `xfddecrunch`.
+
+In the alpha build, the compressed content uses standard `PP20` headers.
