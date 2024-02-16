@@ -209,7 +209,7 @@ changed names.
 | H'Khan shop        | RUDI'S LADEN          | ROBIN'S LADEN           | 
 | Ghale shop         | ROBIN'S LADEN         | RUDI'S LADEN            | 
 | H'Khan temple      | TEMPEL DES JAHDT      | TEMPEL DES JAHDT        | 
-| Ghale shop         | FISCH'S TEMPEL        | __ARA'S TEMPEL__        | 
+| Ghale temple       | FISCH'S TEMPEL        | __ARA'S TEMPEL__        | 
 | Trainer            | DIE WEISEN DREI       | __DIE BEF&Ouml;RDERER__ | 
 | City H'Khan        | DIE STADT H'KHAN      | DIE STADT H'KHAN        | 
 | City Ghale         | DIE STADT GHALE       | DIE STADT GHALE         | 
