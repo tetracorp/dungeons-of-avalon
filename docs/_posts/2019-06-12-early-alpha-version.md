@@ -200,7 +200,7 @@ Crossbow and Sefer's Helmet.
 
 Ghale is the starting city in the alpha version, but this was switched to H'Khan
 for the final release. Most place names were already in the alpha, and were
-simply swapped in the list to accomodate the change. However, a few places
+simply swapped in the list to accommodate the change. However, a few places
 changed names.
 
 | Name               | Final release (DE)    | Alpha version (DE)      | 
