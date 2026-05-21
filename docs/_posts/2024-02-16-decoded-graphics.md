@@ -50,11 +50,11 @@ See [Monster and town graphics](../data/monster-sprites.html).
 
 #### DGFX_1
 
-![doa2_DGFX_1](../images/doa2_DGFX_1.png "DGFX_1"){:width="640" height="400"}
+![doa2_DGFX_1](../images/doa2_DGFX_1.png "DGFX_1"){:width="640" height="512"}
 
 #### DGFX_2
 
-![doa2_DGFX_2](../images/doa2_DGFX_2.png "DGFX_2"){:width="640" height="400"}
+![doa2_DGFX_2](../images/doa2_DGFX_2.png "DGFX_2"){:width="640" height="512"}
 
 #### END1
 
