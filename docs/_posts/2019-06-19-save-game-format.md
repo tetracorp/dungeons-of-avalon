@@ -57,7 +57,7 @@ string.
 : Bitfield for status effects.
 - Bit 7: Poisened
 - Bit 6: Stoned
-- Bit 4: ???
+- Bit 4: Blinded
 
 12-13
 : Current hitpoints as a 16-bit word.
@@ -114,30 +114,26 @@ string.
 49
 : Ammunition slot (arrows). Stores the ammunition type, not count.
 
-50-55
-: Unknown. Appears to be all $00 for standard characters and all $ff for NPCs.
-: May be related to inventory.
+50-57
+: Ammo/charges (eight inventory slots).
 
 58
-: Unknown. $FF for NPCs and all standard characters.
+: Ammo/charges (robe/armor slot).
 
 59
-: Unknown. $FF for NPCs and all basic characters except Simarhon, who is $00.
-: All newly-made characters are $00.
+: Ammo/charges (left hand).
 
 60
-: Unknown. $FF for NPCs, $00 for all PCs.
+: Ammo/charges (ring slot).
 
 61
-: Unknown. $FF for NPCs and starting characters, $00 for newly-made characters.
+: Ammo/charges (head slot).
 
 62
-: Unknown. $14 (20) for Meridian and Wyndon, $FF for other PCs/NPCs, $00 for new
-: characters.
-: Ammunition count for bolas-wielders?
+: Ammo/charges (right hand).
 
 63
-: Ammunition count? $0a (10) for Simarhon only.
+: Ammo/charges (ammo slot).
 
 64
 : AC. Improved by weapons. (German: Angriffst&auml;rke)

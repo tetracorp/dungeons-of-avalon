@@ -107,13 +107,10 @@ cannot be found in any chest:
 * __Disarm trap__: A scroll of a spell new to _Dungeons of Avalon II_.
   It can be cast as a level 7 spell for a Healer, or a level 8 spell for
   a Magician or Wizard.
-* __Dragonslayer__: In German, called "Drachent&ouml;ter".
-  In the first _Dungeons of Avalon_, this item's slot was used by the 
-  Ruby Dagger.
-  In the _Dungeons of Avalon_ early alpha version, this was the name of a
-  beverage available at the tavern.
 * __Scroll 3__: Simply reads "TEXT 2". Scroll 4's slot from DoA1 was replaced
   with the item Permission.
+* __Teleport__: Scroll of a spell. None appear in the dungeon. No class can cast
+  this spell. A spell by this name appeared in the demo.
 
 For completeness' sake, note that some other items appearing in the first
 _Dungeons of Avalon_ were replaced in the second game. Club became Warhammer,

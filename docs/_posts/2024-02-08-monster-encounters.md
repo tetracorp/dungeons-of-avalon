@@ -58,7 +58,7 @@ Worms. On DoA1 castle level 4, you will encounter 1 to 5 groups of enemies,
 each group will have 1 to 6 monsters, and the only monsters you will encounter
 are Green Dragon, Guard, and Hellworm.
 
-### fixed encounters
+### Fixed encounters
 
 Tile `0a` is a fixed monster encounter. The subtype is an index to a list of
 fixed encounters. Each encounter has a set number and type of monsters, and can
