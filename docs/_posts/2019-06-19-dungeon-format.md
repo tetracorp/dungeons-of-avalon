@@ -62,34 +62,8 @@ $01: Message
 $02: Trap
 : A trap triggers when you enter this square.
 : The subtype determines the type of trap. The same types appear in both games,
-although some games do not use every type of trap.
-
-| ID | English                                               | German                                              |
-|----|-------------------------------------------------------|-----------------------------------------------------|
-| 00 | A SCREAM OF A BANSHEE DISTURBS↵THE SILENCE.           | EIN BANSHEE SCHREI ZERREIßT DIE↵STILLE.             |
-| 01 | TINY SHARP BLADES ATTACKS THE↵PARTY.                  | KLEINE SCHARFE MESSER KOMMEN↵AUF EUCH ZUGESCHOSSEN. |
-| 02 | A ICEWAVE GETS YOUR PARTY.                            | EINE KÄLTEWELLE ERGREIFT EUCH.                      |
-| 03 | DROPS OF ACID FALLS FROM THE↵CEILING.                 | SÄURETROPFEN REGNEN AUF EUCH↵NIEDER.                |
-| 04 | POISENED ARROWS HITS THE PARTY↵.                      | GIFTPFEILE KOMMEN AUF EUCH↵ZUGESCHOSSEN.            |
-| 05 | POISENED ARROWS HITS THE PARTY↵.                      | GIFTPFEILE KOMMEN AUF EUCH↵ZUGESCHOSSEN.            |
-| 06 | YOU ARE COVERED BY A CLOUD OF↵POISEN↵.                | EINE GIFTWOLKE ENSTEHT UM EUCH.                     |
-| 07 | YOU ARE COVERED BY A CLOUD OF↵POISEN↵.                | EINE GIFTWOLKE ENSTEHT UM EUCH.                     |
-| 08 | THE ECO OF A GREAT EXPLOSION↵COVERS THE HALL.         | DAS ECHO DER EXPLOSION ERFÜLLT↵DIE HALLEN.          |
-| 09 | A TRAPDOOR OPENS UNDER YOU↵.                          | EINE FALLTÜRE ÖFFNET SICH UNTER↵EUCH.               |
-| 0a | A TRAPDOOR OPENS UNDER YOU↵.                          | SPEERE KOMMEN AUS DEM BODEN↵GESCHOSSEN.             |
-| 0b | STONES FALLING FROM THE CEILING↵.                     | STEINBLÖCKE FALLEN AUF EUCH↵NIEDER.                 |
-| 0c | FLAMES COMMING FROM THE SIDE↵WALLS.                   | AUS DEN SEITENWÄNDEN KOMMEN↵FLAMMEN.                |
-|----|-------------------------------------------------------|-----------------------------------------------------|
-| 0d | THE LOCK OF THE CHEST WAS↵COVERED BY POISENED THORNS. | GIFTIGE DORNEN SPRINGEN AUS DER↵TRUHE.              |
-| 0e | THE LOCK OF THE CHEST WAS↵COVERED BY POISENED BLADES. | GIFTIGE NADELN SPRINGEN AUS DER↵TRUHE.              |
-| 0f | A SMALL EXPLOSION.                                    | EINE KLEINE EXPLOSION EREIGNET↵SICH.                |
-| 10 | A COLD WAVE SPINNS AROUND THE↵CHEST.                  | EINE KÄLTEWELLE GEHT VON DER↵TRUHE AUS.             |
-| 11 | AN ACID TRAP IS ACTIVATED.                            | EINE SÄÜREFALLE WURDE↵AUSGELÖST.                    |
-
-- 04 Poisened Arrows is unused in DoA1.
-- 00 Banshee, 07 Cloud of Poisen, and 0a Trapdoor are unused in DoA2.
-- 09 Trapdoor is unused in either game.
-- Traps 0d to 11 are only used in chests, where they appear as dummy items.
+although some games do not use every type of trap. For specific details on the
+types of traps and their effects, see the [traps](../game/traps.html) page.
 
 $03: Dispel magic
 : Antimagic effect causes all spells active on the party to end.
@@ -103,7 +77,8 @@ Each entry on the chest list begins with one of `0x00` (Open) `0xfe` (Trapped)
 or `0xfd` (Closed). If trapped, the next byte is a trap ID from the traps
 list above. The remaining byte are item IDs. An item ID of `0x80` represents
 gold, and the next byte is the number of coins divided by 20. A chest ends with
-`0xff`.
+`0xff`.  For specific details on the
+types of traps and their effects, see the [traps](../game/traps.html) page.
 
 $05: Monster encounter, random.
 : A random monster encounter based on the current

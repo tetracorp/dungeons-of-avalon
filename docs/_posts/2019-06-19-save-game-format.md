@@ -145,7 +145,7 @@ string.
 : PC/NPC status. $00 for heroes, $80 for NPCs.
 
 67
-: Magic level. Perhaps maximum possible magic level.
+: Maximum magic level(?)
 
 68-73
 : 6 bytes which appear to be all zero in every character I've observed.
@@ -166,7 +166,10 @@ Unknown.
 
 A bitfield to store which spell effects are currently active on the party.
 
-- Bit 2: Levitation
+- Bit 3: Birds View / Eagles View
+- Bit 2: Levitation / Levitation II
+- Bit 1: Magic Armour / Magic Armour2
+- Bit 0: Magic Eye
 
 ### LAB_063A ($01c5, 1 byte)
 
