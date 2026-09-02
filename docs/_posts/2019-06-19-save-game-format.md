@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Save game format (DoA2)"
+title: "Save game format (DoA1/DoA2)"
 categories: data
 ---
 
@@ -30,9 +30,9 @@ detail below.
 Currently, not all fields have been decoded. The offset given is from the start
 of the encoded section, which in DoA2 is 20480 bytes into the file and can be
 easily spotted by the ASCII appearing in the first character name in the party.
-The encrypted section in DoA2 is 2482 bytes long.
+The encrypted section is 2474 bytes in DoA1, and 2482 bytes long in DoA2.
 
-### Party characters ($0000 - $01bb, 444 bytes)
+### Party characters ($000-$1bb, 444 bytes)
 
 The first 444 bytes of the encrypted section store the six characters of the
 player's current party as six rows of 74 bytes each. This also represents how
@@ -90,7 +90,7 @@ string.
 * 34: KO, Kondition (German: KO, Kondition)
 
 35
-: Magic level. Maximum level of spells user can cast.
+: Magic level. Maximum level of spells user can learn.
 : Set to 00 for non-spellcasters.
 
 36-43
@@ -115,7 +115,8 @@ string.
 : Ammunition slot (arrows). Stores the ammunition type, not count.
 
 50-57
-: Ammo/charges (eight inventory slots).
+: Ammo/charges (eight inventory slots). A value of `FF` for charges means that
+item cannot run out of charges.
 
 58
 : Ammo/charges (robe/armor slot).
@@ -145,24 +146,39 @@ string.
 : PC/NPC status. $00 for heroes, $80 for NPCs.
 
 67
-: Maximum magic level(?)
+: Maximum magic level, learned spell level.
 
 68-73
 : 6 bytes which appear to be all zero in every character I've observed.
 
-### LAB_0636 ($01bc-$01c0, 5 bytes)
+### Ongoing spells ($1bc-$1c3, 8 bytes)
 
-Unknown.
+The first four bytes hold the current duration of each of the four party spell
+effects, in order, with the starting duration of those spells:
 
-### LAB_0637 ($01c1, 1 byte)
+`00`: Magic Eye
+: Magic Eye (starting duration 2).
+`01`: Magic Armour
+: Magic Armour (duration 5) or Magic Armour2 (duration 3).
+`02`: Levitation
+: Levitation (duration 2) or Levitation II (duration 5).
+`03`: Automapping
+: Birds view (duration 0) or Eagles View (also duration 0).
 
-Unknown.
+The second four bytes hold any special parameter:
 
-### LAB_0638 ($01c2-$01c3, 2 bytes)
+Magic Eye
+: Unused, always `00`.
+Magic Armour
+: Amount of armour bonus. `03` for Magic Armour, and `02` for
+  Magic Armour2.
+Levitation
+: Attack bonus granted by Levitation or Levitation II. However, for
+  both spells it's always `00`.
+Automapping
+: `00` for Eagles View, `01` for Birds View. Eagles View shows more detail/
 
-Unknown.
-
-### Buffs ($01c4, 1 byte)
+### Ongoing spells bitfield ($1c4, 1 byte)
 
 A bitfield to store which spell effects are currently active on the party.
 
@@ -171,104 +187,145 @@ A bitfield to store which spell effects are currently active on the party.
 - Bit 1: Magic Armour / Magic Armour2
 - Bit 0: Magic Eye
 
-### LAB_063A ($01c5, 1 byte)
+### LAB_063A ($1c5, 1 byte)
 
 Unknown.
 
-### LAB_063B ($01c6, 1 byte)
+### LAB_063B ($1c6, 1 byte)
 
 Unknown.
 
-### LAB_063C ($01c7, 1 byte)
+### LAB_063C ($1c7, 1 byte)
 
 Unknown.
 
-### LAB_063D ($01c8-$01c9, 2 bytes)
+### LAB_063D ($1c8-$1c9, 2 bytes)
 
 Unknown.
 
-### LAB_063E ($01ca, 1 byte)
+### LAB_063E ($1ca, 1 byte)
 
 Unknown.
 
-### LAB_063F ($01cb, 1 byte)
+### LAB_063F ($1cb, 1 byte)
 
 Unknown.
 
-### LAB_0640 ($01cc, 1 byte)
+### LAB_0640 ($1cc, 1 byte)
 
 Unknown.
 
-### LAB_0641 ($01cd, 1 byte)
+### LAB_0641 ($1cd, 1 byte)
 
 Unknown.
 
-### LAB_0642 ($01ce, 1 byte)
+### LAB_0642 ($1ce, 1 byte)
 
 Unknown.
 
-### LAB_0643 ($01cf, 1 byte)
+### LAB_0643 ($1cf, 1 byte)
 
 Unknown.
 
-### LAB_0644 ($01d0, 1 byte)
+### LAB_0644 ($1d0, 1 byte)
 
 Unknown.
 
-### LAB_0645 ($01d1, 1 byte)
+### LAB_0645 ($1d1, 1 byte)
 
 Unknown.
 
-### LAB_0646 ($01d2, 1 byte)
+### LAB_0646 ($1d2, 1 byte)
 
 Unknown.
 
-### Facing ($01d3, 1 byte)
+### Facing ($1d3, 1 byte)
 
 Which direction the party is facing, as an integer.
 
-### LAB_0648 ($01d4, 1 byte)
+### LAB_0648 ($1d4, 1 byte)
 
 Unknown.
 
-### LAB_0649 ($01d5, 1 byte)
+### Dungeon level ($1d5, 1 byte)
+
+Current dungeon level.
+
+### LAB_064A ($1d6, 1 byte)
 
 Unknown.
 
-### LAB_064A ($01d6, 1 byte)
+### LAB_064B ($1d7, 1 byte)
 
 Unknown.
 
-### LAB_064B ($01d7, 1 byte)
+### LAB_064C ($1d8, 1 byte)
 
 Unknown.
 
-### LAB_064C ($01d8, 1 byte)
+### LAB_064D ($1d9, 1 byte)
 
 Unknown.
 
-### LAB_064D ($01d9, 1 byte)
+### Per-level pointers ($1da-$201, 40 bytes)
 
-Unknown.
+A 32-bit offset for each dungeon level, pointing to various sections of data.
+However, those sections aren't part of the save area themselves.
 
-### LAB_064E ($01da-$0201, 40 bytes)
+### Fixed encounters ($202-$2c1 or $202-$267, 192 or 102 bytes)
 
-Unknown.
+Rows of six bytes for fixed monster encounters. Each row has two bytes for each
+of three monsters, with the first byte holding the count of that monster, and
+the second the ID number of the monster type.  There are 32 rows (DoA1) or 17
+rows (DoA2).
 
-### Fixed encounters ($0202-$0267, 102 bytes)
-
-17 rows of six bytes for fixed monster encounters. Each row has two bytes for
-each of three monsters, with the first byte holding the number of that monster,
-and the second the ID number of the monster. The number of the monster changes
-as the monsters are defeated.
-
-Most important is $0262-$0267, which is the final boss fight with Lord Roa.
-Reducing all the numbers of monsters in this row to zero triggers the game's win
-conditions.
-
+In DoA2, the number of the monster changes as the monsters are defeated. 
 A bug in the first _Dungeons of Avalon_ prevented the numbers from registering
 defeated fixed-encounter monsters correctly, which made the game unwinnable
 (see [How to see the Dungeons of Avalon 1 ending](../secrets/doa1-ending.html)).
+
+In DoA2, the most important is $262-$267, which is the final boss fight with
+Lord Roa. Reducing all the numbers of monsters in this row to zero triggers the
+game's win conditions.
+
+DoA1:
+
+| ID | Monster 1       | Monster 2     | Monster 3     |
+|----|-----------------|---------------|---------------|
+| 00 |  5x Worm        |               |               |
+| 01 |  1x Worm        |               |               |
+| 02 |  2x Worm        |               |               |
+| 03 |  3x Worm        |               |               |
+| 04 |  4x Worm        |               |               |
+| 05 |  5x Worm        |               |               |
+| 06 |  6x Worm        |               |               |
+| 07 |  7x Worm        |               |               |
+| 08 |  8x Worm        |               |               |
+| 09 |  9x Worm        |               |               |
+| 0A | 10x Worm        |               |               |
+| 0B | 11x Worm        |               |               |
+| 0C | 12x Worm        |               |               |
+| 0D | 13x Worm        |               |               |
+| 0E | 14x Worm        |               |               |
+| 0F | 15x Worm        |               |               |
+| 10 | 16x Worm        |               |               |
+| 11 | 17x Worm        |               |               |
+| 12 | 18x Worm        |               |               |
+| 13 | 19x Worm        |               |               |
+| 14 | 20x Worm        |               |               |
+| 15 | 21x Worm        |               |               |
+| 16 | 22x Worm        |               |               |
+| 17 | 23x Worm        |               |               |
+| 18 | 24x Worm        |               |               |
+| 19 | 25x Worm        |               |               |
+| 1A | 26x Worm        |               |               |
+| 1B | 27x Worm        |               |               |
+| 1C | 28x Worm        |               |               |
+| 1D | 29x Worm        |               |               |
+| 1E |  2x Fire Dragon |               |               |
+| 1F |  1x Dark Lord   | 5x Fire Troll | 8x Fire Troll |
+
+DoA2:
 
 | ID | Monster 1            | Monster 2     | Monster 3    |
 |----|----------------------|---------------|--------------|
@@ -290,26 +347,63 @@ defeated fixed-encounter monsters correctly, which made the game unwinnable
 | 0F | 1x Illusory Lord Roa | 1x Arc Dragon | 1x Skelleton |
 | 10 | 1x Real Lord Roa     | 5x Arc Dragon | 6x Skelleton |
 
-### Unknown ($0268-$042d, 454 bytes)
+<!-- offset numbers unreliable from this point -->
 
-Unknown.
+### Chests ($2c2-$422 or $268-$42d, 356 or 454 bytes)
 
-### LAB_0651 ($042e-$047d, 80 bytes)
+A list of all treasure chests in the game. Entries are of variable width, and
+end with `FF`.
 
-Unknown.
+The first byte of each entry determines the type:
 
-### Adventurer's Guild ($047e - $09b1, 1332 bytes)
+- `00`: Open
+- `FD`: Closed
+- `FE`: Trapped
+
+If trapped, the second byte determines the ID number of the
+[trap](../game/traps.html) on the chest.
+
+The remaining bytes are [item ID](../data/item-ids.html). The special exception
+is byte `80`, which indicates gold. The byte which follows `80` is multiplied by
+20 to determine the number of gold coins. Additionally, item IDs plus `80`
+indicate an unidentified item of that type.
+
+DoA1 has 68 chests, including 11 Castle chests which were never placed on the
+map, and one on [Dungeon level 3](maps/doa1-dungeon3.html) which is
+inaccessible. DoA2 has 84 chests.
+
+### Shop inventory ($488-$4d7 or $42e-$47d, 80 bytes)
+
+One byte for the number of each item in stock at the weapons store
+(see [item IDs](../data/item-ids.html)). Starting equipment:
+
+| DoA1          | DoA2
+|---------------|-----------------
+| 4 Wood Shield |  2 Wood Shield
+| 2 Sword       |  1 Sword
+| 6 Dagger      |  8 Dagger
+| 1 Club        |  2 Warhammer
+|               |  1 Warstaff
+| 2 Staff       | 
+|               |  1 Crossbow
+| 1 Broadsword  |  1 Longbow
+| 8 Spellbook   | 10 Spellbook
+| 8 Robe        |  8 Robe
+| 1 Scroll 1    | 
+|               |  2 Magic Eye
+
+### Adventurer's Guild ($4d8-$a0b or $47e-$9b1, 1332 bytes)
 
 18 rows of 74 bytes to represent characters who have been created but not loaded
 into the party.
 
 Same data format as party characters.
 
-### Checksum ($09b2 - $09b3, 2 bytes)
+### Checksum ($a0c-$a0d or $9b2-$9b3, 2 bytes)
 
-A two-byte checksum to prevent save game editing. This adds the other 2482 bytes
-of the encrypted section, one two-byte word at a time, and stores the result
-here.
+A two-byte checksum to prevent save game editing. This adds the other 2474 or
+2482 bytes of the encrypted section, one two-byte word at a time, and stores the
+result here.
 
 The checksum is calculated prior to encryption. The entire section, starting
 from the party list, is encrypted as previously mentioned by XOR-ing it with the

@@ -86,34 +86,37 @@ You don't get to pick stat increases like some RPGs. You can save and reload to
 try and get better rolls on level up, though.
 
 Like Advanced Dungeons & Dragons, different character classes actually require
-different amounts of XP to level up. The wizard actually requires something like
-43% more XP than the fighter to gain a level.
+different amounts of XP to level up. The wizard actually requires 43% more XP
+than the fighter to gain a level.
 
 Internally, levelling up requires a base value of XP times a multiplier for
 class: x7 for Fighter and Hunter; x8 for Healer, Knight and Thief; x9 for
-Magician and Monk; and x10 for Wizard.
+Magician and Monk; and x10 for Wizard. The following table shows the XP total
+needed to attain each level:
 
-| To reach: | Base XP | Ftr/Hnt     | Hlr/Kt/Thf  | Mag/Monk    | Wizard      |
-|-----------|---------|-------------|-------------|-------------|-------------|
-| Level  1  |     0   |        0    |         0   |        0    |        0    |
-| Level  2  |    20   |      140    |       160   |      180    |      200    |
-| Level  3  |    45   |      315    |       360   |      405    |      450    |
-| Level  4  |   100   |      700    |       800   |      900    |     1000    |
-| Level  5  |   170   |     1190    |      1360   |     1530    |     1700    |
-| Level  6  |   270   |     1890    |      2160   |     2430    |     2700    |
-| Level  7  |   400   |     2800    |      3200   |     3600    |     4000    |
-| Level  8  |   600   |     4200    |      4800   |     5400    |     6000    |
-| Level  9  |   800   |     5600    |      6400   |     7200    |     8000    |
-| Level 10  |  1100   |     7700    |      8800   |     9900    |    11000    |
-| Level 11  |  1500   |    10500    |     12000   |    13500    |    15000    |
-| Level 12  |  2000   |    14000    |     16000   |    18000    |    20000    |
-| Level 13  |  2600   |    18200    |     20800   |    23400    |    26000    |
-| Level 14  |  3100   |    21700    |     24800   |    27900    |    31000    |
-| Level 15  |  3500   |    24500    |     28000   |    31500    |    35000    |
-| Level 16  |  4000   |    28000    |     32000   |    36000    |    40000    |
-| (Level 17)|  4700   |    32900    |     37600   |    42300    |    47000    |
+| Lv | Base   |Ftr/Hnt |Tf/Kt/He| Mon/Mag| Wiz    |
+|----|-------:|-------:|-------:|-------:|-------:|
+| 1  |      0 |      0 |      0 |      0 |      0 |
+| 2  |     20 |    140 |    160 |    180 |    200 |
+| 3  |     45 |    315 |    360 |    405 |    450 |
+| 4  |    100 |    700 |    800 |    900 |  1,000 |
+| 5  |    170 |  1,190 |  1,360 |  1,530 |  1,700 |
+| 6  |    270 |  1,890 |  2,160 |  2,430 |  2,700 |
+| 7  |    400 |  2,800 |  3,200 |  3,600 |  4,000 |
+| 8  |    600 |  4,200 |  4,800 |  5,400 |  6,000 |
+| 9  |    800 |  5,600 |  6,400 |  7,200 |  8,000 |
+| 10 |  1,100 |  7,700 |  8,800 |  9,900 | 11,000 |
+| 11 |  1,500 | 10,500 | 12,000 | 13,500 | 15,000 |
+| 12 |  2,000 | 14,000 | 16,000 | 18,000 | 20,000 |
+| 13 |  2,600 | 18,200 | 20,800 | 23,400 | 26,000 |
+| 14 |  3,100 | 21,700 | 24,800 | 27,900 | 31,000 |
+| 15 |  3,500 | 24,500 | 28,000 | 31,500 | 35,000 |
+| 16 |  4,000 | 28,000 | 32,000 | 36,000 | 40,000 |
+|(17)|  4,700 | 32,900 | 37,600 | 42,300 | 47,000 |
+|(18)|  7,997 | 55,979 | 63,976 | 71,973 | 79,970 |
 
-In practice, level 17 is unattainable due to a level cap of 16.
+In practice, level 17 is unattainable due to a level cap of 16. The level 18
+figure appears in the code for DoA1, but in DoA2 that row is empty.
 
 ### Gaining spells
 

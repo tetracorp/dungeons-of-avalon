@@ -25,7 +25,12 @@ read 00, such as 0016 for a wall block.
 Squares can also have their highest bit set in order to signify that the player
 has encountered it before, i.e. adding 80 hex to the type value. In other words,
 if 00 is an empty square, 80 is a visited empty square. One of the DUNG
-files can often be found marked in this way.
+files can often be found marked in this way. A square is marked visited if you
+have stood on or adjacent to it (including diagonally adjacent).
+The [spells](../game/spells.html) Birds View and Eagles View will show any
+square marked visited, but Birds View will show limited detail: tiles `00` to
+`11` appear as empty, `12` (door) as normal, and `13` and above appear as solid
+wall.
 
 Each level in _Dungeons of Avalon_ is 50 squares wide and 50 squares tall, with
 9 levels (five in the dungeon, and four in the castle). Each 100 bytes thus
@@ -66,8 +71,9 @@ although some games do not use every type of trap. For specific details on the
 types of traps and their effects, see the [traps](../game/traps.html) page.
 
 $03: Dispel magic
-: Antimagic effect causes all spells active on the party to end.
-Foils mapping and levitation.
+: Antimagic effect quietly causes all spells active on the party to end.
+Foils mapping, levitation, magic eye, and magic armour spells.
+Cannot cast spells in this square.
 
 $04: Treasure chest
 : Subtype determines which chest. Each level has its own offset in a list of
@@ -81,11 +87,12 @@ gold, and the next byte is the number of coins divided by 20. A chest ends with
 types of traps and their effects, see the [traps](../game/traps.html) page.
 
 $05: Monster encounter, random.
-: A random monster encounter based on the current
-dungeon level. If you re-load from a save, you may find that a different
-number of monsters appear. Fleeing a battle will also cause the square to
-generate a different number of monsters on next visit, which can be used
-to farm XP indefinitely. Defeating all monsters clears the square.
+: A random monster encounter. The number of groups, number of monsters on each
+group, and types of monsters are selected at random from an encounter table
+based on the current dungeon level. See individual level map articles.
+Generated when encountered, so it will create a new if you reload or flee and
+re-enter the battle, which can be exploited to farm XP indefinitely.
+Defeating all monsters clears the square.
 Monster squares can be visually identified by a shadow on the floor.
 
 $06: Teleporter
