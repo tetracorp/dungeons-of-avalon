@@ -46,12 +46,12 @@ stored five times, but only totals up to 102,400 bytes, about 11% of the disk
 capacity. This allowed the main game executable to be stored uncompressed on
 disk, which makes it easier to analyze and modify.
 
-In _Dungeons of Avalon II_ only, the map loops around when the player
-reaches the edge. A player who steps off the edge finds themself back on the
-opposite side of the map. DoA2 uses this to great effect, allowing the map
-designer to fit more stuff into the map. It also saves them from having to
-put a one-block wall around the edge of the map, as you see in most DoA1
-maps. See [Dungeon of Isla, level 4](../maps/doa2-dungeon4.html) and
+In both games, the map loops around when the player reaches the edge. A player
+who steps off the edge finds themself back on the opposite side of the map.
+_Dungeons of Avalon II_ uses this to great effect, allowing the map designer to
+fit more stuff into the map. It also saves them from having to put a one-block
+wall around the edge of the map, as you see in most DoA1 maps.
+See [Dungeon of Isla, level 4](../maps/doa2-dungeon4.html) and
 [Tower of Roa, level B2](maps/doa2-tower-b1.html) for examples of map
 looping.
 

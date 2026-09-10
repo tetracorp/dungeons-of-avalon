@@ -140,7 +140,7 @@ used.
 These unused chests are the only sources of Stone-Ring, Silver-Ring, and Scroll
 4 in the game.
 
-There are no unused chests in _Dungons of Avalon II_.
+There are no unused chests in _Dungeons of Avalon II_.
 
 ### End credits (DoA1)
 
@@ -149,3 +149,89 @@ final boss is defeated, essentially making it unused content.
 
 Fortunately, by editing save states it's possible to cheat to see the
 [_Dungeons of Avalon_ ending](../secrets/doa1-ending.html).
+
+### Unused encounters
+
+There are two NPC encounters in DoA1: Kham, and the dragon Elistaire. However,
+an unused dummy third NPC encounter exists.
+
+If used, it would appear as Kham. He would greet the party by saying "Hurz". The
+item he wants is a scroll of Wasp Sting, and he rewards you with Killersword,
+also saying "Hurz". "Hurz" might be a reference to
+"[Hurz!](https://de.wikipedia.org/wiki/Hurz!)", a German TV comedy skit which
+aired in July 1991
+(see [YouTube video](https://www.youtube.com/watch?v=MJ7jbQJXF68)).
+
+### Unused text
+
+DoA1 Dungeon 1 text 12
+:EN: ................................ ................................
+:DE: ................................ ................................
+
+DoA1 Dungeon 3 text 3
+:EN: DEAD END.
+:DE: DEAD END.(SACKGASSE)
+
+DoA1 Castle 1 question 0
+:EN: WHAT DID A KING WEAR?
+:EN: CRONE
+:DE: WAS IST EINES KÖNIGS INSIGNIE ?
+:DE: KRONE
+
+DoA1 Castle 4 question 0
+:EN: RÄTSEL 00
+:EN: LÖSUNG 00
+:DE: RÄTSEL 00
+:DE: LÖSUNG 00
+
+DoA2 Dungeon 1 question 0
+:EN: "A"
+:EN: A
+:DE: "A"
+:DE: A
+
+DoA2 Dungeon 1 text 8
+:EN: 
+:DE: "................................ ................................"
+
+DoA2 Dungeon 2 question 0
+:EN: "A"
+:EN: A
+:DE: "A"
+:DE: A
+
+DoA2 Dungeon 2 text 1
+:EN: NEAR!
+:DE: NÄHE!
+
+DoA2 Tower 1 question 0
+:EN: "A"
+:EN: A
+:DE: "A"
+:DE: A
+
+DoA2 Tower 2 question 0
+:EN: "A"
+:EN: A
+:DE: "A"
+:DE: A
+
+DoA2 Tower B1 question 0
+:EN: "A"
+:EN: A
+:DE: "A"
+:DE: A
+
+DoA2 Tower B1 text 6
+:EN: I HOPE THAT WAS NOT SO FRIGHTENED FOR YOU.. LORD ROA.
+:DE: NA HABT IHR EUCH ERSCHRECKT! LORD ROA.
+
+DoA2 Tower B2 question 0
+:EN: "A"
+:EN: A
+:DE: "A"
+:DE: A
+
+DoA2 Tower B2 text 3
+:EN: WELCOME YOUR FOOLS. I’LL REVENGE FOR MY FATHER. FIRST I’LL KILL YOU,THAN I CONQUER AVALON. HA HA HA HAAAAA.
+:DE: WILKOMMEN IHR NARREN. ICH WILL RACHE FÜR MEINEN VATER.ERST KOMMT IHR DRAN .DANN EROBERE ICH AVALON. HA HA HA HAAAA.

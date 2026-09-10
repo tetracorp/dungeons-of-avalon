@@ -18,7 +18,7 @@ A random encounter's composition depends on the current dungeon level.
 
 _Dungeons of Avalon_:
 
-| Level | Groups | Number | Monsters |
+| Level     | Groups    | Number    | Monsters                              |
 |-----------|-----------|-----------|---------------------------------------|
 | Dungeon 1 | 1         | 1&ndash;3 | Gnom, Worm                            |
 | Dungeon 2 | 1&ndash;2 | 1&ndash;4 | Worm, Troll, Vulture                  |
@@ -32,7 +32,7 @@ _Dungeons of Avalon_:
 
 _Dungeons of Avalon II_:
 
-| Level | Groups | Number | Monsters |
+| Level     | Groups    | Number    | Monsters                          |
 |-----------|-----------|-----------|-----------------------------------|
 | Dungeon 1 | 1         | 1&ndash;3 | Big Frog, Big Turtle              |
 | Dungeon 2 | 1&ndash;2 | 1&ndash;4 | Big Turtle, Pest Baby, Slime Twin |
@@ -57,6 +57,12 @@ you a single group of enemies, and it will be either 1 to 3 Gnoms or 1 to 3
 Worms. On DoA1 castle level 4, you will encounter 1 to 5 groups of enemies,
 each group will have 1 to 6 monsters, and the only monsters you will encounter
 are Green Dragon, Guard, and Hellworm.
+
+You will tend to encounter the maximum number of groups for the level.
+Technically, the game always attempts to generate the maximum number of groups,
+and each group has 0 to N monsters rather than 1 to N as listed. However, if it
+generates 0, that group isn't added. However, if it generates 0 groups, it will
+re-roll the entire encounter until it generates at least one group.
 
 ### Fixed encounters
 

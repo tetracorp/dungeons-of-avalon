@@ -139,8 +139,8 @@ arrow.
 | ![doa item blk](../images/doa_item_blk.png "doa item blk") | ![doa2 item 29](../images/doa2_item_29.png "doa2 item 29") |  Magic Eye&sup2;      |    4g |    4g |  When used, casts Magic Eye. Can only be used once. Magic item.
 | ![doa1 item 19](../images/doa1_item_19.png "doa1 item 19") | ![doa item blk](../images/doa_item_blk.png "doa item blk") |  Magic Armour&sup1;   |    5g |    5g |  When used, casts Magic Armour. Can only be used once. Magic item.
 | ![doa item blk](../images/doa_item_blk.png "doa item blk") | ![doa2 item 29](../images/doa2_item_29.png "doa2 item 29") |  Magic Armour&sup2;   |    5g |    5g |  When used, casts Magic Armour. Can only be used once. Magic item.
-| ![doa1 item 44](../images/doa1_item_44.png "doa1 item 44") | ![doa item blk](../images/doa_item_blk.png "doa item blk") |  Troll Bones&sup1;    |    5g |    5g |  NPC 00. Can only be used once. Spear. Normal item.
-| ![doa item blk](../images/doa_item_blk.png "doa item blk") | ![doa2 item 44](../images/doa2_item_44.png "doa2 item 44") |  Flint&sup2;          |    5g |    5g |  NPC 00. Can only be used once. Spear. Normal item.
+| ![doa1 item 44](../images/doa1_item_44.png "doa1 item 44") | ![doa item blk](../images/doa_item_blk.png "doa item blk") |  Troll Bones&sup1;    |    5g |    5g |  NPC 00. Can only be used once. Bones. Normal item.
+| ![doa item blk](../images/doa_item_blk.png "doa item blk") | ![doa2 item 44](../images/doa2_item_44.png "doa2 item 44") |  Flint&sup2;          |    5g |    5g |  NPC 00. Can only be used once. Bones. Normal item.
 | ![doa1 item 44](../images/doa1_item_44.png "doa1 item 44") | ![doa item blk](../images/doa_item_blk.png "doa item blk") |  Elf Bones&sup1;      |    5g |    5g |  NPC 01. Can only be used once. Bones. Normal item.
 | ![doa item blk](../images/doa_item_blk.png "doa item blk") | ![doa2 item 44](../images/doa2_item_44.png "doa2 item 44") |  Rahven&sup2;         |    5g |    5g |  NPC 01. Can only be used once. Bones. Normal item.
 | ![doa1 item 44](../images/doa1_item_44.png "doa1 item 44") | ![doa item blk](../images/doa_item_blk.png "doa item blk") |  Gnom Bones&sup1;     |    5g |    5g |  NPC 02. Can only be used once. Bones. Normal item.
@@ -148,26 +148,26 @@ arrow.
 | ![doa1 item 44](../images/doa1_item_44.png "doa1 item 44") | ![doa item blk](../images/doa_item_blk.png "doa item blk") |  Dwarf Bones&sup1;    |    5g |    5g |  NPC 03. Can only be used once. Bones. Normal item.
 | ![doa item blk](../images/doa_item_blk.png "doa item blk") | ![doa2 item 59](../images/doa2_item_59.png "doa2 item 59") |  ----&sup2;           |    5g |    5g |  Normal item.
 | ![doa1 item 19](../images/doa1_item_19.png "doa1 item 19") | ![doa2 item 19](../images/doa2_item_19.png "doa2 item 19") |  Stemberfang          |   25g |   22g |  When used, casts Stemberfang. Can only be used once. Magic item.
-| ![doa1 item 40](../images/doa1_item_40.png "doa1 item 40") | ![doa2 item 40](../images/doa2_item_40.png "doa2 item 40") |  Key 1                |    1g |    1g |  Can only be used once. Key. Normal item.
-| ![doa1 item 41](../images/doa1_item_41.png "doa1 item 41") | ![doa2 item 41](../images/doa2_item_41.png "doa2 item 41") |  Key 2                |    1g |    1g |  Can only be used once. Key. Normal item.
-| ![doa1 item 42](../images/doa1_item_42.png "doa1 item 42") | ![doa2 item 42](../images/doa2_item_42.png "doa2 item 42") |  Key 3                |    1g |    1g |  Can only be used once. Key. Normal item.
-| ![doa1 item 43](../images/doa1_item_43.png "doa1 item 43") | ![doa2 item 43](../images/doa2_item_43.png "doa2 item 43") |  Key 4                |    1g |    1g |  Can only be used once. Key. Normal item.
+| ![doa1 item 40](../images/doa1_item_40.png "doa1 item 40") | ![doa2 item 40](../images/doa2_item_40.png "doa2 item 40") |  Key 1                |    1g |    1g |  Can only be used once. Key (1). Normal item.
+| ![doa1 item 41](../images/doa1_item_41.png "doa1 item 41") | ![doa2 item 41](../images/doa2_item_41.png "doa2 item 41") |  Key 2                |    1g |    1g |  Can only be used once. Key (2). Normal item.
+| ![doa1 item 42](../images/doa1_item_42.png "doa1 item 42") | ![doa2 item 42](../images/doa2_item_42.png "doa2 item 42") |  Key 3                |    1g |    1g |  Can only be used once. Key (3). Normal item.
+| ![doa1 item 43](../images/doa1_item_43.png "doa1 item 43") | ![doa2 item 43](../images/doa2_item_43.png "doa2 item 43") |  Key 4                |    1g |    1g |  Can only be used once. Key (4). Normal item.
 | ![doa1 item 16](../images/doa1_item_16.png "doa1 item 16") | ![doa item blk](../images/doa_item_blk.png "doa item blk") |  Eagles View&sup1;    |   35g |   31g |  When used, casts Eagles View. Can only be used once. Magic item.
 | ![doa item blk](../images/doa_item_blk.png "doa item blk") | ![doa2 item 29](../images/doa2_item_29.png "doa2 item 29") |  Eagles View&sup2;    |   35g |   31g |  When used, casts Eagles View. Can only be used once. Magic item.
 | ![doa1 item 16](../images/doa1_item_16.png "doa1 item 16") | ![doa item blk](../images/doa_item_blk.png "doa item blk") |  Birds View&sup1;     |   25g |   22g |  When used, casts Birds View. Can only be used once. Magic item.
 | ![doa item blk](../images/doa_item_blk.png "doa item blk") | ![doa2 item 29](../images/doa2_item_29.png "doa2 item 29") |  Birds View&sup2;     |   25g |   22g |  When used, casts Birds View. Can only be used once. Magic item.
-| ![doa1 item 59](../images/doa1_item_59.png "doa1 item 59") | ![doa item blk](../images/doa_item_blk.png "doa item blk") |  -----&sup1;          |    1g |    1g |  Can only be used once. Sword. Normal item.
+| ![doa1 item 59](../images/doa1_item_59.png "doa1 item 59") | ![doa item blk](../images/doa_item_blk.png "doa item blk") |  -----&sup1;          |    1g |    1g |  Can only be used once. Key (7). Normal item.
 | ![doa item blk](../images/doa_item_blk.png "doa item blk") | ![doa2 item 29](../images/doa2_item_29.png "doa2 item 29") |  Levitation&sup2;     |    1g |    1g |  When used, casts Levitation. Can only be used once. Magic item.
-| ![doa1 item 59](../images/doa1_item_59.png "doa1 item 59") | ![doa item blk](../images/doa_item_blk.png "doa item blk") |  -----&sup1;          |    1g |    1g |  Can only be used once. Sword. Normal item.
+| ![doa1 item 59](../images/doa1_item_59.png "doa1 item 59") | ![doa item blk](../images/doa_item_blk.png "doa item blk") |  -----&sup1;          |    1g |    1g |  Can only be used once. Key (8). Normal item.
 | ![doa item blk](../images/doa_item_blk.png "doa item blk") | ![doa2 item 29](../images/doa2_item_29.png "doa2 item 29") |  Killmagic&sup2;      |    1g |    1g |  When used, casts Killmagic. Can only be used once. Magic item.
-| ![doa1 item 59](../images/doa1_item_59.png "doa1 item 59") | ![doa item blk](../images/doa_item_blk.png "doa item blk") |  -----&sup1;          |    1g |    1g |  Sword. Normal item.
+| ![doa1 item 59](../images/doa1_item_59.png "doa1 item 59") | ![doa item blk](../images/doa_item_blk.png "doa item blk") |  -----&sup1;          |    1g |    1g |  Key (-1). Normal item.
 | ![doa item blk](../images/doa_item_blk.png "doa item blk") | ![doa2 item 29](../images/doa2_item_29.png "doa2 item 29") |  Disarm Trap&sup2;    |    1g |    1g |  When used, casts Disarm Trap. Can only be used once. Magic item.
 | ![doa1 item 58](../images/doa1_item_58.png "doa1 item 58") | ![doa2 item 58](../images/doa2_item_58.png "doa2 item 58") |  Left                 |    0g |    0g |  Normal item.
 | ![doa1 item 18](../images/doa1_item_18.png "doa1 item 18") | ![doa2 item 18](../images/doa2_item_18.png "doa2 item 18") |  Right                |    0g |    0g |  Normal item.
 
 ### Items by bonus
 
-The following items give the numbered bonus to attack:
+The following items give the numbered bonus to attack (AC, AS):
 
 - +1: Dagger, Warhammer, Stone-Ring, Silver-Ring, Ara's Shield, Fire Shield
 - +2: Battle Axe, Warstaff, Mace, Longbow, Bolas, Dragonslayer
@@ -175,12 +175,12 @@ The following items give the numbered bonus to attack:
 - +4: Arc's Axe, Arc's Speer, Arc's Sword, Broadsword, Killersword, Deathbringer,
    Arrows, Elf Arrows, Kel's Arrows, Kel's Crossbow
 
-The following items give the numbered bonus to defense:
+The following items give the numbered bonus to defense (WC, RS):
 
 - +1: Arc's Axe, Arc's Boolas, Arc's Speer, Arc's Sword, Bee-Ring,
    Deathbringer, Dragonslayer, Healing Robe, Helmet, Killersword,
    Robe, Silver-Ring, Wood Shield
-- +2: Armour, Metal Shield, Sefer's/Arc's/Power Helmet
+- +2: Armour, Metal Shield, Sefer's Helmet, Arc's Helmet, Power Helmet
 - +3: Ara's Armour, Knight Armour, Battle Helmet, Buckler
 - +4: Ara's Shield, Fire Shield
 
@@ -316,8 +316,8 @@ respectively.
   exclusive to the Fighter, Knight and Hunter are unavailable to the Thief.
 - "Left" and "Right" appear to be dummy items to represent an empty-handed
   character's hands.
-- New Live has weapon-like values, granting +3 attack and +11 damage.
-  However, it has no slot, so there's no way to gain its attack bonus.
+- The scroll of New Live has weapon-like values, granting +3 attack and +11
+  damage. However, it has no slot, so there's no way to gain its attack bonus.
 - You can see the current number of charges of any item by placing it in the
   arrows inventory slot. A glitch also allows you to recharge it by selling it
   to the shop and buying it back.
@@ -330,7 +330,7 @@ item.
 - 00: Item price, as a 16-bit value (i.e. two bytes). This is the price the item
   costs to buy from the shop. Sells for 1/8th less.
 - 02: Sprite number.
-- 03: Slot, as in what part of the body it's equipped on:
+- 03: Slot, as in what part of the body it's equipped on to grant its bonus:
   - 08: Armour
   - 09: Left hand (shield)
   - 0A: Ring

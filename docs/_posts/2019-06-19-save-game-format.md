@@ -55,9 +55,10 @@ string.
 
 11
 : Bitfield for status effects.
-- Bit 7: Poisened
-- Bit 6: Stoned
-- Bit 4: Blinded
+- Bit 7: GI - Poisened
+- Bit 6: ST - Stoned
+- Bit 5: VR - Unknown (no enemy or trap inflicts this)
+- Bit 4: BL - Blinded
 
 12-13
 : Current hitpoints as a 16-bit word.
@@ -158,10 +159,13 @@ effects, in order, with the starting duration of those spells:
 
 `00`: Magic Eye
 : Magic Eye (starting duration 2).
+
 `01`: Magic Armour
 : Magic Armour (duration 5) or Magic Armour2 (duration 3).
+
 `02`: Levitation
 : Levitation (duration 2) or Levitation II (duration 5).
+
 `03`: Automapping
 : Birds view (duration 0) or Eagles View (also duration 0).
 
@@ -169,12 +173,16 @@ The second four bytes hold any special parameter:
 
 Magic Eye
 : Unused, always `00`.
+
 Magic Armour
 : Amount of armour bonus. `03` for Magic Armour, and `02` for
+
   Magic Armour2.
 Levitation
+
 : Attack bonus granted by Levitation or Levitation II. However, for
   both spells it's always `00`.
+
 Automapping
 : `00` for Eagles View, `01` for Birds View. Eagles View shows more detail/
 

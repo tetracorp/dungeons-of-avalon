@@ -311,14 +311,14 @@ anywhere in the dungeon. All of the unused art appeared in _Dungeons of Avalon
 II_ in some form.
 
 The Thorndragon and Blue Dragon became DoA2's Dragon and the NPC Elinor. Phantom
-became Lord Roa. Woodoo Man became Voodoo Man. Devil DoA2's Devil and the NPC
-Giant Argha. Alien became Alien. Unused graphics became DoA2's Big Turtle,
+became Lord Roa. Woodoo Man became Voodoo Man. Devil became DoA2's Devil and the
+NPC Giant Argha. Alien became Alien. Unused graphics became DoA2's Big Turtle,
 Invisible, and Zombi.
 
-DoA2 featured only two pieces of completely original monster art: Big Frog, Pest
-Baby, Slime Twin, Eagle, and Werewolf. Of those, Eagle never appears in the
-game. The other art is re-used, sometimes with a different palette or graphic
-changes.
+DoA2 featured only five pieces of completely original monster art: Big Frog,
+Pest Baby, Slime Twin, Eagle, and Werewolf. Of those, Eagle never appears in the
+game. The other art is re-used from DoA1, sometimes with a different palette or
+graphic changes.
 
 ### Technical notes
 

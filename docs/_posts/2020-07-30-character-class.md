@@ -4,6 +4,8 @@ title: "Character classes"
 categories: game
 ---
 
+There are eight classes in the game. 
+
 See also [Race and class lore](../lore/race-and-class.html) and
 [Character creation and level up](../game/character-creation-and-level.html).
 
@@ -128,5 +130,8 @@ progression or item proficiency tables.
 |Healer   | :white_check_mark: |:white_check_mark:|  :white_check_mark:   | :x: | :x: |:x: |    :x:     |  :x:   |
 |Wizard   | :white_check_mark: |:x:|  :x:   | :x: | :x: |:white_check_mark: |    :x:     |  :white_check_mark:   |
 
-While the troll and stemb&auml;r have a value for MP increase at level-up, they
+While the Troll and Stemb&auml;r have a value for MP increase at level-up, they
 can not take any spellcasting classes, and therefore can never actually gain MP.
+
+Although you cannot create an Elf Wizard, in DoA1 the default character Wynder
+is in fact an Elf Wizard.
