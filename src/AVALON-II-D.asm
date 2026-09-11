@@ -7,6 +7,9 @@
 ; from DungeonsOfAvalon2.dms (md5 02e9f37af41cf2436b1748e97f64a45a)
 ; from Amiga Games magazine CD-ROM Sept 1995 (verified program)
 ; ira -a -CONFIG -NEWSTYLE -KEEPZH -COMPAT=bi AVALON-II-D
+;
+; Somewhat outdated -- the DoA1 dissassembly AVALON_E.asm has more
+; details and corrections.
 ;-----------------------------------------------------------------------
 
 EXT_0000	EQU	$0

@@ -514,9 +514,10 @@ SYMBOL SUB_5B3A $00005B3A
 SYMBOL loop_5B52 $00005B52
 SYMBOL SUB_5B6A $00005B6A
 SYMBOL SUB_5B7C $00005B7C
+SYMBOL SUB_TeleWipe $00005BBE
 SYMBOL loop_5BCC $00005BCC
 SYMBOL loop_5BE8 $00005BE8
-SYMBOL SUB_5C2A $00005C2A
+SYMBOL SUB_Clear5C2A $00005C2A
 SYMBOL loop_5C32 $00005C32
 SYMBOL loop_5C34 $00005C34
 SYMBOL SUB_5C4C $00005C4C
@@ -525,7 +526,7 @@ SYMBOL SUB_CalcFacing $00005C66
 SYMBOL SUB_5C68 $00005C68
 SYMBOL loop_5C76 $00005C76
 SYMBOL loop_5C78 $00005C78
-SYMBOL SUB_5CA0 $00005CA0
+SYMBOL SUB_MoveSquare $00005CA0
 SYMBOL loop_5D0A $00005D0A
 SYMBOL SUB_5E0C $00005E0C
 SYMBOL SUB_5E38 $00005E38
@@ -550,8 +551,9 @@ SYMBOL loop_6816 $00006816
 SYMBOL SUB_6844 $00006844
 SYMBOL loop_685A $0000685A
 SYMBOL sqrTeleport $0000689A
-SYMBOL loop_68DE $000068DE
-SYMBOL SUB_68EA $000068EA
+SYMBOL loop_68AE $000068AE
+SYMBOL next_68DE $000068DE
+SYMBOL SUB_MapCoords $000068EA
 SYMBOL sqrTrap $000068FE
 SYMBOL SUB_ActivateTrap $00006908
 SYMBOL SquareTrap $00006946
@@ -725,6 +727,7 @@ SYMBOL Dung_F69B $0000F69B
 SYMBOL MapX $0000F69C
 SYMBOL MapY $0000F69D
 SYMBOL PrevMapX $0000F6A0
+SYMBOL PrevMapY $0000F6A1
 SYMBOL Facing $0000F6A3
 SYMBOL DungeonLvl $0000F6A5
 SYMBOL Direction $0000F6A6
@@ -1124,6 +1127,14 @@ COMMENT $5E6E X:-1 loops back to X:49
 COMMENT $5E76 Y:50 loops around to Y:0
 COMMENT $5E7E Y:-1 loops back to Y:49
 COMMENT $5F0A 100 bytes - map size x2
+COMMENT $689E pointer to start of current level in map
+COMMENT $68AE d0 = teleporter ID
+COMMENT $68AE d1 = square ID
+COMMENT $68AE d3 = square type (06 = teleporter)
+COMMENT $68AE a0 = pointer to square
+COMMENT $68E2 max level size (50x50)
+COMMENT $68EA Converts offset into map coordinates
+COMMENT $68FE Clear trap square and continue to trap code
 COMMENT $6924 Single-target (opening chest)
 COMMENT $6924 Level-2 (min 0)
 COMMENT $6932 +4 level if thief
@@ -1293,6 +1304,10 @@ BANNER $5E58 Calculate new coordinate based on a one step move
 BANNER $5E94 Calculate change to coordinates based on direction
 BANNER $5ECE Get current square
 BANNER $5ECE Ignore $80 (visited bit)
+BANNER $689A Teleporter
+BANNER $68BC Teleporter N means it takes you to the Nth teleporter on the map.
+BANNER $68BC They are sometimes bi-directional, but there's no guarantee.
+BANNER $68FE Trap
 BANNER $6908 Encountered a trapped chest
 BANNER $6B88 Find item D1 in inventory
 BANNER $6B88 Sets D5 to 0 if successfull, $FFFF if not
@@ -1622,6 +1637,7 @@ EQU slotRHand $2D67.B
 EQU slotRightHand $3302.W
 EQU spCurePoisen $5595.B
 EQU sqStairsCity $4BDB.B
+EQU sqTeleport $68B9.B
 EQU sqrAntimagic $AA3.B $5267.B
 EQU sqrBtnWall $62BB.B
 EQU sqrCityStairs $18A5.B

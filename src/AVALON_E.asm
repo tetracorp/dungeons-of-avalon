@@ -194,6 +194,7 @@ slotRHand	EQU	15
 slotRightHand	EQU	48
 spCurePoisen	EQU	5
 sqStairsCity	EQU	24
+sqTeleport	EQU	6
 sqrAntimagic	EQU	3
 sqrBtnWall	EQU	19
 sqrCityStairs	EQU	24
@@ -2142,10 +2143,10 @@ LAB_17EC:
 	CMPI.B	#$1b,ButtonID		;017f2: 0c39001b0000ff8c
 	BNE.S	LAB_1812		;017fa: 6616
 	CLR.W	(A0)			;017fc: 4250
-	BSR.W	SUB_5CA0		;017fe: 610044a0
+	BSR.W	SUB_MoveSquare		;017fe: 610044a0
 	MOVE.B	#$09,Sound_FF74		;01802: 13fc00090000ff74
 	BSR.W	SUB_Sound		;0180a: 6100604c
-	BSR.W	LAB_5BBE		;0180e: 610043ae
+	BSR.W	SUB_TeleWipe		;0180e: 610043ae
 LAB_1812:
 	CMP.B	#$12,D0			;01812: b03c0012
 	BNE.S	LAB_1894		;01816: 667c
@@ -5994,15 +5995,15 @@ sqrStairs:
 	MOVE.B	D2,DungeonLvl		;04c5c: 13c20000f6a5
 	MOVE.W	MapX,PrevMapX		;04c62: 33f90000f69c0000f6a0
 	BSR.W	SUB_1B98		;04c6c: 6100cf2a
-	BSR.W	SUB_5C2A		;04c70: 61000fb8
-	BSR.W	LAB_5BBE		;04c74: 61000f48
+	BSR.W	SUB_Clear5C2A		;04c70: 61000fb8
+	BSR.W	SUB_TeleWipe		;04c74: 61000f48
 	BSR.W	SUB_1B7E		;04c78: 6100cf04
 	MOVEQ	#15,D0			;04c7c: 700f
 	CLR.L	D7			;04c7e: 4287
 	MOVEA.L	DLevel_E958,A2		;04c80: 24790000e958
 	BSR.W	SUB_7594		;04c86: 6100290c
-	BSR.W	SUB_5CA0		;04c8a: 61001014
-	BRA.W	LAB_5BBE		;04c8e: 60000f2e
+	BSR.W	SUB_MoveSquare		;04c8a: 61001014
+	BRA.W	SUB_TeleWipe		;04c8e: 60000f2e
 LAB_4C92:
 	CMP.B	#$12,D0			;04c92: b03c0012
 	BNE.S	LAB_4CB2		;04c96: 661a
@@ -6856,7 +6857,7 @@ LAB_57B0:
 	BSR.W	SUB_IntToASCII		;057c6: 6100cbc6
 	MOVE.B	D1,msgPositionE		;057ca: 13c100011556
 	MOVE.B	D0,LAB_11557		;057d0: 13c000011557
-	MOVE.B	LAB_F6A1,D3		;057d6: 16390000f6a1
+	MOVE.B	PrevMapY,D3		;057d6: 16390000f6a1
 	ANDI.W	#$003f,D3		;057dc: 0243003f
 	BSR.W	SUB_IntToASCII		;057e0: 6100cbac
 	MOVE.B	D1,msgPositionN		;057e4: 13c10001155d
@@ -7132,8 +7133,8 @@ LAB_5BA6:
 	CLR.L	D1			;05bb0: 4281
 LAB_5BB2:
 	MOVE.B	#East,Facing		;05bb2: 13fc00010000f6a3
-	BRA.W	SUB_68EA		;05bba: 60000d2e
-LAB_5BBE:
+	BRA.W	SUB_MapCoords		;05bba: 60000d2e
+SUB_TeleWipe:
 	MOVEA.L	LAB_E99C,A3		;05bbe: 26790000e99c
 	MOVEA.L	LAB_E9C4,A2		;05bc4: 24790000e9c4
 	MOVEQ	#15,D6			;05bca: 7c0f
@@ -7166,7 +7167,7 @@ loop_5BE8:
 	ADDA.L	#$00000028,A3		;05c1e: d7fc00000028
 	DBF	D6,loop_5BCC		;05c24: 51ceffa6
 	RTS				;05c28: 4e75
-SUB_5C2A:
+SUB_Clear5C2A:
 	MOVEQ	#111,D1			;05c2a: 726f
 	MOVEA.L	LAB_E9C4,A0		;05c2c: 20790000e9c4
 loop_5C32:
@@ -7188,7 +7189,7 @@ SUB_5C58:
 	BSR.W	SUB_5B3A		;05c5a: 6100fede
 	MOVE.B	#$01,LAB_FFA7		;05c5e: 13fc00010000ffa7
 SUB_CalcFacing:
-	BSR.S	SUB_5CA0		;05c66: 6138
+	BSR.S	SUB_MoveSquare		;05c66: 6138
 SUB_5C68:
 	MOVEQ	#111,D1			;05c68: 726f
 	MOVEA.L	LAB_E99C,A1		;05c6a: 22790000e99c
@@ -7205,7 +7206,7 @@ loop_5C78:
 	ADDA.L	#$00000018,A1		;05c94: d3fc00000018
 	DBF	D1,loop_5C76		;05c9a: 51c9ffda
 	RTS				;05c9e: 4e75
-SUB_5CA0:
+SUB_MoveSquare:
 	ANDI.B	#$03,Facing		;05ca0: 023900030000f6a3
 	MOVEQ	#111,D1			;05ca8: 726f
 	MOVEQ	#15,D2			;05caa: 740f
@@ -7958,38 +7959,56 @@ LAB_6892:
 	ADDQ.L	#2,A0			;06892: 5488
 	DBF	D0,loop_685A		;06894: 51c8ffc4
 	RTS				;06898: 4e75
+; ------------------------------------------------------------------------------
+; Teleporter
+; ------------------------------------------------------------------------------
 sqrTeleport:
 	BSR.W	SUB_MapUpdate		;0689a: 61009dd8
+; pointer to start of current level in map
 	MOVEA.L	CurrentLvl,A0		;0689e: 20790000e9f0
 	MOVE.W	SquareMeta,D0		;068a4: 30390000f484
 	CLR.L	D1			;068aa: 4281
 	CLR.L	D3			;068ac: 4283
-LAB_68AE:
+loop_68AE:
+; d0 = teleporter ID
+; d1 = square ID
+; d3 = square type (06 = teleporter)
+; a0 = pointer to square
 	MOVE.B	1(A0),D3		;068ae: 16280001
 	ANDI.B	#$7f,D3			;068b2: 0203007f
-	CMP.B	#$06,D3			;068b6: b63c0006
-	BNE.S	loop_68DE		;068ba: 6622
-	DBF	D0,loop_68DE		;068bc: 51c80020
-	BSR.S	SUB_68EA		;068c0: 6128
-	BSR.W	SUB_5C2A		;068c2: 6100f366
-	BSR.W	LAB_5BBE		;068c6: 6100f2f6
-	BSR.W	SUB_5CA0		;068ca: 6100f3d4
+	CMP.B	#sqTeleport,D3		;068b6: b63c0006
+	BNE.S	next_68DE		;068ba: 6622
+; ------------------------------------------------------------------------------
+; Teleporter N means it takes you to the Nth teleporter on the map.
+; They are sometimes bi-directional, but there's no guarantee.
+; ------------------------------------------------------------------------------
+	DBF	D0,next_68DE		;068bc: 51c80020
+	BSR.S	SUB_MapCoords		;068c0: 6128
+	BSR.W	SUB_Clear5C2A		;068c2: 6100f366
+	BSR.W	SUB_TeleWipe		;068c6: 6100f2f6
+	BSR.W	SUB_MoveSquare		;068ca: 6100f3d4
 	MOVE.B	#$06,Sound_FF74		;068ce: 13fc00060000ff74
 	BSR.W	SUB_Sound		;068d6: 61000f80
-	BRA.W	LAB_5BBE		;068da: 6000f2e2
-loop_68DE:
+	BRA.W	SUB_TeleWipe		;068da: 6000f2e2
+next_68DE:
 	ADDQ.W	#1,D1			;068de: 5241
 	ADDQ.L	#2,A0			;068e0: 5488
+; max level size (50x50)
 	CMP.W	#$09c4,D1		;068e2: b27c09c4
-	BLS.S	LAB_68AE		;068e6: 63c6
+	BLS.S	loop_68AE		;068e6: 63c6
 	RTS				;068e8: 4e75
-SUB_68EA:
+SUB_MapCoords:
+; Converts offset into map coordinates
 	DIVU	#$0032,D1		;068ea: 82fc0032
-	MOVE.B	D1,LAB_F6A1		;068ee: 13c10000f6a1
+	MOVE.B	D1,PrevMapY		;068ee: 13c10000f6a1
 	SWAP	D1			;068f4: 4841
 	MOVE.B	D1,PrevMapX		;068f6: 13c10000f6a0
 	RTS				;068fc: 4e75
+; ------------------------------------------------------------------------------
+; Trap
+; ------------------------------------------------------------------------------
 sqrTrap:
+; Clear trap square and continue to trap code
 	CLR.B	1(A0)			;068fe: 42280001
 	BSR.W	SUB_MapUpdate		;06902: 61009d70
 	CLR.L	D7			;06906: 4287
@@ -12335,7 +12354,7 @@ LAB_F69F:
 	DS.B	1			;0f69f
 PrevMapX:
 	DS.B	1			;0f6a0
-LAB_F6A1:
+PrevMapY:
 	DS.B	1			;0f6a1
 LAB_F6A2:
 	DS.B	1			;0f6a2
