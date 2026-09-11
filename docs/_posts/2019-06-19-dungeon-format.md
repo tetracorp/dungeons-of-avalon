@@ -106,8 +106,11 @@ All switches on a level start as "off" until switched on.
 All equally-numbered floor and button switches on a level are linked, e.g. when
 one switch 01 is switched on, all switch 01 on that level are on.
 
-$08: Twister
-: The party's facing direction is changed.
+$08: Spinner
+: The party's facing direction is changed. One of the other three possible
+directions is selected at random. The spell Magic Eye will alert you with a
+noise if you are affected by a Spinner. The spell Levitation or Levitation II
+will render you immune to Spinners.
 
 $09: NPC
 : An encounter with a friendly character, such as Kham or Elistaire.
@@ -166,7 +169,7 @@ For example, riddle 01 on level 1 is different to riddle 01 on level 2.
 
 $0e: Icefloor
 : Stepping on this square makes you continue forward until you hit a wall or
-leave the ice. Levitation spell counters it.
+leave the ice. Levitation or Levitation II spell counters it.
 
 $0f: Wall, appearing
 : An empty square which becomes a wall square whenever the numbered switch is in
@@ -190,7 +193,9 @@ $12: Door
 : A door.
 The subtype determines how the door is opened:
 * 00: Unlocked.
-* 01-06: Pickable by a thief of this character level or higher.
+* 01-06: Pickable by a thief of this character level or higher. In DoA1 only,
+  there is a 50% chance per attempt for the thief to fail anyway, but you can
+  retry indefinitely.
 * 1C: Pickable only by a level 28+ thief; i.e. the NPC thief Rahven.
   See [Tower of Roa, level 2](../maps/doa2-tower2.html).
 * 80-83: Can only be opened by Key 1-4 respectively.
