@@ -249,8 +249,8 @@ $1c: Pit
 : DoA2 only. A dark pit. Don't fall down it! It won't kill you, but it will
 respawn you at the start of the current level. Levitation doesn't help.
 Notably, Tower B1 has a start point marker tile for this purpose.
-Subtype is usually 00, but some on Tower B1 have the subtype 5, 83, or 84.
-Not sure what subtype does.
+Subtype is usually 00, but some on Tower B1 have the subtype 5, 83, or 84, which
+seem to have no special effect.
 
 $1d: Wall message
 : DoA2 only. A wall with a message written on it.
