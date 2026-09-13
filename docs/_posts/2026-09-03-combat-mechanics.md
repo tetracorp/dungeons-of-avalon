@@ -32,9 +32,10 @@ which cannot hit moves forward 5 m.
 
 ### Turn order
 
-At the beginning of battle, a random initiative value is generated to determine
-turn order for the entire battle. There is a 65/256 (about 25%) chance that the
-heroes gain the initiative, and a 191/256 (about 75%) that the monsters do.
+At the beginning of each turn, a random initiative value is generated to
+determine turn order for the entire battle. There is a 65/256 (about 25%) chance
+that the heroes gain the initiative, and a 191/256 (about 75%) that the monsters
+do.
 
 Within the party, members go in order of position in the party: top left, top
 right, middle left, etc. 
@@ -53,10 +54,19 @@ Monster Group #1, Hero #1, Monster Group #2, Hero #2, etc.
 In DoA1, the hero's AC (AS) stat is calculated as `Strength/32` rounded down,
 plus bonuses from [items](game/items-and-treasure.html).
 
-In DoA1, the hero's WC (RS) stat is calculated as `(Luck + Level)/32` plus item
-bonuses. The spell Magic Armour grants +3 to all party members, while Magic
+In DoA2, the hero's AC (AS) stat is instead calculated as
+`((Kondition+Level)/16 + Strength)/16` plus bonuses from items.
+
+However, in both games, the AC (AS) stat appears to have no effect.
+
+In both games, the hero's WC (RS) stat is calculated as `(Luck + Level)/32` plus
+item bonuses. The spell Magic Armour grants +3 to all party members, while Magic
 Armour2 grants +2 instead. There is a -2 penalty if suffering from Blinded
 status.
+
+WC protects the hero from both physical attacks and spells. If their WC is equal
+to or greater then the opponent's attack or spell attack stat, the attack misses
+15/16 (93.75) of the time. If it's lower, the enemy attack always hits.
 
 ### Hero actions
 
