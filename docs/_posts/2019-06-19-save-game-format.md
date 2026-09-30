@@ -32,6 +32,9 @@ of the encoded section, which in DoA2 is 20480 bytes into the file and can be
 easily spotted by the ASCII appearing in the first character name in the party.
 The encrypted section is 2474 bytes in DoA1, and 2482 bytes long in DoA2.
 
+The offsets listed may be inaccurate due to confusion between DoA1 and DoA2, but
+the purpose each of of the fields described are correct.
+
 ### Party characters ($000-$1bb, 444 bytes)
 
 The first 444 bytes of the encrypted section store the six characters of the
@@ -175,11 +178,9 @@ Magic Eye
 : Unused, always `00`.
 
 Magic Armour
-: Amount of armour bonus. `03` for Magic Armour, and `02` for
+: Amount of armour bonus. `03` for Magic Armour, and `02` for Magic Armour2.
 
-  Magic Armour2.
 Levitation
-
 : Attack bonus granted by Levitation or Levitation II. However, for
   both spells it's always `00`.
 
